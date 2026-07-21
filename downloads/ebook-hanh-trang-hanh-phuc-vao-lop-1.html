@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hành Trang Hạnh Phúc Vào Lớp 1 — Mai Thị Thơm | Camkey English</title>
+<meta name="description" content="Ebook Hành Trang Hạnh Phúc Vào Lớp 1 — cẩm nang 30 ngày giúp con tự tin, hạnh phúc bước vào lớp 1, của cô Mai Thị Thơm, Nhà sáng lập Camkey English.">
+<style>
+  :root {
+    --terracotta: #D96C4A;
+    --terracotta-dark: #B8502F;
+    --navy: #1D3557;
+    --navy-light: #2E4A73;
+    --gold: #F2B134;
+    --cream: #FFF8F0;
+    --cream-deep: #FBEEE0;
+    --ink: #2B2118;
+    --muted: #6B6058;
+    --border: #EDE0D4;
+    --white: #FFFFFF;
+    --shadow: 0 10px 30px rgba(43, 33, 24, 0.10);
+    --radius: 18px;
+    --radius-sm: 10px;
+  }
+
+  * { box-sizing: border-box; }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: #EDE3D6;
+    color: var(--ink);
+    font-family: "Segoe UI", system-ui, -apple-system, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: "Segoe UI", system-ui, -apple-system, Arial, sans-serif;
+    color: var(--navy);
+    font-weight: 800;
+    line-height: 1.3;
+    margin: 0 0 14px;
+  }
+
+  p { margin: 0 0 14px; }
+
+  a { color: var(--terracotta-dark); }
+
+  .page {
+    width: 210mm;
+    min-height: 297mm;
+    margin: 24px auto;
+    background: var(--cream);
+    box-shadow: var(--shadow);
+    padding: 22mm 20mm;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .page + .page { margin-top: 24px; }
+
+  /* ---------- Small helper components ---------- */
+  .eyebrow {
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--terracotta-dark);
+    background: var(--cream-deep);
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    padding: 5px 14px;
+    margin-bottom: 16px;
+  }
+
+  .divider {
+    height: 4px;
+    width: 64px;
+    border-radius: 4px;
+    background: linear-gradient(90deg, var(--terracotta), var(--gold));
+    margin: 10px 0 24px;
+  }
+
+  .quote-box {
+    background: var(--cream-deep);
+    border-left: 4px solid var(--terracotta);
+    border-radius: var(--radius-sm);
+    padding: 18px 22px;
+    color: var(--navy);
+    font-style: italic;
+    font-weight: 600;
+    margin: 20px 0;
+  }
+
+  .notice-box {
+    background: #FDF3E7;
+    border: 1px dashed var(--gold);
+    border-radius: var(--radius-sm);
+    padding: 14px 18px;
+    font-size: 14.5px;
+    color: var(--muted);
+    margin: 18px 0;
+  }
+
+  .footer-note {
+    position: absolute;
+    bottom: 12mm;
+    left: 20mm;
+    right: 20mm;
+    display: flex;
+    justify-content: space-between;
+    font-size: 11px;
+    color: var(--muted);
+    border-top: 1px solid var(--border);
+    padding-top: 8px;
+  }
+
+  /* ---------- Cover page ---------- */
+  .cover {
+    background: linear-gradient(155deg, var(--navy) 0%, #16283F 68%, #101E30 100%);
+    color: #EAF0FA;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+  }
+
+  .cover::before, .cover::after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+  }
+  .cover::before {
+    width: 340px; height: 340px;
+    background: radial-gradient(circle, rgba(217,108,74,0.35), transparent 70%);
+    top: -100px; right: -100px;
+  }
+  .cover::after {
+    width: 280px; height: 280px;
+    background: radial-gradient(circle, rgba(242,177,52,0.25), transparent 70%);
+    bottom: -80px; left: -80px;
+  }
+
+  .cover-inner { position: relative; z-index: 2; }
+
+  .cover .kicker {
+    display: inline-block;
+    font-size: 14px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--gold);
+    font-weight: 700;
+    border: 1px solid rgba(242,177,52,0.5);
+    border-radius: 999px;
+    padding: 7px 20px;
+    margin-bottom: 34px;
+  }
+
+  .cover h1 {
+    color: #fff;
+    font-size: 46px;
+    line-height: 1.18;
+    margin-bottom: 18px;
+    letter-spacing: 0.01em;
+  }
+
+  .cover .subtitle {
+    font-size: 19px;
+    color: #C9D4E4;
+    max-width: 480px;
+    margin: 0 auto 46px;
+    font-weight: 400;
+  }
+
+  .cover .badge-row {
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+    margin-bottom: 46px;
+    flex-wrap: wrap;
+  }
+  .cover .badge {
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.18);
+    border-radius: 999px;
+    padding: 8px 18px;
+    font-size: 13px;
+    color: #EAF0FA;
+  }
+
+  .cover .author-block {
+    display: inline-flex;
+    align-items: center;
+    gap: 14px;
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.14);
+    border-radius: 999px;
+    padding: 10px 24px 10px 14px;
+  }
+  .cover .author-avatar {
+    width: 46px; height: 46px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--terracotta), var(--gold));
+    display: flex; align-items: center; justify-content: center;
+    font-weight: 800; color: #fff; font-size: 18px;
+    flex-shrink: 0;
+  }
+  .cover .author-text { text-align: left; }
+  .cover .author-text .name { font-weight: 700; color: #fff; font-size: 15px; }
+  .cover .author-text .role { font-size: 13px; color: var(--gold); }
+
+  .cover .brand-foot {
+    position: absolute;
+    bottom: 20mm;
+    left: 0; right: 0;
+    text-align: center;
+    font-size: 12.5px;
+    color: #8EA0BC;
+    letter-spacing: 0.04em;
+  }
+
+  /* ---------- Cover decorative emoji ---------- */
+  .cover-decor {
+    position: absolute;
+    z-index: 1;
+    line-height: 1;
+    filter: drop-shadow(0 6px 14px rgba(0,0,0,0.35));
+    pointer-events: none;
+  }
+  .cover-decor.d1 { top: 46mm; left: 22mm; font-size: 40px; transform: rotate(-14deg); }
+  .cover-decor.d2 { top: 40mm; right: 26mm; font-size: 46px; transform: rotate(12deg); }
+  .cover-decor.d3 { top: 96mm; left: 14mm; font-size: 32px; transform: rotate(9deg); }
+  .cover-decor.d4 { top: 90mm; right: 16mm; font-size: 34px; transform: rotate(-8deg); }
+  .cover-decor.d5 { bottom: 78mm; left: 24mm; font-size: 34px; transform: rotate(-6deg); }
+  .cover-decor.d6 { bottom: 82mm; right: 22mm; font-size: 38px; transform: rotate(10deg); }
+
+  /* ---------- Part / section header with icon ---------- */
+  .part-head {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 4px;
+  }
+  .part-icon {
+    flex-shrink: 0;
+    width: 60px; height: 60px;
+    border-radius: 50%;
+    background: radial-gradient(circle at 32% 30%, #ffffff, var(--cream-deep));
+    border: 3px solid var(--gold);
+    box-shadow: 0 6px 16px rgba(242,177,52,0.4);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 30px;
+  }
+  .part-head-text { flex: 1; }
+  .part-head-text .eyebrow { margin-bottom: 8px; }
+  .part-head-text h2 { margin-bottom: 0; }
+
+  /* ---------- Intro / letter page ---------- */
+  .signature {
+    margin-top: 26px;
+    font-weight: 700;
+    color: var(--navy);
+  }
+  .signature .role {
+    display: block;
+    font-weight: 400;
+    color: var(--muted);
+    font-size: 14px;
+    margin-top: 2px;
+  }
+
+  /* ---------- Checklist groups ---------- */
+  .group-card {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-top: 3px solid var(--gold);
+    border-radius: var(--radius);
+    padding: 20px 24px;
+    margin: 0 0 22px;
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+  .group-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 14px;
+  }
+  .group-number {
+    width: 44px; height: 44px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--gold), var(--terracotta));
+    color: #fff;
+    display: flex; align-items: center; justify-content: center;
+    font-weight: 800;
+    font-size: 21px;
+    flex-shrink: 0;
+    box-shadow: 0 4px 10px rgba(242,177,52,0.35);
+  }
+  .group-header h3 {
+    margin: 0;
+    font-size: 18px;
+    color: var(--navy);
+  }
+  .group-header span.count {
+    display: block;
+    font-size: 12.5px;
+    font-weight: 400;
+    color: var(--muted);
+    margin-top: 2px;
+  }
+
+  .item {
+    display: flex;
+    gap: 12px;
+    padding: 10px 0;
+    border-bottom: 1px dashed var(--border);
+  }
+  .item:last-child { border-bottom: none; }
+  .item .num {
+    flex-shrink: 0;
+    width: 26px; height: 26px;
+    border-radius: 7px;
+    background: var(--cream-deep);
+    color: var(--terracotta-dark);
+    font-weight: 700;
+    font-size: 13px;
+    display: flex; align-items: center; justify-content: center;
+    margin-top: 2px;
+  }
+  .item .txt strong { color: var(--navy); }
+  .item .txt p.ex {
+    margin: 4px 0 0;
+    font-size: 14px;
+    color: var(--muted);
+  }
+  .item .txt p.ex::before { content: "Ví dụ: "; font-weight: 600; color: var(--terracotta-dark); }
+
+  /* ---------- Week roadmap ---------- */
+  .week-card {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-left: 5px solid var(--terracotta);
+    border-radius: var(--radius-sm);
+    padding: 18px 22px;
+    margin-bottom: 16px;
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+  .week-card h3 {
+    font-size: 17px;
+    margin-bottom: 8px;
+    color: var(--navy);
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+  }
+  .week-card h3 .tag {
+    font-size: 12px;
+    background: var(--gold);
+    color: var(--ink);
+    padding: 3px 10px;
+    border-radius: 999px;
+    font-weight: 700;
+  }
+  .week-card ul { margin: 0; padding-left: 20px; }
+  .week-card li { margin-bottom: 6px; font-size: 14.5px; }
+
+  /* ---------- Table (câu nói) ---------- */
+  table.phrase-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 18px 0;
+    font-size: 14.5px;
+  }
+  table.phrase-table th {
+    background: var(--navy);
+    color: #fff;
+    text-align: left;
+    padding: 12px 14px;
+    font-size: 13.5px;
+  }
+  table.phrase-table th:first-child { border-radius: 10px 0 0 0; }
+  table.phrase-table th:last-child { border-radius: 0 10px 0 0; }
+  table.phrase-table td {
+    padding: 12px 14px;
+    border-bottom: 1px solid var(--border);
+    vertical-align: top;
+  }
+  table.phrase-table tr:nth-child(even) td { background: var(--cream-deep); }
+  table.phrase-table td.avoid { color: var(--terracotta-dark); }
+  table.phrase-table td.avoid::before { content: "✕ "; }
+  table.phrase-table td.replace { color: #2B7A4B; }
+  table.phrase-table td.replace::before { content: "✓ "; }
+
+  /* ---------- Closing page ---------- */
+  .about-card {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 24px;
+    margin: 22px 0;
+  }
+  .contact-box {
+    background: var(--navy);
+    color: #EAF0FA;
+    border-radius: var(--radius);
+    padding: 26px 28px;
+    margin-top: 24px;
+  }
+  .contact-box h3 { color: var(--gold); margin-bottom: 10px; }
+  .contact-box .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 22px;
+    margin-top: 14px;
+    font-size: 14.5px;
+  }
+  .contact-box .row div { color: #C9D4E4; }
+  .contact-box .row strong { color: #fff; display:block; font-size: 13px; text-transform: uppercase; letter-spacing:0.04em; margin-bottom:3px; }
+
+  .thanks-quote {
+    text-align: center;
+    font-size: 19px;
+    font-weight: 700;
+    color: var(--navy);
+    max-width: 520px;
+    margin: 30px auto;
+    line-height: 1.5;
+  }
+
+  /* ---------- Print styles ---------- */
+  @media print {
+    * {
+      -webkit-print-color-adjust: exact !important;
+      print-color-adjust: exact !important;
+      color-adjust: exact !important;
+    }
+    html, body { background: #fff; }
+    .page {
+      width: auto;
+      min-height: 0;
+      margin: 0;
+      box-shadow: none;
+      padding: 16mm 16mm;
+      page-break-after: always;
+    }
+    .page:last-child { page-break-after: auto; }
+    .no-print { display: none !important; }
+    .group-card, .week-card { break-inside: avoid; page-break-inside: avoid; }
+    a { color: var(--terracotta-dark) !important; text-decoration: none; }
+  }
+
+  @page {
+    size: A4;
+    margin: 0;
+  }
+
+  /* ---------- Screen-only print hint bar ---------- */
+  .print-hint {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background: var(--terracotta);
+    color: #fff;
+    text-align: center;
+    padding: 12px 16px;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  .print-hint button {
+    margin-left: 12px;
+    background: #fff;
+    color: var(--terracotta-dark);
+    border: none;
+    border-radius: 999px;
+    padding: 6px 16px;
+    font-weight: 700;
+    font-size: 13px;
+    cursor: pointer;
+  }
+
+  @media (max-width: 780px) {
+    .page { width: 100%; padding: 8mm; }
+  }
+</style>
+</head>
+<body>
+
+<div class="print-hint no-print">
+  📘 Đây là bản xem trước Ebook. Để lưu thành PDF: nhấn Ctrl + P (hoặc ⌘ + P) rồi chọn "Save as PDF".
+  <button onclick="window.print()">In / Lưu PDF</button>
+</div>
+
+<!-- ============ TRANG 1: BÌA ============ -->
+<div class="page cover">
+  <span class="cover-decor d1">⭐</span>
+  <span class="cover-decor d2">🎒</span>
+  <span class="cover-decor d3">📚</span>
+  <span class="cover-decor d4">🌟</span>
+  <span class="cover-decor d5">✏️</span>
+  <span class="cover-decor d6">🎈</span>
+  <div class="cover-inner">
+    <span class="kicker">Ebook miễn phí</span>
+    <h1>HÀNH TRANG<br>HẠNH PHÚC<br>VÀO LỚP 1</h1>
+    <p class="subtitle">Cẩm nang 30 ngày giúp con tự tin, hạnh phúc bước vào lớp 1</p>
+    <div class="badge-row">
+      <span class="badge">✔ 30 điều cần chuẩn bị</span>
+      <span class="badge">✔ Lộ trình 30 ngày</span>
+      <span class="badge">✔ Gợi ý lời nói tích cực</span>
+    </div>
+    <div class="author-block">
+      <div class="author-avatar">MT</div>
+      <div class="author-text">
+        <span class="name">Mai Thị Thơm</span>
+        <span class="role">Nhà sáng lập Camkey English</span>
+      </div>
+    </div>
+  </div>
+  <div class="brand-foot">MAI THƠM · TRUYỀN CẢM HỨNG GIÁO DỤC HẠNH PHÚC</div>
+</div>
+
+<!-- ============ TRANG 2: LỜI MỞ ĐẦU ============ -->
+<div class="page">
+  <span class="eyebrow">Lời mở đầu</span>
+  <h2>Gửi ba mẹ đang cầm cuốn sách này</h2>
+  <div class="divider"></div>
+
+  <p>Xin chào ba mẹ,</p>
+
+  <p>Tôi là Thơm — Mai Thị Thơm, đã có hơn 12 năm đứng lớp và may mắn được đồng hành cùng hơn 1.700 học sinh trên chặng đường học tập của các con. Trong suốt hành trình ấy, cứ đến mỗi mùa hè trước năm học mới, tôi lại nhận được rất nhiều tin nhắn giống nhau từ các ba mẹ: "Cô ơi, con em sắp vào lớp 1 rồi mà em lo quá, không biết phải chuẩn bị gì cho con trước." Có mẹ lo con chưa biết đọc, biết viết. Có mẹ lo con nhút nhát, sợ đi học. Có mẹ chỉ đơn giản là không biết bắt đầu từ đâu.</p>
+
+  <p>Tôi hiểu nỗi lo đó, vì tôi cũng từng là một người mẹ, một người thầy chứng kiến biết bao đứa trẻ bước vào lớp 1 với ánh mắt hoang mang thay vì háo hức. Và tôi nhận ra: điều các con cần nhất không phải là biết trước thật nhiều chữ, thật nhiều số — mà là một tâm thế vững vàng, một vài kỹ năng tự lập nho nhỏ, và cảm giác được ba mẹ đồng hành mỗi ngày.</p>
+
+  <p>Cuốn cẩm nang nhỏ này là tất cả những gì tôi đã đúc kết được sau nhiều năm làm nghề và đồng hành cùng học trò của mình. Tôi viết nó không phải để ba mẹ phải hoàn thành 30 điều một cách hoàn hảo, mà để ba mẹ có một tấm bản đồ rõ ràng, dễ áp dụng, đi cùng con từng bước nhỏ mỗi ngày trong 30 ngày trước khai giảng.</p>
+
+  <p>Tôi tin rằng, khi ba mẹ đọc xong cuốn sách này, ba mẹ sẽ nhẹ lòng hơn rất nhiều. Và quan trọng hơn cả, con sẽ bước vào lớp 1 với một nụ cười tự tin, thay vì những giọt nước mắt lo sợ.</p>
+
+  <p>Chúc ba mẹ và con có một hành trình thật nhiều yêu thương.</p>
+
+  <div class="signature">
+    Mai Thị Thơm
+    <span class="role">Nhà giáo dục · Nhà sáng lập Camkey English</span>
+  </div>
+
+  <div class="footer-note">
+    <span>Hành Trang Hạnh Phúc Vào Lớp 1</span>
+    <span>maithom.vn</span>
+  </div>
+</div>
+
+<!-- ============ TRANG 3: PHẦN 1 ============ -->
+<div class="page">
+  <div class="part-head">
+    <div class="part-icon">💛</div>
+    <div class="part-head-text">
+      <span class="eyebrow">Phần 1</span>
+      <h2>Vì sao "chuẩn bị tâm lý" quan trọng hơn "chuẩn bị kiến thức"</h2>
+    </div>
+  </div>
+  <div class="divider"></div>
+
+  <p>Rất nhiều ba mẹ khi nghĩ đến việc chuẩn bị cho con vào lớp 1 thường tập trung ngay vào việc: con đã biết đọc chưa, đã viết được chưa, đã thuộc bảng chữ cái và các con số chưa. Đó là những điều cần thiết, nhưng không phải là điều quan trọng nhất.</p>
+
+  <p>Trong hơn 12 năm làm việc trực tiếp với các con và phụ huynh, tôi nhận ra một quy luật rất rõ ràng: một đứa trẻ dù đã biết đọc, biết viết thành thạo, nhưng nếu bước vào lớp 1 với tâm lý lo sợ, thiếu tự tin, thì con vẫn sẽ gặp khó khăn — khó hòa nhập với bạn bè, sợ giơ tay phát biểu, sợ mắc lỗi, thậm chí sợ đến trường. Ngược lại, một đứa trẻ có tâm lý vững vàng, tự tin, dù kiến thức chưa thật xuất sắc, vẫn có thể học hỏi và tiến bộ rất nhanh, vì con không sợ thử, không sợ sai.</p>
+
+  <p>Lớp 1 là một bước ngoặt lớn trong cuộc đời một đứa trẻ: từ môi trường mầm non nhẹ nhàng, vui chơi là chính, con chuyển sang một môi trường có kỷ luật, có bài tập, có yêu cầu ngồi yên và tập trung lâu hơn. Sự thay đổi này, nếu không được chuẩn bị đúng cách, rất dễ khiến con bị "sốc" tâm lý trong những tuần đầu tiên.</p>
+
+  <p>Vì vậy, trong cuốn cẩm nang này, tôi sắp xếp phần chuẩn bị tâm lý và kỹ năng tự lập lên trước, xem đó là nền móng. Nền tảng học thuật và Tiếng Anh vẫn quan trọng, nhưng nên được xây dựng nhẹ nhàng, không áp lực, đặt trên nền móng tâm lý vững chắc ấy. Đó cũng chính là triết lý tôi luôn theo đuổi trong công việc của mình: <strong>"The best teachers teach from the heart, not from the book"</strong> — người thầy giỏi nhất dạy bằng trái tim, không chỉ bằng sách vở.</p>
+
+  <div class="quote-box">"Con không cần hoàn hảo ở tất cả mọi điều. Điều quan trọng là ba mẹ đồng hành đủ kiên nhẫn để con tiến bộ dần mỗi ngày."</div>
+
+  <div class="footer-note">
+    <span>Hành Trang Hạnh Phúc Vào Lớp 1</span>
+    <span>maithom.vn</span>
+  </div>
+</div>
+
+<!-- ============ TRANG 4: PHẦN 2 - INTRO + NHÓM 1 ============ -->
+<div class="page">
+  <div class="part-head">
+    <div class="part-icon">✅</div>
+    <div class="part-head-text">
+      <span class="eyebrow">Phần 2</span>
+      <h2>Checklist 30 điều cần chuẩn bị</h2>
+    </div>
+  </div>
+  <div class="divider"></div>
+  <p>Đây là phần cốt lõi của cuốn cẩm nang — 30 điều tôi thường chia sẻ trực tiếp với phụ huynh tại Camkey English, được chia thành 5 nhóm để ba mẹ dễ theo dõi và áp dụng dần từng chút một. Ba mẹ không cần làm hết trong một ngày, hãy xem đây như một người bạn đồng hành nhắc nhở nhẹ nhàng.</p>
+
+  <div class="group-card">
+    <div class="group-header">
+      <div class="group-number">💛</div>
+      <div>
+        <h3>Chuẩn bị tâm lý</h3>
+        <span class="count">8 điều</span>
+      </div>
+    </div>
+
+    <div class="item"><div class="num">1</div><div class="txt"><strong>Nói chuyện với con về lớp 1 bằng hình ảnh tích cực.</strong> Tránh những câu dọa như "vào lớp 1 là bị phạt, bị cô mắng đấy" — điều này chỉ khiến con thêm sợ hãi trước khi kịp trải nghiệm.<p class="ex">Thay vào đó, kể cho con nghe về những trò chơi mới, những người bạn mới con sẽ có ở lớp 1.</p></div></div>
+
+    <div class="item"><div class="num">2</div><div class="txt"><strong>Cho con tham quan trường, sân chơi, lớp học nếu có thể.</strong> Được nhìn thấy tận mắt nơi mình sắp học giúp con bớt bỡ ngỡ trong ngày đầu tiên rất nhiều.</div></div>
+
+    <div class="item"><div class="num">3</div><div class="txt"><strong>Đọc sách hoặc xem video về ngày đầu đi học</strong> để con hình dung trước những gì sẽ diễn ra, từ lúc vào lớp, xếp hàng, đến giờ ra chơi.</div></div>
+
+    <div class="item"><div class="num">4</div><div class="txt"><strong>Không so sánh con với "con nhà người ta"</strong> đã biết đọc, biết viết trước. Mỗi đứa trẻ có một nhịp phát triển riêng, sự so sánh chỉ khiến con mất tự tin.</div></div>
+
+    <div class="item"><div class="num">5</div><div class="txt"><strong>Cho con cơ hội bày tỏ lo lắng, và lắng nghe thay vì gạt đi.</strong><p class="ex">Khi con nói "con sợ đi học", hãy hỏi thêm "con sợ điều gì" thay vì nói ngay "có gì mà sợ".</p></div></div>
+
+    <div class="item"><div class="num">6</div><div class="txt"><strong>Giữ bình tĩnh của chính ba mẹ.</strong> Con luôn cảm nhận được sự lo lắng của người lớn, dù ba mẹ không nói ra thành lời.</div></div>
+
+    <div class="item"><div class="num">7</div><div class="txt"><strong>Tạo một "nghi thức" nhỏ trước ngày khai giảng</strong> như cùng con chọn cặp sách, chọn bút mới, để con háo hức mong chờ ngày đến trường thay vì lo sợ.</div></div>
+
+    <div class="item"><div class="num">8</div><div class="txt"><strong>Nhắc con nhớ rằng cô giáo cũng giống mẹ ở nhà</strong> — luôn ở đó để giúp con khi cần, con có thể tin tưởng và xin giúp đỡ bất cứ lúc nào.</div></div>
+  </div>
+
+  <div class="footer-note">
+    <span>Hành Trang Hạnh Phúc Vào Lớp 1</span>
+    <span>maithom.vn</span>
+  </div>
+</div>
+
+<!-- ============ TRANG 5: NHÓM 2 ============ -->
+<div class="page">
+  <span class="eyebrow">Phần 2 · tiếp theo</span>
+  <h2>Checklist 30 điều cần chuẩn bị</h2>
+  <div class="divider"></div>
+
+  <div class="group-card">
+    <div class="group-header">
+      <div class="group-number">👟</div>
+      <div>
+        <h3>Kỹ năng tự lập</h3>
+        <span class="count">8 điều</span>
+      </div>
+    </div>
+
+    <div class="item"><div class="num">9</div><div class="txt"><strong>Con tự mặc quần áo, tự đi giày, tự cài cúc áo.</strong> Đây là những kỹ năng nhỏ nhưng giúp con không bị lúng túng, tự ti trước bạn bè.</div></div>
+
+    <div class="item"><div class="num">10</div><div class="txt"><strong>Con tự đi vệ sinh và biết cách xin phép đi vệ sinh trong giờ học.</strong><p class="ex">Tập cho con câu nói đơn giản: "Con thưa cô cho con đi vệ sinh ạ."</p></div></div>
+
+    <div class="item"><div class="num">11</div><div class="txt"><strong>Con tự xúc ăn, tự dọn bát đĩa sau khi ăn.</strong> Ở trường, con sẽ cần tự ăn trưa mà không có ba mẹ bên cạnh đút cho từng thìa.</div></div>
+
+    <div class="item"><div class="num">12</div><div class="txt"><strong>Con biết tự sắp xếp cặp sách, đồ dùng học tập của mình.</strong> Hãy để con tự chuẩn bị cặp sách mỗi tối, ba mẹ chỉ kiểm tra lại cùng con.</div></div>
+
+    <div class="item"><div class="num">13</div><div class="txt"><strong>Con biết cách giơ tay xin phát biểu, xin phép ra ngoài.</strong> Đây là quy tắc lớp học mới mà con chưa từng quen ở mầm non.</div></div>
+
+    <div class="item"><div class="num">14</div><div class="txt"><strong>Con biết tự uống nước, tự bảo vệ bản thân</strong> khi khát, khi nóng, khi lạnh — biết nói ra nhu cầu của mình thay vì chịu đựng.</div></div>
+
+    <div class="item"><div class="num">15</div><div class="txt"><strong>Con biết chờ đến lượt mình</strong> — xếp hàng, chờ được gọi tên, không chen ngang khi bạn khác đang nói.</div></div>
+
+    <div class="item"><div class="num">16</div><div class="txt"><strong>Con biết nói ra khi gặp vấn đề</strong> thay vì im lặng chịu đựng, ví dụ khi bị bạn trêu, khi không hiểu bài, khi cần giúp đỡ.</div></div>
+  </div>
+
+  <div class="footer-note">
+    <span>Hành Trang Hạnh Phúc Vào Lớp 1</span>
+    <span>maithom.vn</span>
+  </div>
+</div>
+
+<!-- ============ TRANG 6: NHÓM 3 + 4 ============ -->
+<div class="page">
+  <span class="eyebrow">Phần 2 · tiếp theo</span>
+  <h2>Checklist 30 điều cần chuẩn bị</h2>
+  <div class="divider"></div>
+
+  <div class="group-card">
+    <div class="group-header">
+      <div class="group-number">✏️</div>
+      <div>
+        <h3>Nền tảng học thuật</h3>
+        <span class="count">6 điều</span>
+      </div>
+    </div>
+
+    <div class="item"><div class="num">17</div><div class="txt"><strong>Con nhận biết được 29 chữ cái và các con số cơ bản.</strong> Không cần đọc thông viết thạo, chỉ cần con quen mặt chữ, mặt số.</div></div>
+
+    <div class="item"><div class="num">18</div><div class="txt"><strong>Con cầm bút đúng cách, tô được các nét cơ bản.</strong> Cầm bút sai từ đầu sẽ khó sửa về sau, nên đây là điều nên rèn sớm và đúng cách.</div></div>
+
+    <div class="item"><div class="num">19</div><div class="txt"><strong>Con ngồi tập trung được ít nhất 15-20 phút liên tục.</strong><p class="ex">Ba mẹ có thể luyện dần bằng những hoạt động ở nhà như tô màu, xếp hình trong khoảng thời gian này.</p></div></div>
+
+    <div class="item"><div class="num">20</div><div class="txt"><strong>Con nghe hiểu và làm theo được hướng dẫn 2-3 bước</strong>, ví dụ: "Con cất sách vào cặp, sau đó ra xếp hàng."</div></div>
+
+    <div class="item"><div class="num">21</div><div class="txt"><strong>Con biết kể lại một câu chuyện ngắn theo trình tự</strong> — điều gì xảy ra trước, điều gì xảy ra sau.</div></div>
+
+    <div class="item"><div class="num">22</div><div class="txt"><strong>Con làm quen với việc có bài tập về nhà mỗi ngày</strong>, dù chỉ 10 phút, để không bị bỡ ngỡ khi bước vào nề nếp học tập chính thức.</div></div>
+  </div>
+
+  <div class="group-card">
+    <div class="group-header">
+      <div class="group-number">🔤</div>
+      <div>
+        <h3>Nền tảng Tiếng Anh</h3>
+        <span class="count">4 điều</span>
+      </div>
+    </div>
+
+    <div class="item"><div class="num">23</div><div class="txt"><strong>Con làm quen với phát âm chuẩn từ sớm</strong> — tránh học "nhiễm" phát âm sai rồi sau này khó sửa lại.</div></div>
+
+    <div class="item"><div class="num">24</div><div class="txt"><strong>Con có phản xạ nói những câu giao tiếp cơ bản</strong>: chào hỏi, giới thiệu bản thân, xin phép — những câu đơn giản dùng được ngay hàng ngày.</div></div>
+
+    <div class="item"><div class="num">25</div><div class="txt"><strong>Con không sợ khi nghe người khác nói Tiếng Anh</strong> — quen dần với việc "nghe chưa hiểu hết cũng không sao", không cần hiểu 100% mới dám nghe.</div></div>
+
+    <div class="item"><div class="num">26</div><div class="txt"><strong>Con được học Tiếng Anh qua trò chơi, bài hát</strong> — không áp lực điểm số ở giai đoạn này, để con giữ được niềm yêu thích tự nhiên với ngôn ngữ mới.</div></div>
+  </div>
+
+  <div class="footer-note">
+    <span>Hành Trang Hạnh Phúc Vào Lớp 1</span>
+    <span>maithom.vn</span>
+  </div>
+</div>
+
+<!-- ============ TRANG 7: NHÓM 5 ============ -->
+<div class="page">
+  <span class="eyebrow">Phần 2 · tiếp theo</span>
+  <h2>Checklist 30 điều cần chuẩn bị</h2>
+  <div class="divider"></div>
+
+  <div class="group-card">
+    <div class="group-header">
+      <div class="group-number">🌙</div>
+      <div>
+        <h3>Sức khỏe &amp; nề nếp sinh hoạt</h3>
+        <span class="count">4 điều</span>
+      </div>
+    </div>
+
+    <div class="item"><div class="num">27</div><div class="txt"><strong>Điều chỉnh giờ ngủ, giờ dậy sớm dần theo lịch học lớp 1</strong> trước 2-3 tuần, thay vì đợi đến sát ngày khai giảng mới thay đổi đột ngột.</div></div>
+
+    <div class="item"><div class="num">28</div><div class="txt"><strong>Cho con ăn sáng đầy đủ, tập thói quen ăn đúng giờ ở trường</strong> để con có đủ năng lượng học tập cả buổi.</div></div>
+
+    <div class="item"><div class="num">29</div><div class="txt"><strong>Khám sức khỏe, mắt, tai tổng quát trước năm học mới</strong> để kịp thời phát hiện và xử lý nếu có vấn đề.</div></div>
+
+    <div class="item"><div class="num">30</div><div class="txt"><strong>Giữ lịch sinh hoạt đều đặn, hạn chế thiết bị điện tử vào buổi tối</strong> để con ngủ đủ giấc, có tinh thần tỉnh táo mỗi sáng đến trường.</div></div>
+  </div>
+
+  <div class="quote-box">"Con không cần hoàn hảo ở tất cả 30 điều này. Điều quan trọng là ba mẹ đồng hành đủ kiên nhẫn để con tiến bộ dần mỗi ngày — chứ không phải chạy đua để con giỏi hơn bạn bè." — Mai Thị Thơm</div>
+
+  <div class="footer-note">
+    <span>Hành Trang Hạnh Phúc Vào Lớp 1</span>
+    <span>maithom.vn</span>
+  </div>
+</div>
+
+<!-- ============ TRANG 8: PHẦN 3 - LỘ TRÌNH 30 NGÀY ============ -->
+<div class="page">
+  <div class="part-head">
+    <div class="part-icon">🗓️</div>
+    <div class="part-head-text">
+      <span class="eyebrow">Phần 3</span>
+      <h2>Lộ trình 30 ngày cùng con</h2>
+    </div>
+  </div>
+  <div class="divider"></div>
+  <p>Ba mẹ không cần làm hết 30 điều cùng một lúc. Dưới đây là gợi ý cách sắp xếp theo 4 tuần, để mỗi ngày ba mẹ chỉ cần dành một chút thời gian đồng hành cùng con, nhẹ nhàng mà hiệu quả.</p>
+
+  <div class="week-card">
+    <h3>Tuần 1 <span class="tag">Làm quen &amp; tâm lý</span></h3>
+    <ul>
+      <li>Bắt đầu trò chuyện tích cực với con về lớp 1, tránh mọi lời dọa nạt (điều 1, 4, 6).</li>
+      <li>Sắp xếp một buổi tham quan trường, lớp học nếu có thể (điều 2).</li>
+      <li>Cùng con đọc sách hoặc xem video về ngày đầu đi học (điều 3).</li>
+      <li>Bắt đầu lắng nghe và trò chuyện mỗi tối về những điều con lo lắng (điều 5, 8).</li>
+      <li>Khám sức khỏe, mắt, tai tổng quát cho con (điều 29).</li>
+    </ul>
+  </div>
+
+  <div class="week-card">
+    <h3>Tuần 2 <span class="tag">Kỹ năng tự lập</span></h3>
+    <ul>
+      <li>Luyện con tự mặc quần áo, tự đi giày, tự cài cúc áo mỗi sáng (điều 9).</li>
+      <li>Tập con tự đi vệ sinh và nói câu xin phép đơn giản (điều 10).</li>
+      <li>Cho con tự xúc ăn, tự dọn bát đĩa sau bữa ăn (điều 11).</li>
+      <li>Hướng dẫn con tự sắp xếp cặp sách mỗi tối (điều 12).</li>
+      <li>Dạy con cách giơ tay xin phát biểu, biết chờ đến lượt (điều 13, 15).</li>
+      <li>Bắt đầu điều chỉnh giờ ngủ, giờ dậy sớm dần theo lịch lớp 1 (điều 27).</li>
+    </ul>
+  </div>
+
+  <div class="week-card">
+    <h3>Tuần 3 <span class="tag">Nền tảng học thuật &amp; Tiếng Anh</span></h3>
+    <ul>
+      <li>Ôn lại 29 chữ cái, các con số cơ bản cùng con mỗi tối (điều 17).</li>
+      <li>Luyện con cầm bút đúng cách, tô nét cơ bản 10-15 phút mỗi ngày (điều 18, 22).</li>
+      <li>Tập con ngồi tập trung 15-20 phút qua các hoạt động tô màu, xếp hình (điều 19).</li>
+      <li>Cùng con luyện nghe hiểu hướng dẫn nhiều bước, kể chuyện theo trình tự (điều 20, 21).</li>
+      <li>Cho con làm quen phát âm chuẩn và các câu giao tiếp Tiếng Anh cơ bản qua trò chơi, bài hát (điều 23, 24, 26).</li>
+    </ul>
+  </div>
+
+  <div class="week-card">
+    <h3>Tuần 4 <span class="tag">Hoàn thiện &amp; sẵn sàng</span></h3>
+    <ul>
+      <li>Cùng con chọn cặp sách, bút mới — tạo nghi thức háo hức trước khai giảng (điều 7).</li>
+      <li>Nhắc lại rằng cô giáo cũng như mẹ ở nhà, luôn sẵn sàng giúp con (điều 8).</li>
+      <li>Rèn con biết nói ra khi gặp vấn đề, không im lặng chịu đựng (điều 16).</li>
+      <li>Cho con nghe thêm Tiếng Anh mỗi ngày, không áp lực hiểu hết (điều 25).</li>
+      <li>Ổn định hẳn giờ ăn sáng, giờ ngủ, hạn chế thiết bị điện tử buổi tối (điều 28, 30).</li>
+      <li>Ba mẹ giữ tâm lý bình tĩnh, lạc quan trong những ngày cuối cùng (điều 6).</li>
+    </ul>
+  </div>
+
+  <div class="footer-note">
+    <span>Hành Trang Hạnh Phúc Vào Lớp 1</span>
+    <span>maithom.vn</span>
+  </div>
+</div>
+
+<!-- ============ TRANG 9: PHẦN 4 - CÂU NÓI ============ -->
+<div class="page">
+  <div class="part-head">
+    <div class="part-icon">💬</div>
+    <div class="part-head-text">
+      <span class="eyebrow">Phần 4</span>
+      <h2>5 câu nói ba mẹ nên tránh và nên thay bằng câu gì</h2>
+    </div>
+  </div>
+  <div class="divider"></div>
+  <p>Lời nói của ba mẹ có sức ảnh hưởng rất lớn đến niềm tin của con vào chính mình. Đôi khi, chỉ cần đổi cách nói, cùng một mong muốn nhưng con sẽ đón nhận theo một cách rất khác — tích cực và có động lực hơn nhiều.</p>
+
+  <table class="phrase-table">
+    <thead>
+      <tr>
+        <th style="width:50%;">Câu nên tránh</th>
+        <th>Câu nên nói thay thế</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="avoid">"Vào lớp 1 là bị cô mắng, bị phạt đấy, không được nghịch như ở nhà đâu."</td>
+        <td class="replace">"Vào lớp 1 con sẽ có nhiều bạn mới, nhiều điều thú vị để khám phá cùng cô giáo đấy."</td>
+      </tr>
+      <tr>
+        <td class="avoid">"Con nhà người ta đã biết đọc, biết viết hết rồi, sao con vẫn chưa biết?"</td>
+        <td class="replace">"Mỗi bạn có một tốc độ học riêng, con cứ học từng chút mỗi ngày là mẹ vui rồi."</td>
+      </tr>
+      <tr>
+        <td class="avoid">"Có gì đâu mà sợ, con lớn rồi, không được khóc nhè nữa."</td>
+        <td class="replace">"Mẹ hiểu con đang hơi lo, con kể cho mẹ nghe con đang lo điều gì nhé."</td>
+      </tr>
+      <tr>
+        <td class="avoid">"Con phải tự làm hết đi, mẹ không giúp nữa đâu, lớn rồi mà."</td>
+        <td class="replace">"Con thử tự làm phần này nhé, nếu khó quá mẹ sẽ ở đây giúp con."</td>
+      </tr>
+      <tr>
+        <td class="avoid">"Sao con chậm thế, các bạn làm xong hết rồi kìa."</td>
+        <td class="replace">"Con đang cố gắng rồi, mình cùng làm tiếp nhé, không vội đâu con."</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="notice-box">Ba mẹ không cần nhớ và áp dụng cả 5 câu này một cách máy móc — chỉ cần giữ tinh thần chung: thay lời phán xét bằng lời thấu hiểu, thay áp lực bằng sự đồng hành.</div>
+
+  <div class="footer-note">
+    <span>Hành Trang Hạnh Phúc Vào Lớp 1</span>
+    <span>maithom.vn</span>
+  </div>
+</div>
+
+<!-- ============ TRANG 10: TRANG KẾT ============ -->
+<div class="page">
+  <span class="eyebrow">Lời kết</span>
+  <h2>Cảm ơn ba mẹ đã đồng hành đến trang cuối cùng</h2>
+  <div class="divider"></div>
+
+  <p>Cảm ơn ba mẹ đã dành thời gian đọc hết cuốn cẩm nang nhỏ này. Tôi tin rằng chỉ cần ba mẹ áp dụng dần từng điều, kiên nhẫn cùng con mỗi ngày, con sẽ bước vào lớp 1 với một tâm thế tự tin và hạnh phúc hơn rất nhiều.</p>
+
+  <div class="thanks-quote">"The best teachers teach from the heart, not from the book."</div>
+
+  <div class="about-card">
+    <h3>Về Camkey English</h3>
+    <p>Camkey English là trung tâm Anh ngữ dành cho trẻ em tại Hà Đông, Hà Nội, do cô Mai Thị Thơm sáng lập — người có hơn 12 năm kinh nghiệm giảng dạy và đã đồng hành cùng hơn 1.700 học sinh. Với triết lý dạy học bằng trái tim, Camkey English mong muốn trở thành người bạn đồng hành cùng ba mẹ và các con trên hành trình phát triển toàn diện, hạnh phúc.</p>
+  </div>
+
+  <div class="contact-box">
+    <h3>Nếu ba mẹ cần đồng hành thêm</h3>
+    <p style="color:#EAF0FA; margin-bottom:0;">Đừng ngần ngại liên hệ với tôi và đội ngũ Camkey English — chúng tôi luôn sẵn sàng lắng nghe và cùng ba mẹ tìm ra cách phù hợp nhất cho con.</p>
+    <div class="row">
+      <div><strong>Hotline</strong>0924 135 222</div>
+      <div><strong>Email</strong>camkeyenglish@gmail.com</div>
+      <div><strong>Website</strong>maithom.vn</div>
+    </div>
+  </div>
+
+  <div class="footer-note">
+    <span>Hành Trang Hạnh Phúc Vào Lớp 1 · Mai Thị Thơm</span>
+    <span>maithom.vn</span>
+  </div>
+</div>
+
+</body>
+</html>

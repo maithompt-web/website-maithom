@@ -1,0 +1,1068 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>50 Trò Chơi Tiếng Anh Cho Trẻ 5-6 Tuổi — Mai Thị Thơm | Camkey English</title>
+<style>
+  :root{
+    --terracotta:#D96C4A;
+    --terracotta-dark:#B8502F;
+    --navy:#1D3557;
+    --gold:#F2B134;
+    --cream:#FFF8F0;
+    --cream-dark:#FBEEE0;
+    --ink:#2B2118;
+    --ink-light:#6B6058;
+    /* pastel section palette — one warm pastel tone per topic, for variety */
+    --pastel-1:#FFEBDC;   --pastel-1-icon:#FFCFA3;   --pastel-1-border:#F6D3B4;
+    --pastel-2:#E4F3FF;   --pastel-2-icon:#BCE3FF;   --pastel-2-border:#C7E4F6;
+    --pastel-3:#FFE9F1;   --pastel-3-icon:#FFC2D9;   --pastel-3-border:#F6CADB;
+    --pastel-4:#E8F8EA;   --pastel-4-icon:#C3ECC9;   --pastel-4-border:#CBE9CE;
+    --pastel-5:#FFF6D9;   --pastel-5-icon:#FFE08A;   --pastel-5-border:#F3E3AE;
+  }
+  *{ box-sizing:border-box; }
+  html,body{
+    margin:0; padding:0;
+    background:var(--cream);
+    color:var(--ink);
+    font-family:"Segoe UI", system-ui, Arial, sans-serif;
+    line-height:1.6;
+    font-size:16px;
+  }
+  .page{
+    max-width:900px;
+    margin:0 auto;
+    padding:56px 48px;
+    position:relative;
+  }
+  .page + .page{ page-break-before: always; }
+  h1,h2,h3,h4{ color:var(--navy); margin-top:0; }
+  a{ color:var(--terracotta-dark); }
+
+  /* ===== COVER ===== */
+  .cover{
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    background:
+      radial-gradient(circle at 15% 20%, rgba(242,177,52,0.35), transparent 40%),
+      radial-gradient(circle at 85% 80%, rgba(255,255,255,0.12), transparent 45%),
+      linear-gradient(155deg, var(--navy) 0%, #234069 55%, var(--terracotta-dark) 130%);
+    color:#FFF8F0;
+    padding:60px 40px;
+  }
+  .cover .emoji-row{ font-size:40px; letter-spacing:14px; margin-bottom:26px; }
+  .cover-deco{ position:absolute; inset:0; overflow:hidden; pointer-events:none; }
+  .cover-deco span{ position:absolute; font-size:38px; opacity:0.9; filter:drop-shadow(0 3px 6px rgba(0,0,0,0.18)); }
+  .cover-deco .cd-1{ top:6%;  left:7%;  font-size:44px; transform:rotate(-12deg); }
+  .cover-deco .cd-2{ top:10%; right:9%; font-size:34px; transform:rotate(10deg); }
+  .cover-deco .cd-3{ top:26%; left:4%;  font-size:30px; transform:rotate(8deg); }
+  .cover-deco .cd-4{ top:30%; right:5%; font-size:40px; transform:rotate(-8deg); }
+  .cover-deco .cd-5{ bottom:20%; left:8%; font-size:36px; transform:rotate(14deg); }
+  .cover-deco .cd-6{ bottom:16%; right:8%; font-size:32px; transform:rotate(-10deg); }
+  .cover-deco .cd-7{ bottom:2%;  left:3%; font-size:26px; transform:rotate(-6deg); }
+  .cover-deco .cd-8{ bottom:2%;  right:3%; font-size:26px; transform:rotate(6deg); }
+  .cover .eyebrow{
+    display:inline-block;
+    background:rgba(242,177,52,0.18);
+    border:1px solid var(--gold);
+    color:var(--gold);
+    padding:8px 20px;
+    border-radius:999px;
+    font-size:13px;
+    letter-spacing:2px;
+    text-transform:uppercase;
+    margin-bottom:28px;
+  }
+  .cover h1{
+    color:#fff;
+    font-size:44px;
+    line-height:1.25;
+    margin:0 0 18px;
+    max-width:680px;
+    text-shadow:0 2px 18px rgba(0,0,0,0.25);
+  }
+  .cover h1 span{ color:var(--gold); }
+  .cover .subtitle{
+    font-size:20px;
+    color:#FDEFE2;
+    margin-bottom:44px;
+    font-weight:500;
+  }
+  .cover .author-box{
+    background:rgba(255,255,255,0.08);
+    border:1px solid rgba(255,255,255,0.25);
+    border-radius:18px;
+    padding:22px 34px;
+    backdrop-filter:blur(2px);
+  }
+  .cover .author-name{ font-size:19px; font-weight:700; color:#fff; }
+  .cover .author-role{ font-size:14px; color:#E8D9C8; margin-top:4px; }
+  .cover .footer-note{
+    position:absolute;
+    bottom:34px;
+    left:0; right:0;
+    text-align:center;
+    font-size:13px;
+    color:#E8D9C8;
+    letter-spacing:1px;
+  }
+
+  /* ===== INTRO ===== */
+  .eyebrow-sm{
+    display:inline-block;
+    color:var(--terracotta-dark);
+    font-weight:700;
+    font-size:13px;
+    letter-spacing:2px;
+    text-transform:uppercase;
+    margin-bottom:10px;
+  }
+  .intro-page h1{ font-size:30px; margin-bottom:22px; }
+  .signature{
+    margin-top:26px;
+    font-style:italic;
+    color:var(--ink-light);
+  }
+  .howto-box{
+    background:var(--cream-dark);
+    border-left:5px solid var(--terracotta);
+    border-radius:10px;
+    padding:22px 26px;
+    margin-top:28px;
+  }
+  .howto-box h4{ margin-bottom:10px; color:var(--terracotta-dark); }
+  .howto-box ul{ margin:0; padding-left:20px; }
+  .howto-box li{ margin-bottom:8px; }
+  .toc-box{
+    margin-top:34px;
+    background:#fff;
+    border:1px solid #EEDFCC;
+    border-radius:12px;
+    padding:22px 28px;
+  }
+  .toc-box h4{ color:var(--navy); margin-bottom:14px; }
+  .toc-box ol{ margin:0; padding-left:20px; color:var(--ink); }
+  .toc-box li{ margin-bottom:8px; }
+
+  /* ===== SECTION HEADER ===== */
+  .section-header{
+    position:relative;
+    overflow:hidden;
+    text-align:center;
+    background:linear-gradient(135deg, var(--terracotta) 0%, var(--terracotta-dark) 100%);
+    color:#fff;
+    border-radius:18px;
+    padding:34px 30px;
+    margin-bottom:34px;
+  }
+  .sec-deco{
+    position:absolute;
+    font-size:26px;
+    opacity:0.85;
+    pointer-events:none;
+    filter:drop-shadow(0 2px 4px rgba(0,0,0,0.15));
+  }
+  .sec-deco.sd-tl{ top:10px;    left:16px;   font-size:24px; transform:rotate(-10deg); }
+  .sec-deco.sd-tr{ top:8px;     right:18px;  font-size:30px; transform:rotate(12deg); }
+  .sec-deco.sd-bl{ bottom:10px; left:22px;   font-size:22px; transform:rotate(8deg); }
+  .sec-deco.sd-br{ bottom:12px; right:16px;  font-size:26px; transform:rotate(-8deg); }
+  .section-header .num{
+    display:inline-block;
+    background:rgba(255,255,255,0.2);
+    border:1px solid rgba(255,255,255,0.5);
+    border-radius:999px;
+    padding:5px 18px;
+    font-size:13px;
+    letter-spacing:2px;
+    text-transform:uppercase;
+    margin-bottom:12px;
+  }
+  .section-header h2{ color:#fff; font-size:26px; margin:0 0 10px; }
+  .section-header p{ color:#FDEFE2; max-width:620px; margin:0 auto; font-size:15px; }
+
+  /* ===== GAME CARD ===== */
+  .game-card{
+    display:flex;
+    gap:18px;
+    background:var(--cream-pastel, #fff);
+    border:1px solid var(--cream-pastel-border, #EEDFCC);
+    border-radius:16px;
+    padding:20px 22px;
+    margin-bottom:18px;
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+  .game-icon{
+    flex:0 0 64px;
+    width:64px; height:64px;
+    font-size:32px;
+    text-align:center;
+    line-height:1;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:50%;
+    background:var(--cream-pastel-icon, var(--gold));
+    box-shadow:0 3px 8px rgba(0,0,0,0.08), inset 0 0 0 3px rgba(255,255,255,0.55);
+  }
+  /* pastel theme per section — assigned via .sec-1 … .sec-5 on the page wrapper */
+  .sec-1{ --cream-pastel:var(--pastel-1); --cream-pastel-border:var(--pastel-1-border); --cream-pastel-icon:var(--pastel-1-icon); }
+  .sec-2{ --cream-pastel:var(--pastel-2); --cream-pastel-border:var(--pastel-2-border); --cream-pastel-icon:var(--pastel-2-icon); }
+  .sec-3{ --cream-pastel:var(--pastel-3); --cream-pastel-border:var(--pastel-3-border); --cream-pastel-icon:var(--pastel-3-icon); }
+  .sec-4{ --cream-pastel:var(--pastel-4); --cream-pastel-border:var(--pastel-4-border); --cream-pastel-icon:var(--pastel-4-icon); }
+  .sec-5{ --cream-pastel:var(--pastel-5); --cream-pastel-border:var(--pastel-5-border); --cream-pastel-icon:var(--pastel-5-icon); }
+  .game-body{ flex:1; min-width:0; }
+  .game-body h3{
+    font-size:18px;
+    margin:0 0 6px;
+    color:var(--navy);
+  }
+  .game-body h3 .en-name{
+    color:var(--terracotta-dark);
+    font-style:italic;
+    font-weight:500;
+    font-size:15px;
+  }
+  .game-meta{
+    font-size:13px;
+    color:var(--ink-light);
+    margin:0 0 8px;
+  }
+  .game-meta strong{ color:var(--ink); }
+  .game-desc{ margin:0 0 12px; font-size:14.5px; color:var(--ink); }
+  .vocab-box{
+    background:var(--cream-dark);
+    border-radius:10px;
+    padding:10px 14px;
+  }
+  .vocab-label{
+    display:block;
+    font-size:12px;
+    font-weight:700;
+    color:var(--terracotta-dark);
+    text-transform:uppercase;
+    letter-spacing:0.5px;
+    margin-bottom:6px;
+  }
+  .tag{
+    display:inline-block;
+    background:#fff;
+    border:1px solid var(--gold);
+    color:var(--ink);
+    font-size:13px;
+    padding:3px 11px;
+    border-radius:999px;
+    margin:0 6px 6px 0;
+  }
+
+  /* ===== CLOSING PAGE ===== */
+  .closing-page h1{ font-size:28px; }
+  .encourage-box{
+    background:var(--cream-dark);
+    border-radius:16px;
+    padding:26px 28px;
+    margin:24px 0;
+    border-left:5px solid var(--gold);
+  }
+  .camkey-box{
+    margin-top:34px;
+    background:linear-gradient(135deg, var(--navy) 0%, #24406b 100%);
+    color:#fff;
+    border-radius:18px;
+    padding:32px 34px;
+  }
+  .camkey-box h3{ color:#fff; font-size:22px; margin-bottom:10px; }
+  .camkey-box p{ color:#DCE4F0; font-size:14.5px; }
+  .contact-grid{
+    display:flex;
+    flex-wrap:wrap;
+    gap:14px;
+    margin-top:20px;
+  }
+  .contact-pill{
+    background:rgba(255,255,255,0.1);
+    border:1px solid rgba(255,255,255,0.28);
+    border-radius:12px;
+    padding:12px 18px;
+    font-size:14px;
+    color:#fff;
+    flex:1 1 220px;
+  }
+  .contact-pill strong{ display:block; color:var(--gold); font-size:12px; letter-spacing:1px; text-transform:uppercase; margin-bottom:4px; }
+  .final-note{
+    text-align:center;
+    margin-top:36px;
+    color:var(--ink-light);
+    font-size:13px;
+  }
+
+  /* ===== PRINT ===== */
+  @media print{
+    body{ background:#fff; }
+    .page{ padding:24px 10px; max-width:100%; }
+    .cover{ min-height:100vh; -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+    .section-header{ -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+    .camkey-box{ -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+    .game-card{ box-shadow:none; -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+    .game-icon{ -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+    .cover-deco, .sec-deco{ -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+    a{ color:var(--ink); text-decoration:none; }
+  }
+  @media screen and (max-width:700px){
+    .page{ padding:36px 20px; }
+    .cover h1{ font-size:32px; }
+    .game-card{ flex-direction:column; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ============ TRANG BÌA ============ -->
+<div class="page cover">
+  <div class="cover-deco">
+    <span class="cd-1">⭐</span>
+    <span class="cd-2">🎈</span>
+    <span class="cd-3">🌈</span>
+    <span class="cd-4">😊</span>
+    <span class="cd-5">🎵</span>
+    <span class="cd-6">🧸</span>
+    <span class="cd-7">🐣</span>
+    <span class="cd-8">✨</span>
+  </div>
+  <div class="emoji-row">🎈🎨🎵🏃⭐</div>
+  <div class="eyebrow">Ebook tặng kèm · Camkey English</div>
+  <h1>50 TRÒ CHƠI TIẾNG ANH<br>CHO TRẺ <span>5-6 TUỔI</span></h1>
+  <div class="subtitle">Học vui – Nói nhiều – Không áp lực</div>
+  <div class="author-box">
+    <div class="author-name">Mai Thị Thơm</div>
+    <div class="author-role">Nhà sáng lập Camkey English · 12+ năm kinh nghiệm · 1.700+ học sinh</div>
+  </div>
+  <div class="footer-note">maithom.vn · Camkey English · Hà Đông, Hà Nội</div>
+</div>
+
+<!-- ============ LỜI MỞ ĐẦU ============ -->
+<div class="page intro-page">
+  <div class="eyebrow-sm">Lời mở đầu</div>
+  <h1>Gửi ba mẹ, trước khi bắt đầu chơi cùng con</h1>
+  <p>Tôi là Mai Thơm, người sáng lập Camkey English. Hơn 12 năm đứng lớp cùng hơn 1.700 học sinh, tôi nhận ra một điều rất rõ ràng: ở tuổi 5-6, trẻ không học Tiếng Anh bằng cách ghi nhớ mặt chữ hay làm bài tập, mà bằng cách được nghe, được nói, được chạm vào và được cười. Một câu Tiếng Anh nói ra trong lúc chơi vui sẽ ở lại trong đầu con lâu hơn rất nhiều so với một trang từ vựng phải học thuộc.</p>
+  <p>Cuốn sách nhỏ này là 50 trò chơi tôi đúc kết từ chính những giờ học ở Camkey English, được đơn giản hóa để ba mẹ — dù không giỏi Tiếng Anh — vẫn có thể chơi cùng con ngay tại nhà. Mỗi trò chơi chỉ cần vài phút, không cần đồ dùng cầu kỳ, và quan trọng nhất: không có đúng sai, không có điểm số, chỉ có niềm vui và sự tự tin lớn dần lên mỗi ngày.</p>
+  <p>Ba mẹ không cần chơi hết 50 trò trong một tuần. Mỗi ngày, hãy chọn 1-2 trò chơi phù hợp với thời điểm trong ngày và tâm trạng của con. Chơi chậm rãi, chơi thật, và quan trọng nhất — hãy cùng con cười thật nhiều.</p>
+  <div class="signature">— Mai Thơm</div>
+
+  <div class="howto-box">
+    <h4>Cách dùng cuốn sách này</h4>
+    <ul>
+      <li>Mỗi ngày chỉ cần chọn 1-2 trò chơi, không cần làm hết cả 50 trò cùng lúc.</li>
+      <li>Ưu tiên trò chơi phù hợp thời điểm: vận động vào buổi chiều, giao tiếp vào bữa ăn, sáng tạo trước giờ ngủ.</li>
+      <li>Ba mẹ không cần phát âm chuẩn — con cần sự đồng hành và niềm vui hơn là sự hoàn hảo.</li>
+      <li>Lặp lại trò chơi con thích nhiều lần, đó chính là cách con ghi nhớ tự nhiên nhất.</li>
+    </ul>
+  </div>
+
+  <div class="toc-box">
+    <h4>Mục lục 5 phần</h4>
+    <ol>
+      <li>Trò chơi nhận biết từ vựng — màu sắc, con vật, đồ vật quen thuộc</li>
+      <li>Trò chơi vận động kết hợp Tiếng Anh — nghe lệnh, vừa hát vừa nhảy</li>
+      <li>Trò chơi giao tiếp cơ bản — chào hỏi, giới thiệu bản thân, hỏi đáp</li>
+      <li>Trò chơi trong sinh hoạt hàng ngày — giờ ăn, giờ tắm, giờ ngủ</li>
+      <li>Trò chơi sáng tạo, nghệ thuật — vẽ, đóng vai, kể chuyện</li>
+    </ol>
+  </div>
+</div>
+
+<!-- ============ PHẦN 1 ============ -->
+<div class="page sec-1">
+  <div class="section-header">
+    <span class="sec-deco sd-tl">🌈</span>
+    <span class="sec-deco sd-tr">⭐</span>
+    <span class="sec-deco sd-bl">😊</span>
+    <span class="sec-deco sd-br">🎈</span>
+    <div class="num">Phần 1 / 5</div>
+    <h2>🎨 Trò chơi nhận biết từ vựng</h2>
+    <p>10 trò chơi giúp con làm quen với màu sắc, con vật và đồ vật quen thuộc quanh nhà — nền tảng từ vựng đầu tiên, học qua quan sát và chỉ tay, không cần ép ghi nhớ.</p>
+  </div>
+
+  <div class="game-card">
+    <div class="game-icon">🎨</div>
+    <div class="game-body">
+      <h3>1. Đi Tìm Màu Sắc <span class="en-name">(Color Hunt)</span></h3>
+      <p class="game-meta"><strong>Số người chơi:</strong> 2 người trở lên</p>
+      <p class="game-desc">Ba mẹ gọi tên một màu bằng Tiếng Anh, bé chạy đi tìm một đồ vật trong nhà có màu đó rồi mang lại khoe. Đổi vai để bé được gọi tên màu cho ba mẹ đi tìm.</p>
+      <div class="vocab-box"><span class="vocab-label">Từ vựng sử dụng</span>
+        <span class="tag">Red</span><span class="tag">Blue</span><span class="tag">Yellow</span><span class="tag">Green</span><span class="tag">Find the red one!</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="game-card">
+    <div class="game-icon">🐶</div>
+    <div class="game-body">
+      <h3>2. Đoán Con Vật Qua Tiếng Kêu <span class="en-name">(Animal Sounds)</span></h3>
+      <p class="game-meta"><strong>Số người chơi:</strong> 2-4 người</p>
+      <p class="game-desc">Một người giả tiếng kêu con vật, người còn lại đoán và nói tên con vật đó bằng Tiếng Anh. Có thể dùng thêm thẻ hình con vật để gợi ý cho bé dễ đoán hơn.</p>
+      <div class="vocab-box"><span class="vocab-label">Từ vựng sử dụng</span>
+        <span class="tag">Dog</span><span class="tag">Cat</span><span class="tag">Cow</span><span class="tag">Duck</span><span class="tag">It's a dog!</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="game-card">
+    <div class="game-icon">🧦</div>
+    <div class="game-body">
+      <h3>3. Túi Đồ Vật Bí Ẩn <span class="en-name">(Mystery Bag)</span></h3>
+      <p class="game-meta"><strong>Số người chơi:</strong> 2 người</p>
+      <p class="game-desc">Cho vài đồ vật quen thuộc vào một túi vải kín. Bé thò tay vào sờ, đoán tên đồ vật bằng Tiếng Anh trước khi lấy ra xem có đúng không.</p>
+      <div class="vocab-box"><span class="vocab-label">Từ vựng sử dụng</span>
+        <span class="tag">Ball</span><span class="tag">Book</span><span class="tag">Spoon</span><span class="tag">Sock</span><span class="tag">What is it?</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="game-card">
+    <div class="game-icon">🖍️</div>
+    <div class="game-body">
+      <h3>4. Tô Màu Theo Lệnh <span class="en-name">(Color by Command)</span></h3>
+      <p class="game-meta"><strong>Số người chơi:</strong> 1-2 người</p>
+      <p class="game-desc">Ba mẹ đọc tên một màu, bé chọn đúng bút màu đó rồi tô vào hình vẽ sẵn. Có thể thi xem ai chọn đúng bút màu nhanh hơn cho thêm phần hào hứng.</p>
+      <div class="vocab-box"><span class="vocab-label">Từ vựng sử dụng</span>
+        <span class="tag">Pick the green pen.</span><span class="tag">Color it blue.</span><span class="tag">Red</span><span class="tag">Purple</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="game-card">
+    <div class="game-icon">🐘</div>
+    <div class="game-body">
+      <h3>5. Sở Thú Tí Hon <span class="en-name">(Mini Zoo)</span></h3>
+      <p class="game-meta"><strong>Số người chơi:</strong> 2-4 người</p>
+      <p class="game-desc">Xếp thú nhồi bông hoặc thẻ hình thành một "sở thú" nhỏ. Ba mẹ chỉ vào từng con, bé gọi tên bằng Tiếng Anh, sau đó đổi vai để bé chỉ và ba mẹ đoán.</p>
+      <div class="vocab-box"><span class="vocab-label">Từ vựng sử dụng</span>
+        <span class="tag">Lion</span><span class="tag">Elephant</span><span class="tag">Monkey</span><span class="tag">Tiger</span><span class="tag">This is a lion.</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="game-card">
+    <div class="game-icon">🍎</div>
+    <div class="game-body">
+      <h3>6. Chợ Trái Cây <span class="en-name">(Fruit Market)</span></h3>
+      <p class="game-meta"><strong>Số người chơi:</strong> 2-3 người</p>
+      <p class="game-desc">Bày vài loại trái cây thật hoặc đồ chơi lên bàn. Ba mẹ đóng vai người bán hàng hỏi bé muốn mua gì, bé chỉ tay và trả lời bằng Tiếng Anh.</p>
+      <div class="vocab-box"><span class="vocab-label">Từ vựng sử dụng</span>
+        <span class="tag">Apple</span><span class="tag">Banana</span><span class="tag">Orange</span><span class="tag">I want an apple, please.</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="game-card">
+    <div class="game-icon">👗</div>
+    <div class="game-body">
+      <h3>7. Mặc Đồ Cho Búp Bê <span class="en-name">(Dress the Doll)</span></h3>
+      <p class="game-meta"><strong>Số người chơi:</strong> 1-2 người</p>
+      <p class="game-desc">Bé chọn quần áo cho búp bê hoặc thú bông theo đúng yêu cầu bằng Tiếng Anh của ba mẹ, ví dụ mặc áo, đội mũ hay đi giày cho bạn búp bê.</p>
+      <div class="vocab-box"><span class="vocab-label">Từ vựng sử dụng</span>
+        <span class="tag">Hat</span><span class="tag">Shoes</span><span class="tag">Shirt</span><span class="tag">Put on the hat.</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="game-card">
+    <div class="game-icon">🔢</div>
+    <div class="game-body">
+      <h3>8. Đếm Đồ Vật Quanh Nhà <span class="en-name">(Counting Hunt)</span></h3>
+      <p class="game-meta"><strong>Số người chơi:</strong> 2 người</p>
+      <p class="game-desc">Ba mẹ yêu cầu bé tìm đủ một số lượng đồ vật nhất định trong nhà, ví dụ ba quả bóng, rồi cùng đếm to bằng Tiếng Anh khi tìm thấy đủ.</p>
+      <div class="vocab-box"><span class="vocab-label">Từ vựng sử dụng</span>
+        <span class="tag">One, two, three</span><span class="tag">Find three balls.</span><span class="tag">How many?</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="game-card">
+    <div class="game-icon">🧩</div>
+    <div class="game-body">
+      <h3>9. Ghép Hình Đúng Tên <span class="en-name">(Matching Cards)</span></h3>
+      <p class="game-meta"><strong>Số người chơi:</strong> 2 người</p>
+      <p class="game-desc">Chuẩn bị các cặp thẻ hình giống nhau úp xuống mặt bàn. Lần lượt lật từng cặp và gọi tên đồ vật hoặc con vật bằng Tiếng Anh khi lật trúng cặp giống nhau.</p>
+      <div class="vocab-box"><span class="vocab-label">Từ vựng sử dụng</span>
+        <span class="tag">Cat</span><span class="tag">Fish</span><span class="tag">Star</span><span class="tag">I found a match!</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="game-card">
+    <div class="game-icon">🚗</div>
+    <div class="game-body">
+      <h3>10. Xe Cộ Chạy Qua <span class="en-name">(Vehicles Passing By)</span></h3>
+      <p class="game-meta"><strong>Số người chơi:</strong> 2 người</p>
+      <p class="game-desc">Khi thấy xe đi ngang qua nhà hoặc xem trong sách tranh, bé gọi tên loại xe bằng Tiếng Anh thật to. Ba mẹ có thể hỏi thêm để bé trả lời trọn câu.</p>
+      <div class="vocab-box"><span class="vocab-label">Từ vựng sử dụng</span>
+        <span class="tag">Car</span><span class="tag">Bus</span><span class="tag">Bike</span><span class="tag">What is it?</span><span class="tag">It's a car!</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============ PHẦN 2 ============ -->
+<div class="page sec-2">
+  <div class="section-header">
+    <span class="sec-deco sd-tl">⚡</span>
+    <span class="sec-deco sd-tr">🎈</span>
+    <span class="sec-deco sd-bl">🌟</span>
+    <span class="sec-deco sd-br">😄</span>
+    <div class="num">Phần 2 / 5</div>
+    <h2>🏃 Trò chơi vận động kết hợp Tiếng Anh</h2>
+    <p>10 trò chơi giúp con vừa chạy nhảy vừa nghe – hiểu – phản xạ bằng Tiếng Anh, tiêu hao năng lượng dư thừa mà vẫn học được rất nhiều một cách tự nhiên.</p>
+  </div>
+
+  <div class="game-card">
+    <div class="game-icon">🏃</div>
+    <div class="game-body">
+      <h3>11. Làm Theo Simon <span class="en-name">(Simon Says)</span></h3>
+      <p class="game-meta"><strong>Số người chơi:</strong> 2 người trở lên</p>
+      <p class="game-desc">Ba mẹ nói "Simon says touch your nose" và bé làm theo. Nếu ba mẹ chỉ nói hành động mà không có "Simon says" thì bé không được làm theo.</p>
+      <div class="vocab-box"><span class="vocab-label">Từ vựng sử dụng</span>
+        <span class="tag">Simon says, jump.</span><span class="tag">Touch your head.</span><span class="tag">Stop!</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="game-card">
+    <div class="game-icon">🎵</div>
+    <div class="game-body">
+      <h3>12. Nhảy Theo Head, Shoulders <span class="en-name">(Head, Shoulders, Knees and Toes)</span></h3>
+      <p class="game-meta"><strong>Số người chơi:</strong> 1 người trở lên</p>
+      <p class="game-desc">Cùng hát và chỉ vào các bộ phận cơ thể theo lời bài hát "Head, Shoulders, Knees and Toes", tốc độ tăng dần lên cho thêm phần vui nhộn.</p>
+      <div class="vocab-box"><span class="vocab-label">Từ vựng sử dụng</span>
+        <span class="tag">Head</span><span class="tag">Shoulders</span><span class="tag">Knees</span><span class="tag">Toes</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="game-card">
+    <div class="game-icon">🚦</div>
+    <div class="game-body">
+      <h3>13. Đèn Xanh Đèn Đỏ <span class="en-name">(Red Light, Green Light)</span></h3>
+      <p class="game-meta"><strong>Số người chơi:</strong> 3 người trở lên</p>
+      <p class="game-desc">Một người hô "Green light" thì mọi người chạy tới, hô "Red light" thì phải đứng im ngay lập tức. Ai còn cử động khi nghe "Red light" sẽ phải lùi lại vạch xuất phát.</p>
+      <div class="vocab-box"><span class="vocab-label">Từ vựng sử dụng</span>
+        <span class="tag">Green light, go!</span><span class="tag">Red light, stop!</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="game-card">
+    <div class="game-icon">🐸</div>
+    <div class="game-body">
+      <h3>14. Nhảy Như Con Vật <span class="en-name">(Animal Moves)</span></h3>
+      <p class="game-meta"><strong>Số người chơi:</strong> 2 người trở lên</p>
+      <p class="game-desc">Ba mẹ nói tên một con vật, bé bắt chước dáng đi hoặc động tác của con vật đó, ví dụ nhảy như ếch hoặc đi lạch bạch như vịt.</p>
+      <div class="vocab-box"><span class="vocab-label">Từ vựng sử dụng</span>
+        <span class="tag">Jump like a frog.</span><span class="tag">Walk like a duck.</span><span class="tag">Run like a dog.</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="game-card">
+    <div class="game-icon">🎯</div>
+    <div class="game-body">
+      <h3>15. Nghe Lệnh Đi Đúng Hướng <span class="en-name">(Follow the Direction)</span></h3>
+      <p class="game-meta"><strong>Số người chơi:</strong> 2 người</p>
+      <p class="game-desc">Ba mẹ ra lệnh hướng di chuyển bằng Tiếng Anh, bé bước theo đúng hướng đó. Có thể dùng để dẫn bé tìm đến một món quà nhỏ giấu sẵn trong nhà.</p>
+      <div class="vocab-box"><span class="vocab-label">Từ vựng sử dụng</span>
+        <span class="tag">Go forward.</span><span class="tag">Turn left.</span><span class="tag">Turn right.</span><span class="tag">Stop here.</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="game-card">
+    <div class="game-icon">🕺</div>
+    <div class="game-body">
+      <h3>16. Nhảy Tự Do Theo Nhạc <span class="en-name">(Freeze Dance)</span></h3>
+      <p class="game-meta"><strong>Số người chơi:</strong> 2 người trở lên</p>
+      <p class="game-desc">Bật một bài hát Tiếng Anh vui nhộn, mọi người nhảy tự do theo ý thích. Khi nhạc dừng, tất cả phải đứng im như tượng cho đến khi nhạc bật lại.</p>
+      <div class="vocab-box"><span class="vocab-label">Từ vựng sử dụng</span>
+        <span class="tag">Dance!</span><span class="tag">Freeze!</span><span class="tag">Music on.</span><span class="tag">Music off.</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="game-card">
+    <div class="game-icon">🧸</div>
+    <div class="game-body">
+      <h3>17. Ném Bóng Gọi Tên <span class="en-name">(Ball Toss Naming)</span></h3>
+      <p class="game-meta"><strong>Số người chơi:</strong> 2-3 người</p>
+      <p class="game-desc">Ném một quả bóng nhỏ cho nhau. Người nhận bóng phải nói một từ Tiếng Anh theo chủ đề đã chọn trước, ví dụ tên con vật, rồi mới ném tiếp cho người kế tiếp.</p>
+      <div class="vocab-box"><span class="vocab-label">Từ vựng sử dụng</span>
+        <span class="tag">Catch!</span><span class="tag">Dog</span><span class="tag">Cat</span><span class="tag">Your turn!</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="game-card">
+    <div class="game-icon">🐦</div>
+    <div class="game-body">
+      <h3>18. Bay Như Chim, Bơi Như Cá <span class="en-name">(Fly and Swim)</span></h3>
+      <p class="game-meta"><strong>Số người chơi:</strong> 2 người trở lên</p>
+      <p class="game-desc">Ba mẹ hô "Fly" thì bé giơ tay bay như chim, hô "Swim" thì bé làm động tác bơi, hô "Stand still" thì đứng yên tại chỗ. Đổi lệnh nhanh dần để tăng thêm tiếng cười.</p>
+      <div class="vocab-box"><span class="vocab-label">Từ vựng sử dụng</span>
+        <span class="tag">Fly!</span><span class="tag">Swim!</span><span class="tag">Stand still!</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="game-card">
+    <div class="game-icon">🪜</div>
+    <div class="game-body">
+      <h3>19. Bước Nhảy Đếm Số <span class="en-name">(Counting Hops)</span></h3>
+      <p class="game-meta"><strong>Số người chơi:</strong> 1-2 người</p>
+      <p class="game-desc">Bé nhảy lò cò hoặc bước từng bước trong khi đếm to bằng Tiếng Anh từ một đến mười. Ba mẹ có thể thi xem ai đếm đều và rõ ràng hơn.</p>
+      <div class="vocab-box"><span class="vocab-label">Từ vựng sử dụng</span>
+        <span class="tag">One, two, three, four, five</span><span class="tag">Jump!</span><span class="tag">Let's count.</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="game-card">
+    <div class="game-icon">🤸</div>
+    <div class="game-body">
+      <h3>20. Vòng Tròn Vận Động <span class="en-name">(Action Circle)</span></h3>
+      <p class="game-meta"><strong>Số người chơi:</strong> 3 người trở lên</p>
+      <p class="game-desc">Mọi người đứng thành vòng tròn. Lần lượt mỗi người nói một hành động bằng Tiếng Anh như "clap your hands" và tất cả cùng làm theo.</p>
+      <div class="vocab-box"><span class="vocab-label">Từ vựng sử dụng</span>
+        <span class="tag">Clap your hands.</span><span class="tag">Stomp your feet.</span><span class="tag">Spin around.</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============ PHẦN 3 ============ -->
+<div class="page sec-3">
+  <div class="section-header">
+    <span class="sec-deco sd-tl">😊</span>
+    <span class="sec-deco sd-tr">💕</span>
+    <span class="sec-deco sd-bl">👋</span>
+    <span class="sec-deco sd-br">⭐</span>
+    <div class="num">Phần 3 / 5</div>
+    <h2>💬 Trò chơi giao tiếp cơ bản</h2>
+    <p>10 trò chơi giúp con làm quen với những câu giao tiếp đầu tiên: chào hỏi, giới thiệu bản thân, hỏi – đáp đơn giản — nền tảng để con dạn dĩ nói Tiếng Anh với người khác.</p>
+  </div>
+
+  <div class="game-card">
+    <div class="game-icon">👋</div>
+    <div class="game-body">
+      <h3>21. Chào Hỏi Buổi Sáng <span class="en-name">(Good Morning Greeting)</span></h3>
+      <p class="game-meta"><strong>Số người chơi:</strong> 2 người</p>
+      <p class="game-desc">Mỗi sáng, ba mẹ và bé chào nhau bằng Tiếng Anh trước khi bắt đầu ngày mới, có thể kèm một cái ôm hoặc đập tay thật vui vẻ.</p>
+      <div class="vocab-box"><span class="vocab-label">Từ vựng sử dụng</span>
+        <span class="tag">Good morning!</span><span class="tag">How are you?</span><span class="tag">I'm fine, thank you.</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="game-card">
+    <div class="game-icon">🙋</div>
+    <div class="game-body">
+      <h3>22. Bé Tự Giới Thiệu <span class="en-name">(My Name Is)</span></h3>
+      <p class="game-meta"><strong>Số người chơi:</strong> 2 người trở lên</p>
+      <p class="game-desc">Bé đứng trước gương hoặc trước ba mẹ, tự giới thiệu tên và tuổi của mình bằng Tiếng Anh, có thể thêm cử chỉ vẫy tay cho tự nhiên.</p>
+      <div class="vocab-box"><span class="vocab-label">Từ vựng sử dụng</span>
+        <span class="tag">Hello, my name is Mai.</span><span class="tag">I am five years old.</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="game-card">
+    <div class="game-icon">🎁</div>
+    <div class="game-body">
+      <h3>23. Búp Bê Hỏi Tên <span class="en-name">(Puppet Meets You)</span></h3>
+      <p class="game-meta"><strong>Số người chơi:</strong> 2 người</p>
+      <p class="game-desc">Dùng một con rối hoặc thú bông đóng vai bạn mới. Con rối hỏi tên bé bằng Tiếng Anh, bé trả lời rồi hỏi ngược lại tên của con rối.</p>
+      <div class="vocab-box"><span class="vocab-label">Từ vựng sử dụng</span>
+        <span class="tag">What is your name?</span><span class="tag">My name is Mai.</span><span class="tag">Nice to meet you.</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="game-card">
+    <div class="game-icon">🍪</div>
+    <div class="game-body">
+      <h3>24. Xin Vui Lòng Và Cảm Ơn <span class="en-name">(Please and Thank You)</span></h3>
+      <p class="game-meta"><strong>Số người chơi:</strong> 2 người</p>
+      <p class="game-desc">Khi muốn xin một món đồ hoặc đồ ăn, bé phải nói câu xin phép có từ "please", và nói "thank you" ngay khi nhận được.</p>
+      <div class="vocab-box"><span class="vocab-label">Từ vựng sử dụng</span>
+        <span class="tag">Can I have a cookie, please?</span><span class="tag">Thank you!</span><span class="tag">You're welcome.</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="game-card">
+    <div class="game-icon">☎️</div>
+    <div class="game-body">
+      <h3>25. Gọi Điện Giả Vờ <span class="en-name">(Pretend Phone Call)</span></h3>
+      <p class="game-meta"><strong>Số người chơi:</strong> 2 người</p>
+      <p class="game-desc">Dùng điện thoại đồ chơi hoặc đồ vật giả làm điện thoại. Hai người thay phiên gọi điện, chào hỏi và hỏi thăm nhau bằng những câu Tiếng Anh đơn giản.</p>
+      <div class="vocab-box"><span class="vocab-label">Từ vựng sử dụng</span>
+        <span class="tag">Hello?</span><span class="tag">How are you?</span><span class="tag">I am happy.</span><span class="tag">Goodbye!</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="game-card">
+    <div class="game-icon">🎭</div>
+    <div class="game-body">
+      <h3>26. Đóng Vai Xin Lỗi <span class="en-name">(Sorry Game)</span></h3>
+      <p class="game-meta"><strong>Số người chơi:</strong> 2 người</p>
+      <p class="game-desc">Diễn một tình huống nhỏ như va vào nhau, một bé nói "Sorry" và bé kia đáp lại "It's okay". Sau đó đổi vai để cả hai luyện cả hai câu.</p>
+      <div class="vocab-box"><span class="vocab-label">Từ vựng sử dụng</span>
+        <span class="tag">I'm sorry.</span><span class="tag">It's okay.</span><span class="tag">No problem.</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="game-card">
+    <div class="game-icon">❓</div>
+    <div class="game-body">
+      <h3>27. Hỏi Đáp Bạn Thích Gì <span class="en-name">(What Do You Like)</span></h3>
+      <p class="game-meta"><strong>Số người chơi:</strong> 2 người</p>
+      <p class="game-desc">Ba mẹ hỏi bé thích màu gì, con vật gì hoặc món ăn gì bằng Tiếng Anh. Bé trả lời theo mẫu câu đơn giản rồi hỏi ngược lại ba mẹ.</p>
+      <div class="vocab-box"><span class="vocab-label">Từ vựng sử dụng</span>
+        <span class="tag">What do you like?</span><span class="tag">I like dogs.</span><span class="tag">Do you like cats?</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="game-card">
+    <div class="game-icon">🫱</div>
+    <div class="game-body">
+      <h3>28. Bắt Tay Làm Quen <span class="en-name">(Handshake Friends)</span></h3>
+      <p class="game-meta"><strong>Số người chơi:</strong> 2 người trở lên</p>
+      <p class="game-desc">Hai người giả vờ gặp nhau lần đầu, bắt tay và nói câu chào cùng tên của mình. Sau đó đổi bạn để lặp lại với người khác trong nhà.</p>
+      <div class="vocab-box"><span class="vocab-label">Từ vựng sử dụng</span>
+        <span class="tag">Hi, I'm Ben.</span><span class="tag">Nice to meet you.</span><span class="tag">See you later!</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="game-card">
+    <div class="game-icon">🙆</div>
+    <div class="game-body">
+      <h3>29. Có Và Không <span class="en-name">(Yes or No Game)</span></h3>
+      <p class="game-meta"><strong>Số người chơi:</strong> 2 người</p>
+      <p class="game-desc">Ba mẹ hỏi các câu hỏi đơn giản dạng có/không bằng Tiếng Anh về sở thích hoặc đồ vật xung quanh. Bé trả lời "Yes" hoặc "No" thật to và rõ ràng.</p>
+      <div class="vocab-box"><span class="vocab-label">Từ vựng sử dụng</span>
+        <span class="tag">Is it a cat?</span><span class="tag">Yes, it is.</span><span class="tag">No, it isn't.</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="game-card">
+    <div class="game-icon">🎂</div>
+    <div class="game-body">
+      <h3>30. Chúc Mừng Sinh Nhật Giả Vờ <span class="en-name">(Pretend Birthday)</span></h3>
+      <p class="game-meta"><strong>Số người chơi:</strong> 2 người trở lên</p>
+      <p class="game-desc">Giả vờ tổ chức sinh nhật cho thú bông. Mọi người cùng hát chúc mừng và nói lời chúc bằng Tiếng Anh trước khi cùng "ăn bánh" giả vờ.</p>
+      <div class="vocab-box"><span class="vocab-label">Từ vựng sử dụng</span>
+        <span class="tag">Happy birthday!</span><span class="tag">Make a wish.</span><span class="tag">Thank you so much!</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============ PHẦN 4 ============ -->
+<div class="page sec-4">
+  <div class="section-header">
+    <span class="sec-deco sd-tl">🌙</span>
+    <span class="sec-deco sd-tr">🦆</span>
+    <span class="sec-deco sd-bl">🧸</span>
+    <span class="sec-deco sd-br">✨</span>
+    <div class="num">Phần 4 / 5</div>
+    <h2>🍽️ Trò chơi trong sinh hoạt hàng ngày</h2>
+    <p>10 trò chơi lồng Tiếng Anh vào chính sinh hoạt hàng ngày của con — giờ ăn, giờ tắm, giờ ngủ — để Tiếng Anh trở thành một phần tự nhiên trong ngày, không phải một môn học riêng.</p>
+  </div>
+
+  <div class="game-card">
+    <div class="game-icon">🍽️</div>
+    <div class="game-body">
+      <h3>31. Gọi Tên Món Ăn Trên Bàn <span class="en-name">(Name the Food)</span></h3>
+      <p class="game-meta"><strong>Số người chơi:</strong> 2 người</p>
+      <p class="game-desc">Trước bữa ăn, ba mẹ chỉ vào từng món trên bàn và hỏi bé đó là gì bằng Tiếng Anh. Bé trả lời rồi được mời bắt đầu ăn.</p>
+      <div class="vocab-box"><span class="vocab-label">Từ vựng sử dụng</span>
+        <span class="tag">What is this?</span><span class="tag">It's rice.</span><span class="tag">It's soup.</span><span class="tag">Yummy!</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="game-card">
+    <div class="game-icon">🥄</div>
+    <div class="game-body">
+      <h3>32. Con Đói Chưa <span class="en-name">(Are You Hungry)</span></h3>
+      <p class="game-meta"><strong>Số người chơi:</strong> 2 người</p>
+      <p class="game-desc">Trước giờ ăn, ba mẹ hỏi bé có đói không bằng Tiếng Anh. Bé trả lời có hoặc không rồi cùng ngồi vào bàn ăn.</p>
+      <div class="vocab-box"><span class="vocab-label">Từ vựng sử dụng</span>
+        <span class="tag">Are you hungry?</span><span class="tag">Yes, I am.</span><span class="tag">Let's eat!</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="game-card">
+    <div class="game-icon">🛁</div>
+    <div class="game-body">
+      <h3>33. Đến Giờ Tắm Rồi <span class="en-name">(Bath Time Song)</span></h3>
+      <p class="game-meta"><strong>Số người chơi:</strong> 2 người</p>
+      <p class="game-desc">Vừa chuẩn bị đồ tắm vừa nói một câu ngắn bằng Tiếng Anh báo hiệu giờ tắm. Bé lặp lại theo, rồi cùng gọi tên các bộ phận cơ thể khi tắm rửa.</p>
+      <div class="vocab-box"><span class="vocab-label">Từ vựng sử dụng</span>
+        <span class="tag">It's bath time!</span><span class="tag">Wash your hands.</span><span class="tag">Wash your feet.</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="game-card">
+    <div class="game-icon">🦆</div>
+    <div class="game-body">
+      <h3>34. Vịt Cao Su Trong Bồn Tắm <span class="en-name">(Rubber Duck Talk)</span></h3>
+      <p class="game-meta"><strong>Số người chơi:</strong> 1-2 người</p>
+      <p class="game-desc">Khi tắm cùng đồ chơi vịt cao su, bé trò chuyện giả vờ với vịt bằng vài câu Tiếng Anh đơn giản như chào hỏi hoặc hỏi vịt có vui không.</p>
+      <div class="vocab-box"><span class="vocab-label">Từ vựng sử dụng</span>
+        <span class="tag">Hello, duck!</span><span class="tag">Are you happy?</span><span class="tag">Let's play!</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="game-card">
+    <div class="game-icon">🦷</div>
+    <div class="game-body">
+      <h3>35. Đánh Răng Đếm Giờ <span class="en-name">(Brush Your Teeth)</span></h3>
+      <p class="game-meta"><strong>Số người chơi:</strong> 2 người</p>
+      <p class="game-desc">Trong lúc đánh răng, ba mẹ cùng bé đếm to bằng Tiếng Anh từ một đến mười để canh thời gian đánh răng cho đủ lâu và sạch sẽ.</p>
+      <div class="vocab-box"><span class="vocab-label">Từ vựng sử dụng</span>
+        <span class="tag">Brush your teeth.</span><span class="tag">One, two, three...</span><span class="tag">All done!</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="game-card">
+    <div class="game-icon">👕</div>
+    <div class="game-body">
+      <h3>36. Tự Mặc Đồ Buổi Sáng <span class="en-name">(Getting Dressed)</span></h3>
+      <p class="game-meta"><strong>Số người chơi:</strong> 2 người</p>
+      <p class="game-desc">Ba mẹ gọi tên từng món đồ bằng Tiếng Anh, bé tìm và tự mặc theo đúng thứ tự, ví dụ áo trước rồi mới đến quần.</p>
+      <div class="vocab-box"><span class="vocab-label">Từ vựng sử dụng</span>
+        <span class="tag">Put on your shirt.</span><span class="tag">Put on your pants.</span><span class="tag">I'm ready!</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="game-card">
+    <div class="game-icon">🧸</div>
+    <div class="game-body">
+      <h3>37. Chúc Thú Bông Ngủ Ngon <span class="en-name">(Goodnight Teddy)</span></h3>
+      <p class="game-meta"><strong>Số người chơi:</strong> 1-2 người</p>
+      <p class="game-desc">Trước khi đi ngủ, bé đặt thú bông vào giường và nói lời chúc ngủ ngon bằng Tiếng Anh, có thể đắp chăn nhỏ cho thú bông thêm ấm áp.</p>
+      <div class="vocab-box"><span class="vocab-label">Từ vựng sử dụng</span>
+        <span class="tag">Goodnight, teddy.</span><span class="tag">Sweet dreams.</span><span class="tag">I love you.</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="game-card">
+    <div class="game-icon">🌙</div>
+    <div class="game-body">
+      <h3>38. Đếm Sao Trước Khi Ngủ <span class="en-name">(Counting Stars)</span></h3>
+      <p class="game-meta"><strong>Số người chơi:</strong> 2 người</p>
+      <p class="game-desc">Trước giờ ngủ, ba mẹ và bé giả vờ đếm những ngôi sao tưởng tượng trên trần nhà bằng Tiếng Anh cho đến khi bé buồn ngủ và thiu thiu.</p>
+      <div class="vocab-box"><span class="vocab-label">Từ vựng sử dụng</span>
+        <span class="tag">Look at the stars.</span><span class="tag">One star, two stars.</span><span class="tag">Good night.</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="game-card">
+    <div class="game-icon">🧦</div>
+    <div class="game-body">
+      <h3>39. Dọn Đồ Chơi Trước Giờ Ngủ <span class="en-name">(Clean Up Time)</span></h3>
+      <p class="game-meta"><strong>Số người chơi:</strong> 2 người</p>
+      <p class="game-desc">Ba mẹ nói câu báo hiệu giờ dọn đồ chơi bằng Tiếng Anh. Bé vừa dọn vừa gọi tên từng món đồ chơi trước khi cất vào hộp.</p>
+      <div class="vocab-box"><span class="vocab-label">Từ vựng sử dụng</span>
+        <span class="tag">Clean up time!</span><span class="tag">Put the toys away.</span><span class="tag">All done!</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="game-card">
+    <div class="game-icon">🚪</div>
+    <div class="game-body">
+      <h3>40. Tạm Biệt Ngày Mới <span class="en-name">(Goodbye Day, Hello Night)</span></h3>
+      <p class="game-meta"><strong>Số người chơi:</strong> 2 người</p>
+      <p class="game-desc">Trước khi tắt đèn ngủ, hai người cùng nói lời tạm biệt với ban ngày và chào buổi tối bằng những câu Tiếng Anh ngắn gọn, dễ thương.</p>
+      <div class="vocab-box"><span class="vocab-label">Từ vựng sử dụng</span>
+        <span class="tag">Goodbye, day!</span><span class="tag">Good night, moon.</span><span class="tag">See you tomorrow.</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============ PHẦN 5 ============ -->
+<div class="page sec-5">
+  <div class="section-header">
+    <span class="sec-deco sd-tl">🎨</span>
+    <span class="sec-deco sd-tr">🌈</span>
+    <span class="sec-deco sd-bl">⭐</span>
+    <span class="sec-deco sd-br">😊</span>
+    <div class="num">Phần 5 / 5</div>
+    <h2>🎨 Trò chơi sáng tạo, nghệ thuật</h2>
+    <p>10 trò chơi khơi gợi trí tưởng tượng qua vẽ, đóng vai và kể chuyện bằng Tiếng Anh đơn giản — giúp con dùng ngôn ngữ để sáng tạo, không chỉ để ghi nhớ.</p>
+  </div>
+
+  <div class="game-card">
+    <div class="game-icon">🖌️</div>
+    <div class="game-body">
+      <h3>41. Vẽ Và Gọi Tên <span class="en-name">(Draw and Say)</span></h3>
+      <p class="game-meta"><strong>Số người chơi:</strong> 1-2 người</p>
+      <p class="game-desc">Bé vẽ một hình đơn giản như mặt trời hay ngôi nhà. Sau đó chỉ vào hình vừa vẽ và nói tên bằng Tiếng Anh cho ba mẹ nghe thật tự hào.</p>
+      <div class="vocab-box"><span class="vocab-label">Từ vựng sử dụng</span>
+        <span class="tag">I am drawing a sun.</span><span class="tag">It's a house.</span><span class="tag">Look at my picture!</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="game-card">
+    <div class="game-icon">🏠</div>
+    <div class="game-body">
+      <h3>42. Xây Nhà Bằng Khối Gỗ <span class="en-name">(Building Blocks Talk)</span></h3>
+      <p class="game-meta"><strong>Số người chơi:</strong> 2 người</p>
+      <p class="game-desc">Trong lúc xếp khối gỗ hoặc lego cùng nhau, ba mẹ và bé gọi tên màu sắc và hình dạng của từng khối bằng Tiếng Anh khi đặt vào công trình.</p>
+      <div class="vocab-box"><span class="vocab-label">Từ vựng sử dụng</span>
+        <span class="tag">A blue block.</span><span class="tag">A big house.</span><span class="tag">I am building.</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="game-card">
+    <div class="game-icon">👑</div>
+    <div class="game-body">
+      <h3>43. Đóng Vai Công Chúa, Hoàng Tử <span class="en-name">(Prince and Princess Play)</span></h3>
+      <p class="game-meta"><strong>Số người chơi:</strong> 2 người trở lên</p>
+      <p class="game-desc">Bé và ba mẹ hóa thân thành các nhân vật trong câu chuyện cổ tích, nói vài câu thoại đơn giản bằng Tiếng Anh khi diễn cùng nhau.</p>
+      <div class="vocab-box"><span class="vocab-label">Từ vựng sử dụng</span>
+        <span class="tag">I am a princess.</span><span class="tag">Hello, prince!</span><span class="tag">Let's dance.</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="game-card">
+    <div class="game-icon">📖</div>
+    <div class="game-body">
+      <h3>44. Kể Chuyện Ba Câu <span class="en-name">(Three-Sentence Story)</span></h3>
+      <p class="game-meta"><strong>Số người chơi:</strong> 2 người</p>
+      <p class="game-desc">Ba mẹ bắt đầu một câu chuyện ngắn bằng một câu Tiếng Anh đơn giản, bé tiếp nối thêm một câu nữa, cứ thế cho đến khi câu chuyện có một kết thúc thật vui.</p>
+      <div class="vocab-box"><span class="vocab-label">Từ vựng sử dụng</span>
+        <span class="tag">Once upon a time...</span><span class="tag">The cat is happy.</span><span class="tag">The end.</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="game-card">
+    <div class="game-icon">🎪</div>
+    <div class="game-body">
+      <h3>45. Rạp Xiếc Thú Bông <span class="en-name">(Teddy Bear Circus)</span></h3>
+      <p class="game-meta"><strong>Số người chơi:</strong> 2 người trở lên</p>
+      <p class="game-desc">Xếp các thú bông thành một buổi biểu diễn xiếc nhỏ. Bé làm người dẫn chương trình, giới thiệu từng "diễn viên" bằng Tiếng Anh cho khán giả.</p>
+      <div class="vocab-box"><span class="vocab-label">Từ vựng sử dụng</span>
+        <span class="tag">Welcome!</span><span class="tag">This is the lion.</span><span class="tag">Let's clap!</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="game-card">
+    <div class="game-icon">🖍️</div>
+    <div class="game-body">
+      <h3>46. Vẽ Cảm Xúc Của Con <span class="en-name">(Draw Your Feelings)</span></h3>
+      <p class="game-meta"><strong>Số người chơi:</strong> 1-2 người</p>
+      <p class="game-desc">Bé vẽ một khuôn mặt thể hiện cảm xúc hiện tại của mình, rồi nói cho ba mẹ biết mình đang cảm thấy thế nào bằng Tiếng Anh.</p>
+      <div class="vocab-box"><span class="vocab-label">Từ vựng sử dụng</span>
+        <span class="tag">I am happy.</span><span class="tag">I am sad.</span><span class="tag">I am tired.</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="game-card">
+    <div class="game-icon">🍳</div>
+    <div class="game-body">
+      <h3>47. Đóng Vai Đầu Bếp <span class="en-name">(Little Chef Role-Play)</span></h3>
+      <p class="game-meta"><strong>Số người chơi:</strong> 2 người</p>
+      <p class="game-desc">Bé đóng vai đầu bếp, nấu ăn giả vờ trong bếp đồ chơi. Bé mô tả món ăn đang làm và mời ba mẹ nếm thử bằng những câu Tiếng Anh ngắn.</p>
+      <div class="vocab-box"><span class="vocab-label">Từ vựng sử dụng</span>
+        <span class="tag">I am cooking.</span><span class="tag">Try this, please.</span><span class="tag">It's delicious!</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="game-card">
+    <div class="game-icon">🐣</div>
+    <div class="game-body">
+      <h3>48. Kể Chuyện Bằng Rối Tay <span class="en-name">(Puppet Storytime)</span></h3>
+      <p class="game-meta"><strong>Số người chơi:</strong> 2 người</p>
+      <p class="game-desc">Dùng rối tay hoặc thú bông, hai người thay nhau cho nhân vật nói vài câu Tiếng Anh đơn giản để kể một câu chuyện nhỏ tự nghĩ ra cùng nhau.</p>
+      <div class="vocab-box"><span class="vocab-label">Từ vựng sử dụng</span>
+        <span class="tag">I am a bear.</span><span class="tag">I like honey.</span><span class="tag">Let's go home.</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="game-card">
+    <div class="game-icon">🌈</div>
+    <div class="game-body">
+      <h3>49. Vẽ Cầu Vồng Gọi Màu <span class="en-name">(Rainbow Colors Drawing)</span></h3>
+      <p class="game-meta"><strong>Số người chơi:</strong> 1-2 người</p>
+      <p class="game-desc">Bé vẽ từng dải màu của cầu vồng, vừa vẽ vừa gọi tên màu sắc bằng Tiếng Anh theo đúng thứ tự từ trên xuống dưới.</p>
+      <div class="vocab-box"><span class="vocab-label">Từ vựng sử dụng</span>
+        <span class="tag">Red</span><span class="tag">Orange</span><span class="tag">Yellow</span><span class="tag">It's a rainbow!</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="game-card">
+    <div class="game-icon">🎤</div>
+    <div class="game-body">
+      <h3>50. Buổi Biểu Diễn Gia Đình <span class="en-name">(Family Talent Show)</span></h3>
+      <p class="game-meta"><strong>Số người chơi:</strong> 3 người trở lên</p>
+      <p class="game-desc">Mỗi thành viên trong nhà biểu diễn một tiết mục nhỏ như hát, kể chuyện hoặc múa. Mỗi người giới thiệu tiết mục của mình bằng một câu Tiếng Anh ngắn trước khi bắt đầu.</p>
+      <div class="vocab-box"><span class="vocab-label">Từ vựng sử dụng</span>
+        <span class="tag">My turn now.</span><span class="tag">I will sing a song.</span><span class="tag">Thank you!</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============ TRANG KẾT ============ -->
+<div class="page closing-page">
+  <div class="eyebrow-sm">Lời kết</div>
+  <h1>Gửi ba mẹ — người đồng hành quan trọng nhất của con</h1>
+
+  <div class="encourage-box">
+    <p>Sẽ có những ngày con không hợp tác, có những trò chơi con thích, có những trò con chỉ chơi một lần rồi thôi — điều đó hoàn toàn bình thường. Điều quan trọng không phải là chơi đúng 50 trò trong cuốn sách này, mà là mỗi ngày con được nghe Tiếng Anh trong niềm vui, được ba mẹ ở bên, và dần dần cảm thấy Tiếng Anh là một người bạn quen thuộc chứ không phải một nỗi sợ.</p>
+    <p style="margin-bottom:0;">Ba mẹ cứ kiên nhẫn, cứ chơi cùng con thật chậm rãi. Sự tự tin và tình yêu học tập của con sẽ lớn lên từ chính những phút giây giản dị ấy.</p>
+  </div>
+
+  <div class="camkey-box">
+    <h3>🌟 Về Camkey English</h3>
+    <p>Camkey English là trung tâm Anh ngữ dành cho trẻ em tại Hà Đông, Hà Nội, được sáng lập bởi cô Mai Thị Thơm với hơn 12 năm kinh nghiệm giảng dạy và hành trình đồng hành cùng hơn 1.700 học sinh. Chúng tôi tin rằng: không phải dạy trẻ học Tiếng Anh, mà là giúp trẻ hình thành sự tự tin, khả năng giao tiếp và tình yêu học tập — thông qua trải nghiệm, trò chơi, không áp lực điểm số, để con hình thành phản xạ ngôn ngữ một cách tự nhiên nhất.</p>
+    <div class="contact-grid">
+      <div class="contact-pill"><strong>Hotline</strong>0924 135 222</div>
+      <div class="contact-pill"><strong>Email</strong>camkeyenglish@gmail.com</div>
+      <div class="contact-pill"><strong>Website</strong>maithom.vn</div>
+    </div>
+  </div>
+
+  <p class="final-note">© 2026 Mai Thơm · Camkey English · Ebook tặng kèm, không dùng cho mục đích thương mại.</p>
+</div>
+
+</body>
+</html>

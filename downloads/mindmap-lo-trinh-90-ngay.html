@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mindmap Lộ trình chuẩn bị vào lớp 1 trong 90 ngày — Mai Thơm & Camkey English</title>
+<style>
+  :root{
+    --terracotta:#D96C4A;
+    --terracotta-dark:#B8502F;
+    --navy:#1D3557;
+    --gold:#F2B134;
+    --cream:#FFF8F0;
+    --cream-dark:#FBEEE0;
+    --white:#ffffff;
+  }
+
+  *{ box-sizing:border-box; margin:0; padding:0; }
+
+  body{
+    font-family:'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+    background:var(--cream);
+    color:var(--navy);
+    padding:22px 26px 16px;
+  }
+
+  /* ===== HEADER ===== */
+  .page-header{
+    text-align:center;
+    margin-bottom:18px;
+  }
+  .page-header .eyebrow{
+    display:inline-block;
+    background:var(--navy);
+    color:var(--gold);
+    font-size:12px;
+    letter-spacing:2px;
+    font-weight:700;
+    padding:4px 16px;
+    border-radius:20px;
+    margin-bottom:8px;
+  }
+  .page-header h1{
+    font-size:26px;
+    color:var(--terracotta-dark);
+    letter-spacing:0.5px;
+    line-height:1.3;
+  }
+  .page-header h1 span{
+    color:var(--navy);
+  }
+  .page-header .subtitle{
+    font-size:13px;
+    color:var(--navy);
+    opacity:0.75;
+    margin-top:4px;
+    font-style:italic;
+  }
+
+  /* ===== MINDMAP WRAPPER ===== */
+  .mindmap{
+    position:relative;
+    max-width:1180px;
+    margin:0 auto;
+  }
+
+  /* Center hub */
+  .hub-wrap{
+    display:flex;
+    justify-content:center;
+    margin-bottom:0;
+  }
+  .hub{
+    background:linear-gradient(135deg, var(--navy) 0%, #16283f 100%);
+    color:var(--white);
+    width:280px;
+    height:280px;
+    border-radius:50%;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    box-shadow:0 8px 20px rgba(29,53,87,0.35);
+    border:6px solid var(--gold);
+    padding:20px;
+    position:relative;
+    z-index:3;
+  }
+  .hub .hub-tag{
+    font-size:11px;
+    letter-spacing:2px;
+    color:var(--gold);
+    font-weight:700;
+    margin-bottom:6px;
+  }
+  .hub .hub-title{
+    font-size:22px;
+    font-weight:800;
+    line-height:1.25;
+  }
+  .hub .hub-sub{
+    font-size:12px;
+    margin-top:8px;
+    color:#cfd9e6;
+    line-height:1.4;
+  }
+
+  /* Connector lines from hub down to branches */
+  .connectors{
+    position:relative;
+    height:46px;
+    max-width:980px;
+    margin:0 auto;
+  }
+  .connectors svg{
+    width:100%;
+    height:100%;
+    display:block;
+    overflow:visible;
+  }
+
+  /* Branches grid */
+  .branches{
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap:22px;
+    max-width:1180px;
+    margin:0 auto;
+  }
+
+  .branch{
+    border-radius:16px;
+    padding:0 0 16px 0;
+    box-shadow:0 6px 14px rgba(29,53,87,0.14);
+    display:flex;
+    flex-direction:column;
+    overflow:hidden;
+    border:2px solid rgba(0,0,0,0.06);
+  }
+
+  .branch-head{
+    padding:14px 18px 12px;
+    display:flex;
+    align-items:center;
+    gap:12px;
+  }
+  .branch-num{
+    width:38px;
+    height:38px;
+    border-radius:50%;
+    background:rgba(255,255,255,0.25);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-weight:800;
+    font-size:17px;
+    flex-shrink:0;
+    border:2px solid rgba(255,255,255,0.55);
+  }
+  .branch-head-text .branch-eyebrow{
+    font-size:10.5px;
+    letter-spacing:1.5px;
+    font-weight:700;
+    opacity:0.85;
+    text-transform:uppercase;
+  }
+  .branch-head-text .branch-title{
+    font-size:19px;
+    font-weight:800;
+    line-height:1.2;
+  }
+
+  .branch-body{
+    background:var(--white);
+    margin:0 10px;
+    border-radius:12px;
+    padding:14px 16px;
+    flex:1;
+  }
+  .branch-body ul{
+    list-style:none;
+  }
+  .branch-body li{
+    position:relative;
+    padding:8px 0 8px 24px;
+    font-size:13.5px;
+    line-height:1.45;
+    border-bottom:1px dashed #ecdfd2;
+  }
+  .branch-body li:last-child{
+    border-bottom:none;
+  }
+  .branch-body li::before{
+    content:"";
+    position:absolute;
+    left:2px;
+    top:14px;
+    width:9px;
+    height:9px;
+    border-radius:50%;
+  }
+  .branch-body li strong{
+    display:block;
+    font-size:13.5px;
+    color:var(--navy);
+    margin-bottom:1px;
+  }
+  .branch-body li .desc{
+    color:#555;
+    font-size:12.3px;
+  }
+
+  /* Branch 1 - terracotta */
+  .branch-1{ background:linear-gradient(160deg, var(--terracotta) 0%, var(--terracotta-dark) 100%); }
+  .branch-1 .branch-head{ color:var(--white); }
+  .branch-1 .branch-body li::before{ background:var(--terracotta); }
+
+  /* Branch 2 - gold */
+  .branch-2{ background:linear-gradient(160deg, var(--gold) 0%, #e0a020 100%); }
+  .branch-2 .branch-head{ color:var(--navy); }
+  .branch-2 .branch-head .branch-num{ background:rgba(29,53,87,0.15); border-color:rgba(29,53,87,0.35); color:var(--navy); }
+  .branch-2 .branch-body li::before{ background:var(--gold); }
+
+  /* Branch 3 - navy */
+  .branch-3{ background:linear-gradient(160deg, var(--navy) 0%, #0f1f33 100%); }
+  .branch-3 .branch-head{ color:var(--white); }
+  .branch-3 .branch-body li::before{ background:var(--navy); }
+
+  .goal-strip{
+    max-width:1180px;
+    margin:20px auto 0;
+    background:var(--cream-dark);
+    border:2px dashed var(--terracotta);
+    border-radius:14px;
+    padding:12px 22px;
+    display:flex;
+    align-items:center;
+    gap:14px;
+    justify-content:center;
+    text-align:center;
+  }
+  .goal-strip .icon{
+    font-size:22px;
+  }
+  .goal-strip p{
+    font-size:13px;
+    color:var(--navy);
+    font-weight:600;
+    line-height:1.5;
+  }
+  .goal-strip p span{
+    color:var(--terracotta-dark);
+  }
+
+  /* ===== FOOTER ===== */
+  .page-footer{
+    max-width:1180px;
+    margin:16px auto 0;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    font-size:11.5px;
+    color:var(--navy);
+    opacity:0.75;
+    border-top:1px solid var(--cream-dark);
+    padding-top:10px;
+  }
+  .page-footer .brand{
+    font-weight:800;
+    color:var(--terracotta-dark);
+    opacity:1;
+    font-size:13px;
+    letter-spacing:0.5px;
+  }
+
+  /* ===== PRINT OPTIMIZATION ===== */
+  @page{
+    size:A4 landscape;
+    margin:1cm;
+  }
+  @media print{
+    body{
+      padding:0;
+      background:var(--cream);
+      -webkit-print-color-adjust:exact;
+      print-color-adjust:exact;
+    }
+    .mindmap, .branches, .goal-strip, .page-footer{
+      max-width:100%;
+    }
+    .hub{
+      width:230px;
+      height:230px;
+    }
+    .branch{
+      break-inside:avoid;
+    }
+  }
+
+  @media screen and (max-width:900px){
+    .branches{ grid-template-columns:1fr; }
+    .connectors{ display:none; }
+  }
+</style>
+</head>
+<body>
+
+  <header class="page-header">
+    <div class="eyebrow">TÀI NGUYÊN MIỄN PHÍ</div>
+    <h1>LỘ TRÌNH CHUẨN BỊ VÀO LỚP 1 TRONG 90 NGÀY <span>— Mai Thơm &amp; Camkey English</span></h1>
+    <div class="subtitle">Mindmap tổng quan 3 chặng: Làm quen — Rèn luyện — Sẵn sàng, giúp ba mẹ đồng hành cùng con vững vàng ngày khai giảng</div>
+  </header>
+
+  <div class="mindmap">
+    <div class="hub-wrap">
+      <div class="hub">
+        <div class="hub-tag">MINDMAP</div>
+        <div class="hub-title">LỘ TRÌNH<br>90 NGÀY<br>VÀO LỚP 1</div>
+        <div class="hub-sub">Tâm lý • Tự lập • Học thuật<br>Tiếng Anh • Sức khỏe</div>
+      </div>
+    </div>
+
+    <div class="connectors">
+      <svg viewBox="0 0 980 46" preserveAspectRatio="none">
+        <!-- vertical stem down from hub -->
+        <line x1="490" y1="0" x2="490" y2="16" stroke="#1D3557" stroke-width="3"/>
+        <!-- horizontal bar -->
+        <line x1="163" y1="16" x2="817" y2="16" stroke="#1D3557" stroke-width="3"/>
+        <!-- three drops to branches -->
+        <line x1="163" y1="16" x2="163" y2="46" stroke="#D96C4A" stroke-width="3"/>
+        <line x1="490" y1="16" x2="490" y2="46" stroke="#F2B134" stroke-width="3"/>
+        <line x1="817" y1="16" x2="817" y2="46" stroke="#1D3557" stroke-width="3"/>
+      </svg>
+    </div>
+
+    <div class="branches">
+
+      <!-- BRANCH 1 -->
+      <div class="branch branch-1">
+        <div class="branch-head">
+          <div class="branch-num">1</div>
+          <div class="branch-head-text">
+            <div class="branch-eyebrow">Ngày 1 – 30</div>
+            <div class="branch-title">Tháng 1: Làm quen</div>
+          </div>
+        </div>
+        <div class="branch-body">
+          <ul>
+            <li>
+              <strong>Tham quan trường tiểu học</strong>
+              <div class="desc">Cho con ghé thăm sân trường, lớp học để hình dung môi trường mới, giảm bỡ ngỡ.</div>
+            </li>
+            <li>
+              <strong>Đọc sách về "ngày đầu đi học"</strong>
+              <div class="desc">Chọn truyện tranh, kể chuyện vui về lớp 1 để khơi gợi sự háo hức thay vì lo sợ.</div>
+            </li>
+            <li>
+              <strong>Điều chỉnh giờ ngủ dần</strong>
+              <div class="desc">Tập ngủ sớm – dậy sớm từng bước, tiến gần khung giờ sinh hoạt của học sinh tiểu học.</div>
+            </li>
+            <li>
+              <strong>Trò chuyện tích cực về lớp 1</strong>
+              <div class="desc">Chia sẻ điều thú vị (bạn mới, cô giáo, hoạt động) thay vì dọa "lớp 1 khó lắm".</div>
+            </li>
+            <li>
+              <strong>Bắt đầu 1–2 kỹ năng tự lập cơ bản</strong>
+              <div class="desc">Tự mặc quần áo, tự đi vệ sinh — nền tảng đầu tiên của sự tự tin khi đến trường.</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- BRANCH 2 -->
+      <div class="branch branch-2">
+        <div class="branch-head">
+          <div class="branch-num">2</div>
+          <div class="branch-head-text">
+            <div class="branch-eyebrow">Ngày 31 – 60</div>
+            <div class="branch-title">Tháng 2: Rèn luyện</div>
+          </div>
+        </div>
+        <div class="branch-body">
+          <ul>
+            <li>
+              <strong>Hoàn thiện kỹ năng tự lập</strong>
+              <div class="desc">Tự chuẩn bị cặp sách, tự ăn uống gọn gàng, tự cất dọn đồ dùng cá nhân.</div>
+            </li>
+            <li>
+              <strong>Làm quen 29 chữ cái và số cơ bản</strong>
+              <div class="desc">Nhận diện mặt chữ, đếm số, tô nét cơ bản qua trò chơi nhẹ nhàng, không áp lực.</div>
+            </li>
+            <li>
+              <strong>Tập ngồi tập trung 15–20 phút</strong>
+              <div class="desc">Rèn khả năng ngồi yên, chú ý vào một hoạt động — kỹ năng nền cho việc học ở lớp.</div>
+            </li>
+            <li>
+              <strong>Làm quen phát âm Tiếng Anh chuẩn</strong>
+              <div class="desc">Học qua trò chơi, bài hát cùng Camkey English để tạo phản xạ âm thanh tự nhiên.</div>
+            </li>
+            <li>
+              <strong>Đọc/kể chuyện theo trình tự</strong>
+              <div class="desc">Tập kể lại câu chuyện theo thứ tự để rèn tư duy logic và khả năng diễn đạt.</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- BRANCH 3 -->
+      <div class="branch branch-3">
+        <div class="branch-head">
+          <div class="branch-num">3</div>
+          <div class="branch-head-text">
+            <div class="branch-eyebrow">Ngày 61 – 90</div>
+            <div class="branch-title">Tháng 3: Sẵn sàng</div>
+          </div>
+        </div>
+        <div class="branch-body">
+          <ul>
+            <li>
+              <strong>Làm quen bài tập nhẹ nhàng mỗi ngày</strong>
+              <div class="desc">Tập thói quen ngồi vào bàn học 10–15 phút mỗi ngày, không đặt nặng kết quả.</div>
+            </li>
+            <li>
+              <strong>Ôn lại toàn bộ kỹ năng đã rèn</strong>
+              <div class="desc">Củng cố tự lập, chữ cái, số, tập trung — đảm bảo con thực sự vững trước ngày khai giảng.</div>
+            </li>
+            <li>
+              <strong>Khám sức khỏe tổng quát</strong>
+              <div class="desc">Kiểm tra mắt, tai, răng miệng và thể trạng chung để con có nền tảng sức khỏe tốt nhất.</div>
+            </li>
+            <li>
+              <strong>Chuẩn bị đồ dùng học tập cùng con</strong>
+              <div class="desc">Cùng con chọn cặp, hộp bút, đồng phục — tạo sự hào hứng và cảm giác làm chủ.</div>
+            </li>
+            <li>
+              <strong>Tâm thế háo hức chờ khai giảng</strong>
+              <div class="desc">Đếm ngược ngày tựu trường cùng con bằng thái độ vui vẻ, tin tưởng, an tâm.</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="goal-strip">
+      <div class="icon">🎯</div>
+      <p>Mục tiêu sau 90 ngày: con <span>tự tin — tự lập — sẵn sàng</span> bước vào lớp 1 với tâm lý vững vàng, kỹ năng nền tảng và nụ cười háo hức ngày khai giảng.</p>
+    </div>
+  </div>
+
+  <footer class="page-footer">
+    <div>Tài nguyên miễn phí từ <strong>Mai Thơm — Truyền cảm hứng giáo dục hạnh phúc</strong> &amp; Camkey English</div>
+    <div class="brand">maithom.vn</div>
+  </footer>
+
+</body>
+</html>

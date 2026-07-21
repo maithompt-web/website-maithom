@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>50 Từ Vựng Tiếng Anh Đầu Đời — Flashcard | Mai Thơm & Camkey English</title>
+<style>
+  :root{
+    --terracotta:#D96C4A;
+    --navy:#1D3557;
+    --gold:#F2B134;
+    --cream:#FFF8F0;
+    --cream-dark:#FBEEE0;
+
+    --pink-bg:#FFE0EC;
+    --pink-border:#E8629C;
+    --yellow-bg:#FFF3C4;
+    --yellow-border:#E0A400;
+    --mint-bg:#D4F5E9;
+    --mint-border:#2E9E7C;
+    --blue-bg:#DCEEFF;
+    --blue-border:#4A90D9;
+    --orange-bg:#FFE8D6;
+    --orange-border:#D96C4A;
+  }
+
+  * { box-sizing: border-box; }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: var(--cream);
+    color: var(--navy);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .page {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 28px 20px 40px;
+  }
+
+  /* ===== COVER PAGE ===== */
+  .cover {
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px 20px;
+    border: 3px dashed var(--terracotta);
+    border-radius: 28px;
+    background: var(--cream-dark);
+  }
+
+  .cover .emoji-row {
+    font-size: 48px;
+    margin-bottom: 18px;
+    letter-spacing: 6px;
+  }
+
+  .cover h1 {
+    font-size: 40px;
+    color: var(--terracotta);
+    margin: 0 0 14px;
+    line-height: 1.25;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+  }
+
+  .cover .underline {
+    width: 140px;
+    height: 6px;
+    background: var(--gold);
+    border-radius: 6px;
+    margin: 0 auto 22px;
+  }
+
+  .cover .subtitle {
+    font-size: 18px;
+    color: var(--navy);
+    max-width: 560px;
+    line-height: 1.6;
+    margin: 0 0 28px;
+  }
+
+  .cover .tip-box {
+    background: var(--cream);
+    border: 2px solid var(--gold);
+    border-radius: 16px;
+    padding: 16px 22px;
+    font-size: 14.5px;
+    color: var(--navy);
+    max-width: 520px;
+    line-height: 1.7;
+  }
+
+  .cover .tip-box b { color: var(--terracotta); }
+
+  .cover .brand {
+    margin-top: 30px;
+    font-weight: 700;
+    color: var(--navy);
+    font-size: 16px;
+  }
+  .cover .brand span { color: var(--terracotta); }
+
+  /* ===== CATEGORY SECTIONS ===== */
+  .category {
+    page-break-before: always;
+    break-before: page;
+    padding-top: 10px;
+  }
+
+  .category-header {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 22px;
+    background: var(--navy);
+    border-radius: 16px;
+    padding: 14px 22px;
+  }
+
+  .category-header .num {
+    background: var(--gold);
+    color: var(--navy);
+    font-weight: 800;
+    font-size: 18px;
+    width: 38px;
+    height: 38px;
+    min-width: 38px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .category-header h2 {
+    color: #FFF8F0;
+    font-size: 22px;
+    margin: 0;
+    font-weight: 800;
+    letter-spacing: 0.3px;
+  }
+
+  .category-header .icon {
+    font-size: 26px;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+  }
+
+  /* ===== CARD ===== */
+  .card {
+    position: relative;
+    border: 3px dashed var(--terracotta);
+    border-radius: 18px;
+    padding: 20px 10px 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 192px;
+    break-inside: avoid;
+    page-break-inside: avoid;
+    transition: none;
+  }
+
+  /* pastel background + border cycling through 5 fun tones, per card position */
+  .card:nth-child(5n+1) { background: var(--pink-bg);   border-color: var(--pink-border); }
+  .card:nth-child(5n+2) { background: var(--yellow-bg); border-color: var(--yellow-border); }
+  .card:nth-child(5n+3) { background: var(--mint-bg);   border-color: var(--mint-border); }
+  .card:nth-child(5n+4) { background: var(--blue-bg);   border-color: var(--blue-border); }
+  .card:nth-child(5n)   { background: var(--orange-bg); border-color: var(--orange-border); }
+
+  /* scrapbook-style gentle tilt on about a third of the cards */
+  .card:nth-child(7n+3) { transform: rotate(-2deg); }
+  .card:nth-child(7n+6) { transform: rotate(2deg); }
+
+  /* small decorative sticker in the corner, cycling with the palette */
+  .card::after {
+    position: absolute;
+    top: -12px;
+    right: -10px;
+    font-size: 22px;
+    line-height: 1;
+  }
+  .card:nth-child(5n+1)::after { content: "✨"; }
+  .card:nth-child(5n+2)::after { content: "⭐"; }
+  .card:nth-child(5n+3)::after { content: "💛"; }
+  .card:nth-child(5n+4)::after { content: "✨"; }
+  .card:nth-child(5n)::after   { content: "⭐"; }
+
+  .card .scissors {
+    position: absolute;
+    top: -13px;
+    left: -13px;
+    font-size: 18px;
+    background: var(--cream);
+    border-radius: 50%;
+    padding: 2px;
+    line-height: 1;
+    z-index: 2;
+  }
+
+  .card .visual {
+    font-size: 60px;
+    line-height: 1;
+    margin: 0 auto 10px;
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.75);
+    box-shadow: 0 3px 6px rgba(0,0,0,0.10);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .card .badge {
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.75);
+    box-shadow: 0 3px 6px rgba(0,0,0,0.10);
+    margin: 0 auto 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .card .color-swatch {
+    width: 58px;
+    height: 58px;
+    border-radius: 12px;
+    border: 2px solid rgba(29,53,87,0.15);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+  }
+
+  .card .word-en {
+    font-size: 19px;
+    font-weight: 800;
+    color: var(--navy);
+    letter-spacing: 0.3px;
+  }
+
+  .card .word-vi {
+    font-size: 13px;
+    color: var(--terracotta);
+    margin-top: 4px;
+    font-weight: 500;
+  }
+
+  /* ===== FOOTER ===== */
+  .footer {
+    page-break-before: always;
+    break-before: page;
+    text-align: center;
+    padding-top: 120px;
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footer .emoji-big {
+    font-size: 44px;
+    margin-bottom: 18px;
+  }
+
+  .footer h3 {
+    color: var(--terracotta);
+    font-size: 24px;
+    margin: 0 0 10px;
+  }
+
+  .footer p {
+    color: var(--navy);
+    font-size: 15px;
+    max-width: 480px;
+    line-height: 1.7;
+    margin: 0 0 24px;
+  }
+
+  .footer .site {
+    background: var(--navy);
+    color: var(--gold);
+    font-weight: 800;
+    font-size: 20px;
+    padding: 10px 26px;
+    border-radius: 30px;
+    letter-spacing: 0.5px;
+  }
+
+  /* ===== PRINT ===== */
+  @page {
+    size: A4;
+    margin: 1cm;
+  }
+
+  @media print {
+    body { background: var(--cream); }
+    .page { max-width: 100%; padding: 6px; }
+    .cover { min-height: auto; padding: 30px 16px; }
+    .footer { min-height: auto; padding-top: 60px; }
+    .card { min-height: 178px; }
+    a[href]:after { content: ""; }
+  }
+
+  @media screen and (max-width: 640px) {
+    .grid { grid-template-columns: repeat(2, 1fr); }
+  }
+</style>
+</head>
+<body>
+
+<div class="page">
+
+  <!-- ===================== COVER PAGE ===================== -->
+  <section class="cover">
+    <div class="emoji-row">🐱 🔴 🔟 🏠 👨‍👩‍👧‍👦</div>
+    <h1>50 TỪ VỰNG TIẾNG ANH ĐẦU ĐỜI<br>— FLASHCARD —</h1>
+    <div class="underline"></div>
+    <p class="subtitle">In ra, cắt rời, chơi cùng con mỗi ngày — Mai Thơm &amp; Camkey English</p>
+    <div class="tip-box">
+      <b>Hướng dẫn sử dụng:</b> In file này trên giấy A4 (2 mặt hoặc 1 mặt đều được).
+      Cắt theo <b>đường viền nét đứt</b> quanh mỗi thẻ bằng kéo hoặc dao rọc giấy.
+      Mỗi ngày cùng con học 5–10 thẻ, vừa chỉ hình vừa đọc to từ tiếng Anh và nghĩa tiếng Việt.
+      Có thể ghép thành trò chơi lật thẻ, đố vui hoặc ghi nhớ hình ảnh.
+    </div>
+    <div class="brand">maithom.vn <span>×</span> Camkey English</div>
+  </section>
+
+  <!-- ===================== 1. MÀU SẮC ===================== -->
+  <section class="category">
+    <div class="category-header">
+      <div class="num">1</div>
+      <div class="icon">🎨</div>
+      <h2>CHỦ ĐỀ: MÀU SẮC (COLORS)</h2>
+    </div>
+    <div class="grid">
+
+      <div class="card">
+        <span class="scissors">✂️</span>
+        <div class="badge"><div class="color-swatch" style="background:#E4392E;"></div></div>
+        <div class="word-en">Red</div>
+        <div class="word-vi">Màu đỏ</div>
+      </div>
+
+      <div class="card">
+        <span class="scissors">✂️</span>
+        <div class="badge"><div class="color-swatch" style="background:#2E6BE6;"></div></div>
+        <div class="word-en">Blue</div>
+        <div class="word-vi">Màu xanh dương</div>
+      </div>
+
+      <div class="card">
+        <span class="scissors">✂️</span>
+        <div class="badge"><div class="color-swatch" style="background:#F2D024;"></div></div>
+        <div class="word-en">Yellow</div>
+        <div class="word-vi">Màu vàng</div>
+      </div>
+
+      <div class="card">
+        <span class="scissors">✂️</span>
+        <div class="badge"><div class="color-swatch" style="background:#3FA34D;"></div></div>
+        <div class="word-en">Green</div>
+        <div class="word-vi">Màu xanh lá</div>
+      </div>
+
+      <div class="card">
+        <span class="scissors">✂️</span>
+        <div class="badge"><div class="color-swatch" style="background:#F2822E;"></div></div>
+        <div class="word-en">Orange</div>
+        <div class="word-vi">Màu cam</div>
+      </div>
+
+      <div class="card">
+        <span class="scissors">✂️</span>
+        <div class="badge"><div class="color-swatch" style="background:#8E4EC6;"></div></div>
+        <div class="word-en">Purple</div>
+        <div class="word-vi">Màu tím</div>
+      </div>
+
+      <div class="card">
+        <span class="scissors">✂️</span>
+        <div class="badge"><div class="color-swatch" style="background:#F48FB1;"></div></div>
+        <div class="word-en">Pink</div>
+        <div class="word-vi">Màu hồng</div>
+      </div>
+
+      <div class="card">
+        <span class="scissors">✂️</span>
+        <div class="badge"><div class="color-swatch" style="background:#2B2B2B;"></div></div>
+        <div class="word-en">Black</div>
+        <div class="word-vi">Màu đen</div>
+      </div>
+
+      <div class="card">
+        <span class="scissors">✂️</span>
+        <div class="badge"><div class="color-swatch" style="background:#FFFFFF;"></div></div>
+        <div class="word-en">White</div>
+        <div class="word-vi">Màu trắng</div>
+      </div>
+
+      <div class="card">
+        <span class="scissors">✂️</span>
+        <div class="badge"><div class="color-swatch" style="background:#8B5A2B;"></div></div>
+        <div class="word-en">Brown</div>
+        <div class="word-vi">Màu nâu</div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===================== 2. CON VẬT ===================== -->
+  <section class="category">
+    <div class="category-header">
+      <div class="num">2</div>
+      <div class="icon">🐾</div>
+      <h2>CHỦ ĐỀ: CON VẬT (ANIMALS)</h2>
+    </div>
+    <div class="grid">
+
+      <div class="card"><span class="scissors">✂️</span><div class="visual">🐱</div><div class="word-en">Cat</div><div class="word-vi">Con mèo</div></div>
+      <div class="card"><span class="scissors">✂️</span><div class="visual">🐶</div><div class="word-en">Dog</div><div class="word-vi">Con chó</div></div>
+      <div class="card"><span class="scissors">✂️</span><div class="visual">🐟</div><div class="word-en">Fish</div><div class="word-vi">Con cá</div></div>
+      <div class="card"><span class="scissors">✂️</span><div class="visual">🐦</div><div class="word-en">Bird</div><div class="word-vi">Con chim</div></div>
+      <div class="card"><span class="scissors">✂️</span><div class="visual">🐰</div><div class="word-en">Rabbit</div><div class="word-vi">Con thỏ</div></div>
+      <div class="card"><span class="scissors">✂️</span><div class="visual">🐘</div><div class="word-en">Elephant</div><div class="word-vi">Con voi</div></div>
+      <div class="card"><span class="scissors">✂️</span><div class="visual">🦁</div><div class="word-en">Lion</div><div class="word-vi">Con sư tử</div></div>
+      <div class="card"><span class="scissors">✂️</span><div class="visual">🦆</div><div class="word-en">Duck</div><div class="word-vi">Con vịt</div></div>
+      <div class="card"><span class="scissors">✂️</span><div class="visual">🐻</div><div class="word-en">Bear</div><div class="word-vi">Con gấu</div></div>
+      <div class="card"><span class="scissors">✂️</span><div class="visual">🐵</div><div class="word-en">Monkey</div><div class="word-vi">Con khỉ</div></div>
+
+    </div>
+  </section>
+
+  <!-- ===================== 3. SỐ ĐẾM ===================== -->
+  <section class="category">
+    <div class="category-header">
+      <div class="num">3</div>
+      <div class="icon">🔢</div>
+      <h2>CHỦ ĐỀ: SỐ ĐẾM 1–10 (NUMBERS)</h2>
+    </div>
+    <div class="grid">
+
+      <div class="card"><span class="scissors">✂️</span><div class="visual">1️⃣</div><div class="word-en">One</div><div class="word-vi">Số một</div></div>
+      <div class="card"><span class="scissors">✂️</span><div class="visual">2️⃣</div><div class="word-en">Two</div><div class="word-vi">Số hai</div></div>
+      <div class="card"><span class="scissors">✂️</span><div class="visual">3️⃣</div><div class="word-en">Three</div><div class="word-vi">Số ba</div></div>
+      <div class="card"><span class="scissors">✂️</span><div class="visual">4️⃣</div><div class="word-en">Four</div><div class="word-vi">Số bốn</div></div>
+      <div class="card"><span class="scissors">✂️</span><div class="visual">5️⃣</div><div class="word-en">Five</div><div class="word-vi">Số năm</div></div>
+      <div class="card"><span class="scissors">✂️</span><div class="visual">6️⃣</div><div class="word-en">Six</div><div class="word-vi">Số sáu</div></div>
+      <div class="card"><span class="scissors">✂️</span><div class="visual">7️⃣</div><div class="word-en">Seven</div><div class="word-vi">Số bảy</div></div>
+      <div class="card"><span class="scissors">✂️</span><div class="visual">8️⃣</div><div class="word-en">Eight</div><div class="word-vi">Số tám</div></div>
+      <div class="card"><span class="scissors">✂️</span><div class="visual">9️⃣</div><div class="word-en">Nine</div><div class="word-vi">Số chín</div></div>
+      <div class="card"><span class="scissors">✂️</span><div class="visual">🔟</div><div class="word-en">Ten</div><div class="word-vi">Số mười</div></div>
+
+    </div>
+  </section>
+
+  <!-- ===================== 4. ĐỒ VẬT TRONG NHÀ ===================== -->
+  <section class="category">
+    <div class="category-header">
+      <div class="num">4</div>
+      <div class="icon">🏠</div>
+      <h2>CHỦ ĐỀ: ĐỒ VẬT TRONG NHÀ (HOME ITEMS)</h2>
+    </div>
+    <div class="grid">
+
+      <div class="card"><span class="scissors">✂️</span><div class="visual">🛏️</div><div class="word-en">Bed</div><div class="word-vi">Cái giường</div></div>
+      <div class="card"><span class="scissors">✂️</span><div class="visual">🪑</div><div class="word-en">Chair</div><div class="word-vi">Cái ghế</div></div>
+      <div class="card"><span class="scissors">✂️</span><div class="visual">🚪</div><div class="word-en">Door</div><div class="word-vi">Cái cửa</div></div>
+      <div class="card"><span class="scissors">✂️</span><div class="visual">🪟</div><div class="word-en">Window</div><div class="word-vi">Cửa sổ</div></div>
+      <div class="card"><span class="scissors">✂️</span><div class="visual">☕</div><div class="word-en">Cup</div><div class="word-vi">Cái cốc</div></div>
+      <div class="card"><span class="scissors">✂️</span><div class="visual">📖</div><div class="word-en">Book</div><div class="word-vi">Quyển sách</div></div>
+      <div class="card"><span class="scissors">✂️</span><div class="visual">⏰</div><div class="word-en">Clock</div><div class="word-vi">Đồng hồ</div></div>
+      <div class="card"><span class="scissors">✂️</span><div class="visual">💡</div><div class="word-en">Lamp</div><div class="word-vi">Cái đèn</div></div>
+      <div class="card"><span class="scissors">✂️</span><div class="visual">🥄</div><div class="word-en">Spoon</div><div class="word-vi">Cái thìa</div></div>
+      <div class="card"><span class="scissors">✂️</span><div class="visual">🔑</div><div class="word-en">Key</div><div class="word-vi">Chìa khóa</div></div>
+
+    </div>
+  </section>
+
+  <!-- ===================== 5. THÀNH VIÊN GIA ĐÌNH ===================== -->
+  <section class="category">
+    <div class="category-header">
+      <div class="num">5</div>
+      <div class="icon">👨‍👩‍👧‍👦</div>
+      <h2>CHỦ ĐỀ: THÀNH VIÊN GIA ĐÌNH (FAMILY)</h2>
+    </div>
+    <div class="grid">
+
+      <div class="card"><span class="scissors">✂️</span><div class="visual">👩</div><div class="word-en">Mother</div><div class="word-vi">Mẹ</div></div>
+      <div class="card"><span class="scissors">✂️</span><div class="visual">👨</div><div class="word-en">Father</div><div class="word-vi">Bố (Ba)</div></div>
+      <div class="card"><span class="scissors">✂️</span><div class="visual">👦</div><div class="word-en">Brother</div><div class="word-vi">Anh / Em trai</div></div>
+      <div class="card"><span class="scissors">✂️</span><div class="visual">👧</div><div class="word-en">Sister</div><div class="word-vi">Chị / Em gái</div></div>
+      <div class="card"><span class="scissors">✂️</span><div class="visual">👵</div><div class="word-en">Grandmother</div><div class="word-vi">Bà</div></div>
+      <div class="card"><span class="scissors">✂️</span><div class="visual">👴</div><div class="word-en">Grandfather</div><div class="word-vi">Ông</div></div>
+      <div class="card"><span class="scissors">✂️</span><div class="visual">👶</div><div class="word-en">Baby</div><div class="word-vi">Em bé</div></div>
+      <div class="card"><span class="scissors">✂️</span><div class="visual">👩‍🦱</div><div class="word-en">Aunt</div><div class="word-vi">Cô / Dì</div></div>
+      <div class="card"><span class="scissors">✂️</span><div class="visual">👨‍🦱</div><div class="word-en">Uncle</div><div class="word-vi">Chú / Bác</div></div>
+      <div class="card"><span class="scissors">✂️</span><div class="visual">👨‍👩‍👧‍👦</div><div class="word-en">Family</div><div class="word-vi">Gia đình</div></div>
+
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <section class="footer">
+    <div class="emoji-big">💛📚✨</div>
+    <h3>Cảm ơn ba mẹ đã tải tài nguyên này!</h3>
+    <p>Chúc bé yêu học vui, nhớ lâu cùng 50 từ vựng đầu đời. Theo dõi Mai Thơm &amp; Camkey English để nhận thêm nhiều tài nguyên miễn phí mỗi tuần.</p>
+    <div class="site">maithom.vn</div>
+  </section>
+
+</div>
+
+</body>
+</html>

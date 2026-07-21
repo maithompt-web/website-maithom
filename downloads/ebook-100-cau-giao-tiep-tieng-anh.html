@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>100 Câu Giao Tiếp Tiếng Anh Cha Mẹ Có Thể Dùng Với Con — Mai Thị Thơm</title>
+<style>
+  :root{
+    --terracotta:#D96C4A;
+    --terracotta-dark:#B8502F;
+    --navy:#1D3557;
+    --navy-light:#2E4A73;
+    --gold:#F2B134;
+    --cream:#FFF8F0;
+    --cream-deep:#FBEEE0;
+    --ink:#2B2118;
+    --ink-soft:#6B6058;
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{
+    font-family:"Segoe UI", system-ui, -apple-system, Arial, sans-serif;
+    color:var(--ink);
+    background:#EDE3D6;
+    -webkit-print-color-adjust:exact;
+    print-color-adjust:exact;
+  }
+  .page{
+    max-width:900px;
+    margin:0 auto 28px;
+    background:var(--cream);
+    padding:56px 64px;
+    position:relative;
+    box-shadow:0 6px 24px rgba(29,53,87,0.12);
+  }
+  .page:first-child{margin-top:28px;}
+
+  /* ============ COVER ============ */
+  .cover{
+    background:linear-gradient(160deg, var(--navy) 0%, #16283F 60%, var(--terracotta-dark) 130%);
+    color:#fff;
+    min-height:900px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:70px 60px;
+    overflow:hidden;
+  }
+  .cover .deco-ring{
+    position:absolute;
+    width:340px;height:340px;
+    border:2px solid rgba(242,177,52,0.35);
+    border-radius:50%;
+    top:-90px; right:-90px;
+  }
+  .cover .deco-ring2{
+    position:absolute;
+    width:220px;height:220px;
+    border:2px solid rgba(217,108,74,0.4);
+    border-radius:50%;
+    bottom:-60px; left:-60px;
+  }
+  .cover-frame{
+    position:absolute;
+    inset:20px;
+    border:2px dashed rgba(242,177,52,0.55);
+    border-radius:28px;
+    pointer-events:none;
+  }
+  .floaty{
+    position:absolute;
+    opacity:0.85;
+    filter:drop-shadow(0 3px 5px rgba(0,0,0,0.25));
+    pointer-events:none;
+  }
+  .floaty.f1{top:56px; left:56px; font-size:32px;}
+  .floaty.f2{top:96px; right:110px; font-size:46px; opacity:0.5;}
+  .floaty.f3{bottom:250px; left:64px; font-size:28px;}
+  .floaty.f4{top:210px; left:36px; font-size:24px; opacity:0.7;}
+  .floaty.f5{bottom:190px; right:56px; font-size:30px;}
+  .floaty.f6{top:170px; right:64px; font-size:24px;}
+  .floaty.f7{bottom:330px; right:36px; font-size:22px; opacity:0.7;}
+  .floaty.f8{top:330px; left:96px; font-size:20px; opacity:0.6;}
+  .preview-strip{
+    display:flex;
+    gap:10px;
+    margin:0 0 34px;
+    flex-wrap:wrap;
+    justify-content:center;
+    max-width:440px;
+  }
+  .preview-strip span{
+    width:38px;height:38px;
+    background:rgba(255,255,255,0.14);
+    border:1px solid rgba(242,177,52,0.55);
+    border-radius:50%;
+    display:flex;align-items:center;justify-content:center;
+    font-size:18px;
+  }
+  .cover .eyebrow-badge{
+    display:inline-block;
+    background:rgba(242,177,52,0.16);
+    border:1px solid var(--gold);
+    color:var(--gold);
+    font-size:13px;
+    letter-spacing:2px;
+    text-transform:uppercase;
+    padding:8px 20px;
+    border-radius:999px;
+    margin-bottom:28px;
+    font-weight:600;
+  }
+  .cover h1{
+    font-size:44px;
+    line-height:1.25;
+    margin:0 0 18px;
+    font-weight:800;
+    max-width:640px;
+    color:#fff;
+  }
+  .cover h1 .accent{color:var(--gold);}
+  .cover .subtitle{
+    font-size:19px;
+    color:#E7DCCB;
+    font-style:italic;
+    max-width:480px;
+    margin:0 0 40px;
+  }
+  .cover .number-100{
+    font-size:120px;
+    font-weight:900;
+    color:var(--terracotta);
+    -webkit-text-stroke:2px var(--gold);
+    line-height:1;
+    margin-bottom:8px;
+    opacity:0.95;
+  }
+  .cover .author-block{
+    margin-top:44px;
+    padding-top:26px;
+    border-top:1px solid rgba(255,255,255,0.25);
+    width:100%;
+    max-width:420px;
+  }
+  .cover .author-name{font-size:20px; font-weight:700; color:#fff;}
+  .cover .author-role{font-size:14px; color:#C9D4E4; margin-top:4px;}
+  .cover .brand-tag{
+    margin-top:22px;
+    font-size:13px;
+    letter-spacing:1px;
+    color:var(--gold);
+    text-transform:uppercase;
+    font-weight:700;
+  }
+
+  /* ============ TYPO ============ */
+  h2.section-title{
+    color:var(--navy);
+    font-size:28px;
+    font-weight:800;
+    margin:0 0 6px;
+  }
+  .section-eyebrow{
+    display:inline-block;
+    color:var(--terracotta-dark);
+    background:var(--cream-deep);
+    font-size:12px;
+    font-weight:700;
+    letter-spacing:1.5px;
+    text-transform:uppercase;
+    padding:5px 14px;
+    border-radius:999px;
+    margin-bottom:14px;
+  }
+  .intro-page p{
+    font-size:16.5px;
+    line-height:1.85;
+    color:var(--ink);
+    margin:0 0 18px;
+  }
+  .signature{
+    margin-top:36px;
+    font-style:italic;
+    color:var(--navy);
+    font-weight:700;
+    font-size:16px;
+  }
+  .quote-box{
+    background:var(--cream-deep);
+    border-left:4px solid var(--terracotta);
+    padding:18px 24px;
+    border-radius:8px;
+    font-style:italic;
+    color:var(--navy);
+    font-size:16px;
+    margin:26px 0;
+  }
+
+  /* ============ TOC ============ */
+  .toc-list{list-style:none; margin:0; padding:0;}
+  .toc-list li{
+    display:flex;
+    align-items:center;
+    gap:14px;
+    padding:12px 16px;
+    margin-bottom:10px;
+    border-radius:14px;
+    background:var(--pastel, var(--cream-deep));
+    font-size:16px;
+  }
+  .toc-num{
+    width:26px;height:26px;
+    background:var(--navy);
+    color:#fff;
+    border-radius:50%;
+    display:flex;align-items:center;justify-content:center;
+    font-weight:700;
+    font-size:12px;
+    flex-shrink:0;
+  }
+  .toc-emoji{
+    width:50px;height:50px;
+    background:#fff;
+    border-radius:50%;
+    display:flex;align-items:center;justify-content:center;
+    font-size:25px;
+    flex-shrink:0;
+    box-shadow:0 2px 6px rgba(0,0,0,0.08);
+  }
+  .toc-info{display:flex; flex-direction:column; flex:1;}
+  .toc-title{font-weight:700; color:var(--navy); flex:1;}
+  .toc-range{color:var(--ink-soft); font-size:13.5px; margin-top:2px;}
+
+  /* ============ CHAPTER THEME PASTELS ============ */
+  .ch-1{--pastel:#FFF4D6; --pastel-strong:#FFE49A; --accent:#E0A400;}
+  .ch-2{--pastel:#FFE7DA; --pastel-strong:#FFC9A6; --accent:#D96C4A;}
+  .ch-3{--pastel:#E3F6EC; --pastel-strong:#B7E9CE; --accent:#3F9C79;}
+  .ch-4{--pastel:#E5EFFC; --pastel-strong:#BBD7F5; --accent:#3B6FB6;}
+  .ch-5{--pastel:#FDE8EA; --pastel-strong:#F8BFC5; --accent:#D9645D;}
+  .ch-6{--pastel:#F2E7FB; --pastel-strong:#DCB9F2; --accent:#9B6FC9;}
+  .ch-7{--pastel:#E1F4F8; --pastel-strong:#AEE1EC; --accent:#2E9DB8;}
+  .ch-8{--pastel:#FFEFDA; --pastel-strong:#FFD290; --accent:#DB8A2B;}
+  .ch-9{--pastel:#ECE7FB; --pastel-strong:#C9BAF2; --accent:#7C6FC9;}
+  .ch-10{--pastel:#E4E8F7; --pastel-strong:#B9C3EB; --accent:#3B4C7A;}
+
+  .chapter-page{
+    background:linear-gradient(to bottom, var(--pastel) 0%, var(--cream) 230px);
+    overflow:hidden;
+  }
+  .chapter-page::after{
+    content:attr(data-watermark);
+    position:absolute;
+    top:14px; right:10px;
+    font-size:120px;
+    line-height:1;
+    opacity:0.13;
+    z-index:0;
+    pointer-events:none;
+  }
+  .chapter-page .chapter-head,
+  .chapter-page table.phrase-table,
+  .chapter-page .tip-box{position:relative; z-index:1;}
+
+  /* ============ CHAPTER HEADER ============ */
+  .chapter-head{
+    display:flex;
+    align-items:center;
+    gap:18px;
+    background:linear-gradient(120deg, var(--terracotta), var(--terracotta-dark));
+    color:#fff;
+    border-radius:14px;
+    padding:22px 28px;
+    margin-bottom:26px;
+    box-shadow:0 8px 18px rgba(217,108,74,0.28);
+  }
+  .chapter-icon{
+    font-size:44px;
+    background:var(--pastel-strong, rgba(255,255,255,0.18));
+    width:80px;height:80px;
+    border-radius:50%;
+    display:flex;align-items:center;justify-content:center;
+    flex-shrink:0;
+    border:3px dashed rgba(255,255,255,0.9);
+    box-shadow:0 4px 10px rgba(0,0,0,0.15);
+  }
+  .chapter-head h2{
+    margin:0;
+    font-size:23px;
+    color:#fff;
+    font-weight:800;
+  }
+  .chapter-head .chapter-sub{
+    font-size:13px;
+    color:#FCE5DA;
+    letter-spacing:0.5px;
+    text-transform:uppercase;
+    font-weight:700;
+    margin-bottom:4px;
+  }
+  .chapter-deco{
+    font-size:14px;
+    letter-spacing:8px;
+    opacity:0.75;
+    margin-top:6px;
+  }
+  .chapter-badge{
+    margin-left:auto;
+    background:rgba(255,255,255,0.2);
+    padding:8px 16px;
+    border-radius:999px;
+    font-weight:700;
+    font-size:14px;
+    white-space:nowrap;
+  }
+
+  /* ============ PHRASE TABLE ============ */
+  table.phrase-table{
+    width:100%;
+    border-collapse:collapse;
+    border-radius:12px;
+    overflow:hidden;
+    font-size:14.5px;
+  }
+  table.phrase-table thead th{
+    background:var(--navy);
+    color:#fff;
+    text-align:left;
+    padding:12px 14px;
+    font-size:12.5px;
+    letter-spacing:0.5px;
+    text-transform:uppercase;
+    font-weight:700;
+  }
+  table.phrase-table thead th:first-child{width:42px; text-align:center;}
+  table.phrase-table tbody tr{break-inside:avoid; page-break-inside:avoid;}
+  table.phrase-table tbody tr:nth-child(odd){background:var(--pastel, var(--cream-deep));}
+  table.phrase-table tbody tr:nth-child(even){background:#fff;}
+  table.phrase-table td{
+    padding:12px 14px;
+    vertical-align:top;
+    border-bottom:1px solid #EFE2D2;
+  }
+  table.phrase-table td.num{
+    text-align:center;
+    font-weight:800;
+    color:var(--accent, var(--terracotta-dark));
+  }
+  table.phrase-table td.eng{
+    font-weight:700;
+    color:var(--navy);
+    width:26%;
+    border-left:3px solid var(--accent, var(--gold));
+  }
+  table.phrase-table td.vi{
+    color:var(--ink);
+    width:34%;
+  }
+  table.phrase-table td.pron{
+    color:var(--terracotta-dark);
+    font-family:"Lucida Sans Unicode","Consolas",monospace;
+    font-size:13.5px;
+    font-weight:600;
+  }
+
+  .tip-box{
+    margin-top:22px;
+    background:var(--cream-deep);
+    border:1px dashed var(--terracotta);
+    border-radius:10px;
+    padding:16px 20px;
+    font-size:14px;
+    color:var(--ink);
+  }
+  .tip-box b{color:var(--terracotta-dark);}
+
+  /* ============ CLOSING ============ */
+  .closing-page{
+    text-align:center;
+  }
+  .closing-page h2{
+    color:var(--navy);
+    font-size:30px;
+    margin-bottom:14px;
+  }
+  .closing-page p{
+    font-size:16px;
+    line-height:1.85;
+    max-width:620px;
+    margin:0 auto 16px;
+    color:var(--ink);
+  }
+  .about-box{
+    margin:34px auto 0;
+    max-width:640px;
+    background:var(--cream-deep);
+    border-radius:14px;
+    padding:28px 32px;
+    text-align:left;
+  }
+  .about-box h3{color:var(--terracotta-dark); margin:0 0 10px; font-size:19px;}
+  .contact-grid{
+    margin-top:30px;
+    display:flex;
+    justify-content:center;
+    gap:28px;
+    flex-wrap:wrap;
+  }
+  .contact-item{
+    background:var(--navy);
+    color:#fff;
+    padding:14px 24px;
+    border-radius:10px;
+    font-size:14.5px;
+    font-weight:600;
+    min-width:200px;
+  }
+  .contact-item span{display:block; color:var(--gold); font-size:11px; letter-spacing:1px; text-transform:uppercase; margin-bottom:4px; font-weight:700;}
+  .footer-note{
+    margin-top:40px;
+    font-size:13px;
+    color:var(--ink-soft);
+  }
+  .brand-mark{
+    font-weight:800;
+    color:var(--navy);
+  }
+  .brand-mark .dot{color:var(--terracotta);}
+
+  /* page break control */
+  .page-break{page-break-before:always;}
+
+  @media print{
+    body{background:#fff;}
+    .page{
+      box-shadow:none;
+      margin:0;
+      max-width:none;
+      padding:20mm 18mm;
+      page-break-after:always;
+    }
+    .page:last-child{page-break-after:auto;}
+    .cover{min-height:257mm;}
+    @page{size:A4; margin:0;}
+  }
+  @media screen and (max-width:720px){
+    .page{padding:36px 22px;}
+    .cover h1{font-size:30px;}
+    .cover .number-100{font-size:80px;}
+    table.phrase-table{font-size:13px;}
+    .chapter-head{flex-wrap:wrap;}
+    .chapter-badge{margin-left:0;}
+  }
+</style>
+</head>
+<body>
+
+<!-- ============ TRANG BÌA ============ -->
+<div class="page cover">
+  <div class="cover-frame"></div>
+  <div class="deco-ring"></div>
+  <div class="deco-ring2"></div>
+  <span class="floaty f1">✨</span>
+  <span class="floaty f2">☁️</span>
+  <span class="floaty f3">💛</span>
+  <span class="floaty f4">🔤</span>
+  <span class="floaty f5">📚</span>
+  <span class="floaty f6">🍎</span>
+  <span class="floaty f7">✏️</span>
+  <span class="floaty f8">🌟</span>
+  <div class="eyebrow-badge">Cẩm nang tra cứu nhanh cho ba mẹ</div>
+  <div class="number-100">100</div>
+  <h1>CÂU GIAO TIẾP TIẾNG ANH<br><span class="accent">CHA MẸ CÓ THỂ DÙNG VỚI CON</span></h1>
+  <p class="subtitle">Không cần giỏi Tiếng Anh, chỉ cần bắt đầu mỗi ngày.</p>
+  <div class="preview-strip">
+    <span>🌤️</span><span>🍳</span><span>🪥</span><span>🎒</span><span>🚗</span><span>🧸</span><span>🛁</span><span>🍽️</span><span>📖</span><span>🌙</span>
+  </div>
+  <div class="author-block">
+    <div class="author-name">Mai Thị Thơm</div>
+    <div class="author-role">Nhà sáng lập Camkey English · 12+ năm kinh nghiệm giáo dục</div>
+    <div class="brand-tag">Camkey English</div>
+  </div>
+</div>
+
+<!-- ============ TRANG GIỚI THIỆU ============ -->
+<div class="page intro-page">
+  <div class="section-eyebrow">Lời mở đầu</div>
+  <h2 class="section-title">Gửi những ba mẹ đang đọc cuốn cẩm nang này</h2>
+  <p>Xin chào, tôi là Mai Thị Thơm. Sau hơn 12 năm đứng lớp và đồng hành cùng hàng ngàn học sinh, tôi nhận ra một điều: trẻ học ngôn ngữ nhanh nhất không phải trong sách vở, mà trong chính những câu nói lặp đi lặp lại mỗi ngày cùng ba mẹ.</p>
+  <p>Bạn không cần phát âm chuẩn như người bản xứ, không cần giỏi ngữ pháp. Bạn chỉ cần mạnh dạn nói, dù ngượng ngùng những ngày đầu. Con trẻ không đánh giá bạn — con chỉ đang lặng lẽ hấp thụ mỗi âm thanh Tiếng Anh bạn mang đến.</p>
+  <p>Cuốn cẩm nang này gồm 100 câu giao tiếp đơn giản, chia theo 10 hoạt động quen thuộc trong ngày — từ lúc thức dậy đến khi chúc con ngủ ngon. Mỗi ngày, bạn chỉ cần chọn một vài câu, lặp lại tự nhiên như một thói quen. Theo thời gian, Tiếng Anh sẽ trở thành một phần trong tổ ấm của bạn.</p>
+  <div class="quote-box">"Ba mẹ không cần hoàn hảo. Ba mẹ chỉ cần hiện diện và bắt đầu."</div>
+  <p class="signature">— Mai Thị Thơm</p>
+</div>
+
+<!-- ============ MỤC LỤC ============ -->
+<div class="page">
+  <div class="section-eyebrow">Mục lục</div>
+  <h2 class="section-title">10 tình huống — 100 câu giao tiếp</h2>
+  <ul class="toc-list">
+    <li class="ch-1"><span class="toc-num">1</span><span class="toc-emoji">🌤️</span><span class="toc-info"><span class="toc-title">Buổi sáng thức dậy</span><span class="toc-range">Câu 1 – 10</span></span></li>
+    <li class="ch-2"><span class="toc-num">2</span><span class="toc-emoji">🍳</span><span class="toc-info"><span class="toc-title">Giờ ăn sáng</span><span class="toc-range">Câu 11 – 20</span></span></li>
+    <li class="ch-3"><span class="toc-num">3</span><span class="toc-emoji">🪥</span><span class="toc-info"><span class="toc-title">Đánh răng, rửa mặt, thay quần áo</span><span class="toc-range">Câu 21 – 30</span></span></li>
+    <li class="ch-4"><span class="toc-num">4</span><span class="toc-emoji">🎒</span><span class="toc-info"><span class="toc-title">Trên đường đi học</span><span class="toc-range">Câu 31 – 40</span></span></li>
+    <li class="ch-5"><span class="toc-num">5</span><span class="toc-emoji">🚗</span><span class="toc-info"><span class="toc-title">Đón con tan học</span><span class="toc-range">Câu 41 – 50</span></span></li>
+    <li class="ch-6"><span class="toc-num">6</span><span class="toc-emoji">🧸</span><span class="toc-info"><span class="toc-title">Giờ chơi cùng con</span><span class="toc-range">Câu 51 – 60</span></span></li>
+    <li class="ch-7"><span class="toc-num">7</span><span class="toc-emoji">🛁</span><span class="toc-info"><span class="toc-title">Giờ tắm</span><span class="toc-range">Câu 61 – 70</span></span></li>
+    <li class="ch-8"><span class="toc-num">8</span><span class="toc-emoji">🍽️</span><span class="toc-info"><span class="toc-title">Giờ ăn tối</span><span class="toc-range">Câu 71 – 80</span></span></li>
+    <li class="ch-9"><span class="toc-num">9</span><span class="toc-emoji">📖</span><span class="toc-info"><span class="toc-title">Đọc sách, kể chuyện trước khi ngủ</span><span class="toc-range">Câu 81 – 90</span></span></li>
+    <li class="ch-10"><span class="toc-num">10</span><span class="toc-emoji">🌙</span><span class="toc-info"><span class="toc-title">Chúc con ngủ ngon</span><span class="toc-range">Câu 91 – 100</span></span></li>
+  </ul>
+  <div class="tip-box"><b>Mẹo dùng sách:</b> Mỗi tuần, ba mẹ chọn 1 tình huống, tập trung dùng 3-5 câu trong đó thật tự nhiên trước khi chuyển sang tình huống tiếp theo. Không cần vội, không cần dùng hết 100 câu ngay.</div>
+</div>
+
+<!-- ============ 1. BUỔI SÁNG THỨC DẬY ============ -->
+<div class="page chapter-page ch-1" data-watermark="☀️">
+  <div class="chapter-head">
+    <div class="chapter-icon">🌤️</div>
+    <div>
+      <div class="chapter-sub">Tình huống 1</div>
+      <h2>Buổi sáng thức dậy</h2>
+      <div class="chapter-deco">☀️ 🐣 ⭐</div>
+    </div>
+    <div class="chapter-badge">Câu 1–10</div>
+  </div>
+  <table class="phrase-table">
+    <thead><tr><th>#</th><th>Tiếng Anh</th><th>Nghĩa tiếng Việt</th><th>Phiên âm IPA (từ khoá)</th></tr></thead>
+    <tbody>
+      <tr><td class="num">1</td><td class="eng">Good morning!</td><td class="vi">Chào buổi sáng!</td><td class="pron">morning /ˈmɔːrnɪŋ/</td></tr>
+      <tr><td class="num">2</td><td class="eng">Did you sleep well?</td><td class="vi">Con ngủ có ngon không?</td><td class="pron">sleep /sliːp/</td></tr>
+      <tr><td class="num">3</td><td class="eng">Time to get up!</td><td class="vi">Đến giờ dậy rồi!</td><td class="pron">get up /ɡet ʌp/</td></tr>
+      <tr><td class="num">4</td><td class="eng">Wake up, sweetie.</td><td class="vi">Dậy đi con yêu.</td><td class="pron">sweetie /ˈswiːti/</td></tr>
+      <tr><td class="num">5</td><td class="eng">It's a beautiful morning.</td><td class="vi">Buổi sáng thật đẹp.</td><td class="pron">beautiful /ˈbjuːtɪfl/</td></tr>
+      <tr><td class="num">6</td><td class="eng">Let's open the curtains.</td><td class="vi">Mình cùng mở rèm cửa nhé.</td><td class="pron">curtains /ˈkɜːrtnz/</td></tr>
+      <tr><td class="num">7</td><td class="eng">How are you feeling today?</td><td class="vi">Hôm nay con cảm thấy thế nào?</td><td class="pron">feeling /ˈfiːlɪŋ/</td></tr>
+      <tr><td class="num">8</td><td class="eng">Let's get ready for school.</td><td class="vi">Mình chuẩn bị đi học nhé.</td><td class="pron">ready /ˈredi/</td></tr>
+      <tr><td class="num">9</td><td class="eng">Did you have a nice dream?</td><td class="vi">Con có mơ giấc mơ đẹp không?</td><td class="pron">dream /driːm/</td></tr>
+      <tr><td class="num">10</td><td class="eng">Good morning, my sunshine!</td><td class="vi">Chào buổi sáng, ánh nắng của mẹ/ba!</td><td class="pron">sunshine /ˈsʌnʃaɪn/</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- ============ 2. GIỜ ĂN SÁNG ============ -->
+<div class="page chapter-page ch-2" data-watermark="🍳">
+  <div class="chapter-head">
+    <div class="chapter-icon">🍳</div>
+    <div>
+      <div class="chapter-sub">Tình huống 2</div>
+      <h2>Giờ ăn sáng</h2>
+      <div class="chapter-deco">🥐 🥛 🍓</div>
+    </div>
+    <div class="chapter-badge">Câu 11–20</div>
+  </div>
+  <table class="phrase-table">
+    <thead><tr><th>#</th><th>Tiếng Anh</th><th>Nghĩa tiếng Việt</th><th>Phiên âm IPA (từ khoá)</th></tr></thead>
+    <tbody>
+      <tr><td class="num">11</td><td class="eng">Let's have breakfast.</td><td class="vi">Mình ăn sáng nhé.</td><td class="pron">breakfast /ˈbrekfəst/</td></tr>
+      <tr><td class="num">12</td><td class="eng">What would you like to eat?</td><td class="vi">Con muốn ăn gì?</td><td class="pron">would /wʊd/</td></tr>
+      <tr><td class="num">13</td><td class="eng">Are you hungry?</td><td class="vi">Con có đói không?</td><td class="pron">hungry /ˈhʌŋɡri/</td></tr>
+      <tr><td class="num">14</td><td class="eng">Eat slowly, sweetheart.</td><td class="vi">Con ăn từ từ nhé.</td><td class="pron">slowly /ˈsloʊli/</td></tr>
+      <tr><td class="num">15</td><td class="eng">Do you want some milk?</td><td class="vi">Con có muốn uống sữa không?</td><td class="pron">milk /mɪlk/</td></tr>
+      <tr><td class="num">16</td><td class="eng">This is delicious, isn't it?</td><td class="vi">Món này ngon phải không?</td><td class="pron">delicious /dɪˈlɪʃəs/</td></tr>
+      <tr><td class="num">17</td><td class="eng">Please sit down and eat.</td><td class="vi">Con ngồi xuống ăn nhé.</td><td class="pron">sit down /sɪt daʊn/</td></tr>
+      <tr><td class="num">18</td><td class="eng">Try a little bit more.</td><td class="vi">Con ăn thêm chút nữa nhé.</td><td class="pron">little /ˈlɪtl/</td></tr>
+      <tr><td class="num">19</td><td class="eng">Are you full now?</td><td class="vi">Con no chưa?</td><td class="pron">full /fʊl/</td></tr>
+      <tr><td class="num">20</td><td class="eng">Great job finishing your food!</td><td class="vi">Con ăn hết đồ ăn giỏi quá!</td><td class="pron">finishing /ˈfɪnɪʃɪŋ/</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- ============ 3. ĐÁNH RĂNG, RỬA MẶT, THAY QUẦN ÁO ============ -->
+<div class="page chapter-page ch-3" data-watermark="🪥">
+  <div class="chapter-head">
+    <div class="chapter-icon">🪥</div>
+    <div>
+      <div class="chapter-sub">Tình huống 3</div>
+      <h2>Đánh răng, rửa mặt, thay quần áo</h2>
+      <div class="chapter-deco">🧼 👕 🪞</div>
+    </div>
+    <div class="chapter-badge">Câu 21–30</div>
+  </div>
+  <table class="phrase-table">
+    <thead><tr><th>#</th><th>Tiếng Anh</th><th>Nghĩa tiếng Việt</th><th>Phiên âm IPA (từ khoá)</th></tr></thead>
+    <tbody>
+      <tr><td class="num">21</td><td class="eng">Let's brush your teeth.</td><td class="vi">Mình đánh răng nhé.</td><td class="pron">teeth /tiːθ/</td></tr>
+      <tr><td class="num">22</td><td class="eng">Open your mouth, please.</td><td class="vi">Con há miệng ra nhé.</td><td class="pron">mouth /maʊθ/</td></tr>
+      <tr><td class="num">23</td><td class="eng">Let's wash your face.</td><td class="vi">Mình rửa mặt nhé.</td><td class="pron">wash /wɑːʃ/</td></tr>
+      <tr><td class="num">24</td><td class="eng">Time to get dressed.</td><td class="vi">Đến giờ thay quần áo rồi.</td><td class="pron">dressed /drest/</td></tr>
+      <tr><td class="num">25</td><td class="eng">Which shirt do you want to wear?</td><td class="vi">Con muốn mặc áo nào?</td><td class="pron">wear /wer/</td></tr>
+      <tr><td class="num">26</td><td class="eng">Put on your shoes, please.</td><td class="vi">Con mang giày vào nhé.</td><td class="pron">shoes /ʃuːz/</td></tr>
+      <tr><td class="num">27</td><td class="eng">Don't forget to comb your hair.</td><td class="vi">Đừng quên chải tóc nhé con.</td><td class="pron">comb /koʊm/</td></tr>
+      <tr><td class="num">28</td><td class="eng">You look wonderful today!</td><td class="vi">Hôm nay con thật dễ thương!</td><td class="pron">wonderful /ˈwʌndərfl/</td></tr>
+      <tr><td class="num">29</td><td class="eng">Let's wash your hands.</td><td class="vi">Mình rửa tay nhé.</td><td class="pron">hands /hændz/</td></tr>
+      <tr><td class="num">30</td><td class="eng">Are you ready to go?</td><td class="vi">Con sẵn sàng đi chưa?</td><td class="pron">ready /ˈredi/</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- ============ 4. TRÊN ĐƯỜNG ĐI HỌC ============ -->
+<div class="page chapter-page ch-4" data-watermark="🎒">
+  <div class="chapter-head">
+    <div class="chapter-icon">🎒</div>
+    <div>
+      <div class="chapter-sub">Tình huống 4</div>
+      <h2>Trên đường đi học</h2>
+      <div class="chapter-deco">🚸 🚌 📏</div>
+    </div>
+    <div class="chapter-badge">Câu 31–40</div>
+  </div>
+  <table class="phrase-table">
+    <thead><tr><th>#</th><th>Tiếng Anh</th><th>Nghĩa tiếng Việt</th><th>Phiên âm IPA (từ khoá)</th></tr></thead>
+    <tbody>
+      <tr><td class="num">31</td><td class="eng">Let's go to school.</td><td class="vi">Mình đi học nhé.</td><td class="pron">school /skuːl/</td></tr>
+      <tr><td class="num">32</td><td class="eng">Hold my hand, please.</td><td class="vi">Con nắm tay mẹ/ba nhé.</td><td class="pron">hold /hoʊld/</td></tr>
+      <tr><td class="num">33</td><td class="eng">Look both ways before crossing the street.</td><td class="vi">Con nhìn hai bên trước khi qua đường nhé.</td><td class="pron">crossing /ˈkrɔːsɪŋ/</td></tr>
+      <tr><td class="num">34</td><td class="eng">Have a good day at school!</td><td class="vi">Chúc con một ngày học vui vẻ!</td><td class="pron">day /deɪ/</td></tr>
+      <tr><td class="num">35</td><td class="eng">What are you learning today?</td><td class="vi">Hôm nay con học gì?</td><td class="pron">learning /ˈlɜːrnɪŋ/</td></tr>
+      <tr><td class="num">36</td><td class="eng">I love you. See you later.</td><td class="vi">Mẹ/Ba yêu con. Hẹn gặp lại nhé.</td><td class="pron">later /ˈleɪtər/</td></tr>
+      <tr><td class="num">37</td><td class="eng">Be careful on the road.</td><td class="vi">Con cẩn thận trên đường nhé.</td><td class="pron">careful /ˈkerfl/</td></tr>
+      <tr><td class="num">38</td><td class="eng">We're almost there.</td><td class="vi">Sắp đến nơi rồi.</td><td class="pron">almost /ˈɔːlmoʊst/</td></tr>
+      <tr><td class="num">39</td><td class="eng">Do you have everything you need?</td><td class="vi">Con có mang đủ đồ chưa?</td><td class="pron">everything /ˈevriθɪŋ/</td></tr>
+      <tr><td class="num">40</td><td class="eng">Let's walk together.</td><td class="vi">Mình cùng đi bộ nhé.</td><td class="pron">together /təˈɡeðər/</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- ============ 5. ĐÓN CON TAN HỌC ============ -->
+<div class="page chapter-page ch-5" data-watermark="🚗">
+  <div class="chapter-head">
+    <div class="chapter-icon">🚗</div>
+    <div>
+      <div class="chapter-sub">Tình huống 5</div>
+      <h2>Đón con tan học</h2>
+      <div class="chapter-deco">🤗 🎈 💕</div>
+    </div>
+    <div class="chapter-badge">Câu 41–50</div>
+  </div>
+  <table class="phrase-table">
+    <thead><tr><th>#</th><th>Tiếng Anh</th><th>Nghĩa tiếng Việt</th><th>Phiên âm IPA (từ khoá)</th></tr></thead>
+    <tbody>
+      <tr><td class="num">41</td><td class="eng">Hi! How was school today?</td><td class="vi">Chào con! Hôm nay đi học thế nào?</td><td class="pron">school /skuːl/</td></tr>
+      <tr><td class="num">42</td><td class="eng">I missed you so much.</td><td class="vi">Mẹ/Ba nhớ con lắm.</td><td class="pron">missed /mɪst/</td></tr>
+      <tr><td class="num">43</td><td class="eng">What did you do at school today?</td><td class="vi">Hôm nay con làm gì ở trường?</td><td class="pron">today /təˈdeɪ/</td></tr>
+      <tr><td class="num">44</td><td class="eng">Did you have fun with your friends?</td><td class="vi">Con chơi vui với các bạn không?</td><td class="pron">friends /frendz/</td></tr>
+      <tr><td class="num">45</td><td class="eng">Are you tired?</td><td class="vi">Con có mệt không?</td><td class="pron">tired /ˈtaɪərd/</td></tr>
+      <tr><td class="num">46</td><td class="eng">Let's go home.</td><td class="vi">Mình về nhà nhé.</td><td class="pron">home /hoʊm/</td></tr>
+      <tr><td class="num">47</td><td class="eng">Tell me about your day.</td><td class="vi">Kể mẹ/ba nghe về ngày hôm nay của con đi.</td><td class="pron">tell /tel/</td></tr>
+      <tr><td class="num">48</td><td class="eng">I'm so proud of you.</td><td class="vi">Mẹ/Ba rất tự hào về con.</td><td class="pron">proud /praʊd/</td></tr>
+      <tr><td class="num">49</td><td class="eng">Do you have any homework?</td><td class="vi">Con có bài tập về nhà không?</td><td class="pron">homework /ˈhoʊmwɜːrk/</td></tr>
+      <tr><td class="num">50</td><td class="eng">Let's get in the car.</td><td class="vi">Mình lên xe nhé.</td><td class="pron">car /kɑːr/</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- ============ 6. GIỜ CHƠI CÙNG CON ============ -->
+<div class="page chapter-page ch-6" data-watermark="🧸">
+  <div class="chapter-head">
+    <div class="chapter-icon">🧸</div>
+    <div>
+      <div class="chapter-sub">Tình huống 6</div>
+      <h2>Giờ chơi cùng con</h2>
+      <div class="chapter-deco">🎨 🧩 🎲</div>
+    </div>
+    <div class="chapter-badge">Câu 51–60</div>
+  </div>
+  <table class="phrase-table">
+    <thead><tr><th>#</th><th>Tiếng Anh</th><th>Nghĩa tiếng Việt</th><th>Phiên âm IPA (từ khoá)</th></tr></thead>
+    <tbody>
+      <tr><td class="num">51</td><td class="eng">Let's play together.</td><td class="vi">Mình chơi cùng nhau nhé.</td><td class="pron">play /pleɪ/</td></tr>
+      <tr><td class="num">52</td><td class="eng">What do you want to play?</td><td class="vi">Con muốn chơi gì?</td><td class="pron">want /wɑːnt/</td></tr>
+      <tr><td class="num">53</td><td class="eng">It's your turn now.</td><td class="vi">Đến lượt con rồi.</td><td class="pron">turn /tɜːrn/</td></tr>
+      <tr><td class="num">54</td><td class="eng">Can I play with you?</td><td class="vi">Mẹ/Ba chơi cùng con được không?</td><td class="pron">can /kæn/</td></tr>
+      <tr><td class="num">55</td><td class="eng">You did a great job!</td><td class="vi">Con làm giỏi lắm!</td><td class="pron">great /ɡreɪt/</td></tr>
+      <tr><td class="num">56</td><td class="eng">Let's build a tower.</td><td class="vi">Mình xây một tòa tháp nhé.</td><td class="pron">tower /ˈtaʊər/</td></tr>
+      <tr><td class="num">57</td><td class="eng">Watch me, please.</td><td class="vi">Con nhìn mẹ/ba nè.</td><td class="pron">watch /wɑːtʃ/</td></tr>
+      <tr><td class="num">58</td><td class="eng">That's a wonderful idea!</td><td class="vi">Đó là một ý tưởng tuyệt vời!</td><td class="pron">idea /aɪˈdiːə/</td></tr>
+      <tr><td class="num">59</td><td class="eng">Let's clean up the toys.</td><td class="vi">Mình cùng dọn đồ chơi nhé.</td><td class="pron">toys /tɔɪz/</td></tr>
+      <tr><td class="num">60</td><td class="eng">I'm having so much fun with you.</td><td class="vi">Mẹ/Ba chơi với con vui quá.</td><td class="pron">fun /fʌn/</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- ============ 7. GIỜ TẮM ============ -->
+<div class="page chapter-page ch-7" data-watermark="🛁">
+  <div class="chapter-head">
+    <div class="chapter-icon">🛁</div>
+    <div>
+      <div class="chapter-sub">Tình huống 7</div>
+      <h2>Giờ tắm</h2>
+      <div class="chapter-deco">🫧 🦆 💧</div>
+    </div>
+    <div class="chapter-badge">Câu 61–70</div>
+  </div>
+  <table class="phrase-table">
+    <thead><tr><th>#</th><th>Tiếng Anh</th><th>Nghĩa tiếng Việt</th><th>Phiên âm IPA (từ khoá)</th></tr></thead>
+    <tbody>
+      <tr><td class="num">61</td><td class="eng">It's bath time!</td><td class="vi">Đến giờ tắm rồi!</td><td class="pron">bath /bæθ/</td></tr>
+      <tr><td class="num">62</td><td class="eng">Let's take a bath.</td><td class="vi">Mình đi tắm nhé.</td><td class="pron">bath /bæθ/</td></tr>
+      <tr><td class="num">63</td><td class="eng">Is the water warm enough?</td><td class="vi">Nước ấm vừa chưa con?</td><td class="pron">warm /wɔːrm/</td></tr>
+      <tr><td class="num">64</td><td class="eng">Let's wash your hair.</td><td class="vi">Mình gội đầu nhé.</td><td class="pron">hair /her/</td></tr>
+      <tr><td class="num">65</td><td class="eng">Close your eyes, please.</td><td class="vi">Con nhắm mắt lại nhé.</td><td class="pron">eyes /aɪz/</td></tr>
+      <tr><td class="num">66</td><td class="eng">Don't forget to wash behind your ears.</td><td class="vi">Đừng quên rửa sau tai nhé con.</td><td class="pron">ears /ɪrz/</td></tr>
+      <tr><td class="num">67</td><td class="eng">Let's dry you off.</td><td class="vi">Mình lau khô người nhé.</td><td class="pron">dry /draɪ/</td></tr>
+      <tr><td class="num">68</td><td class="eng">Put on your pajamas.</td><td class="vi">Con mặc đồ ngủ vào nhé.</td><td class="pron">pajamas /pəˈdʒɑːməz/</td></tr>
+      <tr><td class="num">69</td><td class="eng">You smell so nice now!</td><td class="vi">Con thơm quá!</td><td class="pron">smell /smel/</td></tr>
+      <tr><td class="num">70</td><td class="eng">Great job washing yourself!</td><td class="vi">Con tự tắm giỏi lắm!</td><td class="pron">yourself /jɔːrˈself/</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- ============ 8. GIỜ ĂN TỐI ============ -->
+<div class="page chapter-page ch-8" data-watermark="🍽️">
+  <div class="chapter-head">
+    <div class="chapter-icon">🍽️</div>
+    <div>
+      <div class="chapter-sub">Tình huống 8</div>
+      <h2>Giờ ăn tối</h2>
+      <div class="chapter-deco">🍚 🥦 🍇</div>
+    </div>
+    <div class="chapter-badge">Câu 71–80</div>
+  </div>
+  <table class="phrase-table">
+    <thead><tr><th>#</th><th>Tiếng Anh</th><th>Nghĩa tiếng Việt</th><th>Phiên âm IPA (từ khoá)</th></tr></thead>
+    <tbody>
+      <tr><td class="num">71</td><td class="eng">Let's have dinner.</td><td class="vi">Mình ăn tối nhé.</td><td class="pron">dinner /ˈdɪnər/</td></tr>
+      <tr><td class="num">72</td><td class="eng">Wash your hands before dinner.</td><td class="vi">Con rửa tay trước khi ăn tối nhé.</td><td class="pron">before /bɪˈfɔːr/</td></tr>
+      <tr><td class="num">73</td><td class="eng">What would you like to eat tonight?</td><td class="vi">Tối nay con muốn ăn gì?</td><td class="pron">tonight /təˈnaɪt/</td></tr>
+      <tr><td class="num">74</td><td class="eng">Please put your napkin on your lap.</td><td class="vi">Con để khăn ăn lên đùi nhé.</td><td class="pron">napkin /ˈnæpkɪn/</td></tr>
+      <tr><td class="num">75</td><td class="eng">Can you pass me the spoon?</td><td class="vi">Con đưa mẹ/ba cái muỗng được không?</td><td class="pron">spoon /spuːn/</td></tr>
+      <tr><td class="num">76</td><td class="eng">Let's say thank you for the food.</td><td class="vi">Mình cảm ơn vì bữa ăn nhé.</td><td class="pron">thank /θæŋk/</td></tr>
+      <tr><td class="num">77</td><td class="eng">Do you want more vegetables?</td><td class="vi">Con muốn ăn thêm rau không?</td><td class="pron">vegetables /ˈvedʒtəblz/</td></tr>
+      <tr><td class="num">78</td><td class="eng">You're eating so well tonight!</td><td class="vi">Tối nay con ăn ngoan quá!</td><td class="pron">eating /ˈiːtɪŋ/</td></tr>
+      <tr><td class="num">79</td><td class="eng">Let's clear the table together.</td><td class="vi">Mình cùng dọn bàn nhé.</td><td class="pron">table /ˈteɪbl/</td></tr>
+      <tr><td class="num">80</td><td class="eng">Are you ready for dessert?</td><td class="vi">Con sẵn sàng ăn tráng miệng chưa?</td><td class="pron">dessert /dɪˈzɜːrt/</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- ============ 9. ĐỌC SÁCH, KỂ CHUYỆN TRƯỚC KHI NGỦ ============ -->
+<div class="page chapter-page ch-9" data-watermark="📖">
+  <div class="chapter-head">
+    <div class="chapter-icon">📖</div>
+    <div>
+      <div class="chapter-sub">Tình huống 9</div>
+      <h2>Đọc sách, kể chuyện trước khi ngủ</h2>
+      <div class="chapter-deco">🦋 🐰 ✨</div>
+    </div>
+    <div class="chapter-badge">Câu 81–90</div>
+  </div>
+  <table class="phrase-table">
+    <thead><tr><th>#</th><th>Tiếng Anh</th><th>Nghĩa tiếng Việt</th><th>Phiên âm IPA (từ khoá)</th></tr></thead>
+    <tbody>
+      <tr><td class="num">81</td><td class="eng">Let's read a book together.</td><td class="vi">Mình cùng đọc sách nhé.</td><td class="pron">book /bʊk/</td></tr>
+      <tr><td class="num">82</td><td class="eng">Which book do you want to read?</td><td class="vi">Con muốn đọc cuốn nào?</td><td class="pron">read /riːd/</td></tr>
+      <tr><td class="num">83</td><td class="eng">Once upon a time...</td><td class="vi">Ngày xửa ngày xưa...</td><td class="pron">once /wʌns/</td></tr>
+      <tr><td class="num">84</td><td class="eng">What happens next?</td><td class="vi">Chuyện gì xảy ra tiếp theo nhỉ?</td><td class="pron">happens /ˈhæpənz/</td></tr>
+      <tr><td class="num">85</td><td class="eng">Do you like this story?</td><td class="vi">Con có thích câu chuyện này không?</td><td class="pron">story /ˈstɔːri/</td></tr>
+      <tr><td class="num">86</td><td class="eng">Let's turn the page.</td><td class="vi">Mình lật trang nhé.</td><td class="pron">page /peɪdʒ/</td></tr>
+      <tr><td class="num">87</td><td class="eng">Who is your favorite character?</td><td class="vi">Nhân vật con thích nhất là ai?</td><td class="pron">character /ˈkærəktər/</td></tr>
+      <tr><td class="num">88</td><td class="eng">This is the last page.</td><td class="vi">Đây là trang cuối rồi.</td><td class="pron">last /læst/</td></tr>
+      <tr><td class="num">89</td><td class="eng">Shall we read one more page?</td><td class="vi">Mình đọc thêm một trang nữa nhé?</td><td class="pron">shall /ʃæl/</td></tr>
+      <tr><td class="num">90</td><td class="eng">Let's put the book away.</td><td class="vi">Mình cất sách lại nhé.</td><td class="pron">away /əˈweɪ/</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- ============ 10. CHÚC CON NGỦ NGON ============ -->
+<div class="page chapter-page ch-10" data-watermark="🌙">
+  <div class="chapter-head">
+    <div class="chapter-icon">🌙</div>
+    <div>
+      <div class="chapter-sub">Tình huống 10</div>
+      <h2>Chúc con ngủ ngon</h2>
+      <div class="chapter-deco">⭐ 🧸 💤</div>
+    </div>
+    <div class="chapter-badge">Câu 91–100</div>
+  </div>
+  <table class="phrase-table">
+    <thead><tr><th>#</th><th>Tiếng Anh</th><th>Nghĩa tiếng Việt</th><th>Phiên âm IPA (từ khoá)</th></tr></thead>
+    <tbody>
+      <tr><td class="num">91</td><td class="eng">It's time for bed.</td><td class="vi">Đến giờ đi ngủ rồi.</td><td class="pron">bed /bed/</td></tr>
+      <tr><td class="num">92</td><td class="eng">Sweet dreams, my love.</td><td class="vi">Chúc con có giấc mơ đẹp nhé.</td><td class="pron">dreams /driːmz/</td></tr>
+      <tr><td class="num">93</td><td class="eng">Good night, sleep tight.</td><td class="vi">Ngủ ngon nhé con.</td><td class="pron">tight /taɪt/</td></tr>
+      <tr><td class="num">94</td><td class="eng">I love you to the moon and back.</td><td class="vi">Mẹ/Ba yêu con nhiều lắm.</td><td class="pron">moon /muːn/</td></tr>
+      <tr><td class="num">95</td><td class="eng">Close your eyes now.</td><td class="vi">Con nhắm mắt lại nhé.</td><td class="pron">close /kloʊz/</td></tr>
+      <tr><td class="num">96</td><td class="eng">Tomorrow is a new day.</td><td class="vi">Ngày mai lại là một ngày mới.</td><td class="pron">tomorrow /təˈmɑːroʊ/</td></tr>
+      <tr><td class="num">97</td><td class="eng">I'll be right here.</td><td class="vi">Mẹ/Ba ở ngay đây thôi.</td><td class="pron">here /hɪr/</td></tr>
+      <tr><td class="num">98</td><td class="eng">You are safe and loved.</td><td class="vi">Con luôn được an toàn và yêu thương.</td><td class="pron">safe /seɪf/</td></tr>
+      <tr><td class="num">99</td><td class="eng">See you in the morning.</td><td class="vi">Sáng mai gặp lại con nhé.</td><td class="pron">morning /ˈmɔːrnɪŋ/</td></tr>
+      <tr><td class="num">100</td><td class="eng">Good night, sweetheart.</td><td class="vi">Chúc con ngủ ngon, con yêu.</td><td class="pron">sweetheart /ˈswiːthɑːrt/</td></tr>
+    </tbody>
+  </table>
+  <div class="tip-box"><b>Gợi ý:</b> Ba mẹ có thể chọn 2-3 câu trong tình huống này để lặp lại thành "nghi thức" trước giờ ngủ mỗi tối — sự lặp lại đều đặn chính là chìa khóa giúp con ghi nhớ tự nhiên.</div>
+</div>
+
+<!-- ============ TRANG KẾT ============ -->
+<div class="page closing-page">
+  <div class="section-eyebrow">Lời kết</div>
+  <h2>Hành trình 100 câu nói — bắt đầu từ hôm nay</h2>
+  <p>Cảm ơn ba mẹ đã đồng hành cùng tôi hết 100 câu giao tiếp này. Đừng áp lực phải nhớ hết hay dùng đúng ngay từ đầu — chỉ cần mỗi ngày nói với con một câu, đều đặn, bằng tình yêu thương, con sẽ dần quen với âm thanh Tiếng Anh như một phần tự nhiên của cuộc sống, giống như cách con học tiếng mẹ đẻ vậy.</p>
+  <p>Tôi tin rằng, món quà lớn nhất ba mẹ có thể trao cho con không phải là sự hoàn hảo, mà là sự đồng hành kiên trì mỗi ngày.</p>
+
+  <div class="about-box">
+    <h3>Về Camkey English</h3>
+    <p style="margin:0 0 10px;">Camkey English là trung tâm Anh ngữ dành cho trẻ em, được sáng lập bởi Mai Thị Thơm với hơn 12 năm kinh nghiệm giáo dục. Chúng tôi tin rằng mỗi đứa trẻ đều có thể yêu thích Tiếng Anh khi được học trong một môi trường vui vẻ, tích cực và đầy cảm hứng — bắt đầu từ chính mái ấm của con.</p>
+    <p style="margin:0;">Nếu ba mẹ muốn con được đồng hành bài bản hơn cùng đội ngũ giáo viên giàu kinh nghiệm của Camkey English, đừng ngần ngại liên hệ với chúng tôi.</p>
+  </div>
+
+  <div class="contact-grid">
+    <div class="contact-item"><span>Hotline</span>0924 135 222</div>
+    <div class="contact-item"><span>Email</span>camkeyenglish@gmail.com</div>
+    <div class="contact-item"><span>Website</span>maithom.vn</div>
+  </div>
+
+  <div class="footer-note">
+    <p style="margin:0;"><span class="brand-mark">Mai <span class="dot">Thơm</span></span> — Truyền cảm hứng giáo dục hạnh phúc</p>
+    <p style="margin:6px 0 0;">© 2026 Mai Thơm · Camkey English. All rights reserved.</p>
+  </div>
+</div>
+
+</body>
+</html>

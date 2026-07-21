@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Giao tiếp Tiếng Anh gia đình — 8 tình huống mỗi ngày — Mai Thơm &amp; Camkey English</title>
+<meta name="description" content="File luyện tập miễn phí: 8 kịch bản hội thoại Tiếng Anh gia đình đơn giản giữa ba mẹ và con, kèm nghĩa tiếng Việt, in được khổ A4.">
+<style>
+  :root{
+    --terracotta:#D96C4A;
+    --navy:#1D3557;
+    --gold:#F2B134;
+    --cream:#FFF8F0;
+    --cream-dark:#FBEEE0;
+    --ink:#1a1a1a;
+    --line:#e3d5c4;
+  }
+
+  *{ box-sizing: border-box; }
+
+  html, body{
+    margin:0;
+    padding:0;
+    background:#f2ede7;
+    color:var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+  }
+
+  .page{
+    max-width: 860px;
+    margin: 24px auto;
+    background: var(--cream);
+    padding: 40px 44px 32px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+    border-top: 6px solid var(--terracotta);
+  }
+
+  /* ---------- Header ---------- */
+  .doc-header{
+    text-align:center;
+    margin-bottom: 26px;
+    padding-bottom: 18px;
+    border-bottom: 2px solid var(--navy);
+  }
+
+  .kicker{
+    display:inline-block;
+    font-size: 12px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--terracotta);
+    font-weight: 700;
+    margin-bottom: 8px;
+  }
+
+  h1{
+    font-size: 25px;
+    line-height: 1.3;
+    margin: 0 0 8px;
+    color: var(--navy);
+    font-weight: 800;
+    letter-spacing: 0.3px;
+  }
+
+  .subtitle{
+    font-size: 14px;
+    color: #555;
+    margin: 0;
+    font-style: italic;
+  }
+
+  .meta-row{
+    display:flex;
+    justify-content:center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 14px;
+    font-size: 12.5px;
+    color: var(--navy);
+  }
+
+  .meta-row span{
+    border: 1px solid var(--navy);
+    border-radius: 20px;
+    padding: 3px 12px;
+    white-space: nowrap;
+  }
+
+  /* ---------- Intro note ---------- */
+  .intro-note{
+    margin: 0 0 22px;
+    text-align:center;
+    font-size: 12.8px;
+    color: var(--navy);
+    border: 1.5px dashed var(--gold);
+    border-radius: 8px;
+    padding: 10px 16px;
+    background: #fffdf7;
+    line-height: 1.55;
+  }
+
+  /* ---------- Scenario cards ---------- */
+  .scenario{
+    background: #ffffff;
+    border: 1.5px solid var(--line);
+    border-radius: 12px;
+    padding: 18px 22px 16px;
+    margin-bottom: 18px;
+    break-inside: avoid;
+  }
+
+  .scenario-header{
+    display:flex;
+    align-items:center;
+    gap: 10px;
+    margin: 0 0 12px;
+    padding-bottom: 8px;
+    border-bottom: 1.5px solid var(--terracotta);
+  }
+
+  .scenario-icon{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    width: 32px;
+    height: 32px;
+    min-width: 32px;
+    border-radius: 50%;
+    background: var(--cream-dark);
+    font-size: 17px;
+  }
+
+  .scenario-title-wrap{
+    flex: 1 1 auto;
+  }
+
+  .scenario-num{
+    font-size: 10.5px;
+    font-weight: 700;
+    color: var(--terracotta);
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    margin: 0;
+  }
+
+  .scenario-title{
+    font-size: 16.5px;
+    font-weight: 800;
+    color: var(--navy);
+    margin: 1px 0 0;
+  }
+
+  .dialogue{
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+  }
+
+  .line{
+    display:flex;
+    gap: 10px;
+    align-items: flex-start;
+  }
+
+  .line .speaker{
+    flex: 0 0 auto;
+    width: 44px;
+    font-size: 11.5px;
+    font-weight: 800;
+    padding: 3px 0;
+    text-align:center;
+    border-radius: 6px;
+    color: #fff;
+    margin-top: 1px;
+  }
+
+  .line.mom .speaker, .line.dad .speaker{
+    background: var(--navy);
+  }
+
+  .line.child .speaker{
+    background: var(--terracotta);
+  }
+
+  .line .bubble{
+    flex: 1 1 auto;
+    background: var(--cream-dark);
+    border-radius: 8px;
+    padding: 7px 12px;
+  }
+
+  .line.child .bubble{
+    background: #fdf1ea;
+  }
+
+  .line .en{
+    font-weight: 700;
+    font-size: 13.6px;
+    color: var(--ink);
+    margin: 0 0 2px;
+  }
+
+  .line .vi{
+    font-style: italic;
+    font-size: 11.8px;
+    color: #6b6b6b;
+    margin: 0;
+  }
+
+  /* ---------- Vocabulary strip ---------- */
+  .vocab{
+    margin-top: 12px;
+    padding-top: 10px;
+    border-top: 1px dashed var(--line);
+    font-size: 11.3px;
+    color: var(--navy);
+  }
+
+  .vocab b{
+    color: var(--terracotta);
+  }
+
+  /* ---------- Section divider for print pacing ---------- */
+  .page-break{
+    break-before: page;
+  }
+
+  /* ---------- Tips box ---------- */
+  .tips-box{
+    background: var(--cream-dark);
+    border-radius: 10px;
+    padding: 16px 20px;
+    margin-top: 6px;
+    margin-bottom: 20px;
+    break-inside: avoid;
+  }
+
+  .tips-box h2{
+    font-size: 14.5px;
+    color: var(--navy);
+    margin: 0 0 8px;
+  }
+
+  .tips-box ul{
+    margin: 0;
+    padding-left: 18px;
+    font-size: 12px;
+    line-height: 1.6;
+    color: var(--ink);
+  }
+
+  /* ---------- Footer ---------- */
+  .doc-footer{
+    margin-top: 20px;
+    padding-top: 14px;
+    border-top: 2px solid var(--navy);
+    text-align:center;
+  }
+
+  .doc-footer .cta{
+    font-size: 13px;
+    color: var(--terracotta);
+    font-weight: 700;
+    margin: 0 0 4px;
+  }
+
+  .doc-footer .brand{
+    font-size: 13px;
+    color: var(--navy);
+    font-weight: 700;
+    margin: 0;
+  }
+
+  .doc-footer .tiny{
+    font-size: 11px;
+    color: #888;
+    margin-top: 6px;
+  }
+
+  /* ---------- Screen-only print button ---------- */
+  .print-bar{
+    max-width: 860px;
+    margin: 16px auto 0;
+    text-align: right;
+  }
+
+  .print-btn{
+    background: var(--terracotta);
+    color:#fff;
+    border:none;
+    padding: 10px 22px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 700;
+    cursor:pointer;
+    box-shadow: 0 2px 8px rgba(217,108,74,0.35);
+  }
+
+  .print-btn:hover{
+    background: #c25a3a;
+  }
+
+  /* ================= PRINT ================= */
+  @page{
+    size: A4;
+    margin: 1.5cm;
+  }
+
+  @media print{
+    *{
+      -webkit-print-color-adjust:exact !important;
+      print-color-adjust:exact !important;
+      color-adjust:exact !important;
+    }
+    html, body{
+      background:#fff;
+    }
+    .print-bar{
+      display:none;
+    }
+    .page{
+      max-width: 100%;
+      margin: 0;
+      padding: 0;
+      box-shadow: none;
+      border-top: 4px solid var(--terracotta);
+      background: #fff;
+    }
+    .scenario{
+      break-inside: avoid;
+      border-color: #d8d8d8;
+    }
+    a{
+      color: inherit;
+      text-decoration: none;
+    }
+  }
+</style>
+</head>
+<body>
+
+<div class="print-bar">
+  <button class="print-btn" onclick="window.print()">In / Lưu thành PDF</button>
+</div>
+
+<div class="page">
+
+  <div class="doc-header">
+    <span class="kicker">Tài nguyên miễn phí</span>
+    <h1>GIAO TIẾP TIẾNG ANH GIA ĐÌNH<br>8 TÌNH HUỐNG MỖI NGÀY</h1>
+    <p class="subtitle">Mai Thơm &amp; Camkey English</p>
+    <div class="meta-row">
+      <span>👨‍👩‍👧 Dành cho ba mẹ có con 5–6 tuổi</span>
+      <span>💬 8 kịch bản hội thoại</span>
+      <span>🗣️ Câu đơn giản, dễ đọc theo</span>
+    </div>
+  </div>
+
+  <p class="intro-note">💛 Ba mẹ không cần giỏi Tiếng Anh — chỉ cần đọc theo câu in đậm, nghĩa tiếng Việt đã có sẵn ngay bên dưới. Mỗi ngày chọn 1-2 tình huống, lặp lại đều đặn trong 1 tuần trước khi chuyển sang tình huống mới.</p>
+
+  <!-- 1. BUỔI SÁNG THỨC DẬY -->
+  <div class="scenario">
+    <div class="scenario-header">
+      <span class="scenario-icon">☀️</span>
+      <div class="scenario-title-wrap">
+        <p class="scenario-num">Tình huống 1</p>
+        <p class="scenario-title">Buổi sáng thức dậy</p>
+      </div>
+    </div>
+    <div class="dialogue">
+      <div class="line mom">
+        <span class="speaker">Mẹ</span>
+        <div class="bubble">
+          <p class="en">Good morning, sweetie! Time to wake up.</p>
+          <p class="vi">Chào buổi sáng con yêu! Đến giờ dậy rồi.</p>
+        </div>
+      </div>
+      <div class="line child">
+        <span class="speaker">Con</span>
+        <div class="bubble">
+          <p class="en">Good morning, Mom. I'm still sleepy.</p>
+          <p class="vi">Chào buổi sáng mẹ. Con vẫn còn buồn ngủ.</p>
+        </div>
+      </div>
+      <div class="line mom">
+        <span class="speaker">Mẹ</span>
+        <div class="bubble">
+          <p class="en">Let's stretch your arms and legs.</p>
+          <p class="vi">Mình cùng duỗi tay chân một chút nào.</p>
+        </div>
+      </div>
+      <div class="line child">
+        <span class="speaker">Con</span>
+        <div class="bubble">
+          <p class="en">Okay! I'm getting up now.</p>
+          <p class="vi">Vâng ạ! Con dậy đây.</p>
+        </div>
+      </div>
+      <div class="line mom">
+        <span class="speaker">Mẹ</span>
+        <div class="bubble">
+          <p class="en">Great job! Go wash your face, please.</p>
+          <p class="vi">Giỏi lắm! Con đi rửa mặt nhé.</p>
+        </div>
+      </div>
+      <div class="line child">
+        <span class="speaker">Con</span>
+        <div class="bubble">
+          <p class="en">Yes, Mom. I'll brush my teeth too.</p>
+          <p class="vi">Vâng mẹ. Con sẽ đánh răng nữa ạ.</p>
+        </div>
+      </div>
+      <div class="line mom">
+        <span class="speaker">Mẹ</span>
+        <div class="bubble">
+          <p class="en">Perfect. How do you feel today?</p>
+          <p class="vi">Tuyệt vời. Hôm nay con cảm thấy thế nào?</p>
+        </div>
+      </div>
+      <div class="line child">
+        <span class="speaker">Con</span>
+        <div class="bubble">
+          <p class="en">I feel happy and ready for school.</p>
+          <p class="vi">Con thấy vui và sẵn sàng đi học ạ.</p>
+        </div>
+      </div>
+    </div>
+    <div class="vocab"><b>Từ vựng cần nhớ:</b> wake up (thức dậy) · sleepy (buồn ngủ) · stretch (duỗi người) · brush my teeth (đánh răng) · ready (sẵn sàng)</div>
+  </div>
+
+  <!-- 2. GIỜ ĂN SÁNG -->
+  <div class="scenario">
+    <div class="scenario-header">
+      <span class="scenario-icon">🥣</span>
+      <div class="scenario-title-wrap">
+        <p class="scenario-num">Tình huống 2</p>
+        <p class="scenario-title">Giờ ăn sáng</p>
+      </div>
+    </div>
+    <div class="dialogue">
+      <div class="line dad">
+        <span class="speaker">Ba</span>
+        <div class="bubble">
+          <p class="en">Breakfast is ready. Come sit down.</p>
+          <p class="vi">Bữa sáng xong rồi. Con lại ngồi vào bàn nào.</p>
+        </div>
+      </div>
+      <div class="line child">
+        <span class="speaker">Con</span>
+        <div class="bubble">
+          <p class="en">Yay! What are we eating today?</p>
+          <p class="vi">Yay! Hôm nay mình ăn gì vậy ba?</p>
+        </div>
+      </div>
+      <div class="line dad">
+        <span class="speaker">Ba</span>
+        <div class="bubble">
+          <p class="en">We have eggs and bread. Do you like it?</p>
+          <p class="vi">Mình có trứng và bánh mì. Con có thích không?</p>
+        </div>
+      </div>
+      <div class="line child">
+        <span class="speaker">Con</span>
+        <div class="bubble">
+          <p class="en">Yes, I like eggs very much!</p>
+          <p class="vi">Dạ có, con thích trứng lắm ạ!</p>
+        </div>
+      </div>
+      <div class="line dad">
+        <span class="speaker">Ba</span>
+        <div class="bubble">
+          <p class="en">Would you like some milk too?</p>
+          <p class="vi">Con có muốn uống thêm sữa không?</p>
+        </div>
+      </div>
+      <div class="line child">
+        <span class="speaker">Con</span>
+        <div class="bubble">
+          <p class="en">Yes, please. May I have some water too?</p>
+          <p class="vi">Dạ có ạ. Con xin thêm nước được không ba?</p>
+        </div>
+      </div>
+      <div class="line dad">
+        <span class="speaker">Ba</span>
+        <div class="bubble">
+          <p class="en">Of course. Eat slowly, okay?</p>
+          <p class="vi">Được chứ. Con ăn từ từ nhé?</p>
+        </div>
+      </div>
+      <div class="line child">
+        <span class="speaker">Con</span>
+        <div class="bubble">
+          <p class="en">Okay, Dad. Thank you for the food!</p>
+          <p class="vi">Vâng ạ ba. Con cảm ơn bữa ăn ạ!</p>
+        </div>
+      </div>
+    </div>
+    <div class="vocab"><b>Từ vựng cần nhớ:</b> breakfast (bữa sáng) · eggs (trứng) · bread (bánh mì) · milk (sữa) · slowly (từ từ)</div>
+  </div>
+
+  <!-- 3. CHUẨN BỊ ĐI HỌC -->
+  <div class="scenario">
+    <div class="scenario-header">
+      <span class="scenario-icon">🎒</span>
+      <div class="scenario-title-wrap">
+        <p class="scenario-num">Tình huống 3</p>
+        <p class="scenario-title">Chuẩn bị đi học</p>
+      </div>
+    </div>
+    <div class="dialogue">
+      <div class="line mom">
+        <span class="speaker">Mẹ</span>
+        <div class="bubble">
+          <p class="en">It's time for school. Where is your bag?</p>
+          <p class="vi">Đến giờ đi học rồi. Cặp sách của con đâu rồi?</p>
+        </div>
+      </div>
+      <div class="line child">
+        <span class="speaker">Con</span>
+        <div class="bubble">
+          <p class="en">It's here, Mom. I packed it last night.</p>
+          <p class="vi">Nó đây ạ mẹ. Con đã soạn từ tối qua rồi.</p>
+        </div>
+      </div>
+      <div class="line mom">
+        <span class="speaker">Mẹ</span>
+        <div class="bubble">
+          <p class="en">Good job! Put on your shoes now.</p>
+          <p class="vi">Giỏi lắm! Giờ con đi giày vào nào.</p>
+        </div>
+      </div>
+      <div class="line child">
+        <span class="speaker">Con</span>
+        <div class="bubble">
+          <p class="en">I'm putting them on. Can you help me, please?</p>
+          <p class="vi">Con đang đi giày. Mẹ giúp con với được không?</p>
+        </div>
+      </div>
+      <div class="line mom">
+        <span class="speaker">Mẹ</span>
+        <div class="bubble">
+          <p class="en">Sure. Do you have your water bottle?</p>
+          <p class="vi">Được rồi. Con có mang bình nước chưa?</p>
+        </div>
+      </div>
+      <div class="line child">
+        <span class="speaker">Con</span>
+        <div class="bubble">
+          <p class="en">Yes, it's in my bag. I'm ready to go!</p>
+          <p class="vi">Dạ có ạ, nó trong cặp rồi. Con sẵn sàng đi rồi!</p>
+        </div>
+      </div>
+      <div class="line mom">
+        <span class="speaker">Mẹ</span>
+        <div class="bubble">
+          <p class="en">Have a nice day at school!</p>
+          <p class="vi">Chúc con có một ngày học vui vẻ!</p>
+        </div>
+      </div>
+      <div class="line child">
+        <span class="speaker">Con</span>
+        <div class="bubble">
+          <p class="en">Thank you, Mom. Bye-bye, see you later!</p>
+          <p class="vi">Con cảm ơn mẹ. Bye mẹ, chiều gặp lại ạ!</p>
+        </div>
+      </div>
+    </div>
+    <div class="vocab"><b>Từ vựng cần nhớ:</b> school bag (cặp sách) · shoes (giày) · water bottle (bình nước) · ready (sẵn sàng) · see you later (hẹn gặp lại)</div>
+  </div>
+
+  <!-- 4. ĐÓN CON TAN HỌC -->
+  <div class="scenario">
+    <div class="scenario-header">
+      <span class="scenario-icon">🚸</span>
+      <div class="scenario-title-wrap">
+        <p class="scenario-num">Tình huống 4</p>
+        <p class="scenario-title">Đón con tan học</p>
+      </div>
+    </div>
+    <div class="dialogue">
+      <div class="line mom">
+        <span class="speaker">Mẹ</span>
+        <div class="bubble">
+          <p class="en">Hi, my love! How was school today?</p>
+          <p class="vi">Chào con yêu! Hôm nay đi học thế nào?</p>
+        </div>
+      </div>
+      <div class="line child">
+        <span class="speaker">Con</span>
+        <div class="bubble">
+          <p class="en">It was fun! I played with my friends.</p>
+          <p class="vi">Vui lắm ạ! Con chơi với các bạn.</p>
+        </div>
+      </div>
+      <div class="line mom">
+        <span class="speaker">Mẹ</span>
+        <div class="bubble">
+          <p class="en">That's great! What did you learn today?</p>
+          <p class="vi">Tuyệt quá! Hôm nay con học được gì?</p>
+        </div>
+      </div>
+      <div class="line child">
+        <span class="speaker">Con</span>
+        <div class="bubble">
+          <p class="en">I learned a new song in English class.</p>
+          <p class="vi">Con học được một bài hát mới trong giờ Tiếng Anh.</p>
+        </div>
+      </div>
+      <div class="line mom">
+        <span class="speaker">Mẹ</span>
+        <div class="bubble">
+          <p class="en">Wow, can you sing it for me later?</p>
+          <p class="vi">Wow, lát nữa con hát cho mẹ nghe được không?</p>
+        </div>
+      </div>
+      <div class="line child">
+        <span class="speaker">Con</span>
+        <div class="bubble">
+          <p class="en">Yes! And I'm a little hungry now.</p>
+          <p class="vi">Dạ được! Với lại giờ con hơi đói ạ.</p>
+        </div>
+      </div>
+      <div class="line mom">
+        <span class="speaker">Mẹ</span>
+        <div class="bubble">
+          <p class="en">Let's go home and have a snack.</p>
+          <p class="vi">Mình về nhà ăn nhẹ một chút nhé.</p>
+        </div>
+      </div>
+    </div>
+    <div class="vocab"><b>Từ vựng cần nhớ:</b> fun (vui) · friends (bạn bè) · learn (học) · hungry (đói) · snack (đồ ăn nhẹ)</div>
+  </div>
+
+  <!-- 5. GIỜ CHƠI CÙNG NHAU -->
+  <div class="scenario page-break">
+    <div class="scenario-header">
+      <span class="scenario-icon">🧩</span>
+      <div class="scenario-title-wrap">
+        <p class="scenario-num">Tình huống 5</p>
+        <p class="scenario-title">Giờ chơi cùng nhau</p>
+      </div>
+    </div>
+    <div class="dialogue">
+      <div class="line dad">
+        <span class="speaker">Ba</span>
+        <div class="bubble">
+          <p class="en">Do you want to play a game with me?</p>
+          <p class="vi">Con có muốn chơi trò gì đó cùng ba không?</p>
+        </div>
+      </div>
+      <div class="line child">
+        <span class="speaker">Con</span>
+        <div class="bubble">
+          <p class="en">Yes! Let's play with building blocks.</p>
+          <p class="vi">Dạ có! Mình chơi xếp hình đi ba.</p>
+        </div>
+      </div>
+      <div class="line dad">
+        <span class="speaker">Ba</span>
+        <div class="bubble">
+          <p class="en">Good idea. What are we building today?</p>
+          <p class="vi">Ý hay đấy. Hôm nay mình xây gì nào?</p>
+        </div>
+      </div>
+      <div class="line child">
+        <span class="speaker">Con</span>
+        <div class="bubble">
+          <p class="en">Let's build a big house together.</p>
+          <p class="vi">Mình cùng xây một ngôi nhà thật to đi ba.</p>
+        </div>
+      </div>
+      <div class="line dad">
+        <span class="speaker">Ba</span>
+        <div class="bubble">
+          <p class="en">Okay. Can you pass me the red block?</p>
+          <p class="vi">Được rồi. Con đưa ba miếng ghép màu đỏ với.</p>
+        </div>
+      </div>
+      <div class="line child">
+        <span class="speaker">Con</span>
+        <div class="bubble">
+          <p class="en">Here you are! This is so much fun.</p>
+          <p class="vi">Đây ạ ba! Chơi cái này vui thật đấy.</p>
+        </div>
+      </div>
+      <div class="line dad">
+        <span class="speaker">Ba</span>
+        <div class="bubble">
+          <p class="en">I agree. We make a great team!</p>
+          <p class="vi">Ba cũng thấy vậy. Hai ba con mình là một đội tuyệt vời!</p>
+        </div>
+      </div>
+    </div>
+    <div class="vocab"><b>Từ vựng cần nhớ:</b> play a game (chơi trò chơi) · building blocks (khối xếp hình) · build (xây) · pass me (đưa cho ba/mẹ) · team (đội)</div>
+  </div>
+
+  <!-- 6. GIỜ TẮM -->
+  <div class="scenario">
+    <div class="scenario-header">
+      <span class="scenario-icon">🛁</span>
+      <div class="scenario-title-wrap">
+        <p class="scenario-num">Tình huống 6</p>
+        <p class="scenario-title">Giờ tắm</p>
+      </div>
+    </div>
+    <div class="dialogue">
+      <div class="line mom">
+        <span class="speaker">Mẹ</span>
+        <div class="bubble">
+          <p class="en">It's bath time now. Let's go upstairs.</p>
+          <p class="vi">Đến giờ tắm rồi. Mình lên nhà tắm nào.</p>
+        </div>
+      </div>
+      <div class="line child">
+        <span class="speaker">Con</span>
+        <div class="bubble">
+          <p class="en">Okay, Mom. Is the water warm?</p>
+          <p class="vi">Vâng ạ mẹ. Nước có ấm không mẹ?</p>
+        </div>
+      </div>
+      <div class="line mom">
+        <span class="speaker">Mẹ</span>
+        <div class="bubble">
+          <p class="en">Yes, it's warm and just right for you.</p>
+          <p class="vi">Có, nước ấm và vừa vặn cho con đấy.</p>
+        </div>
+      </div>
+      <div class="line child">
+        <span class="speaker">Con</span>
+        <div class="bubble">
+          <p class="en">I want to play with my toy duck.</p>
+          <p class="vi">Con muốn chơi với con vịt đồ chơi ạ.</p>
+        </div>
+      </div>
+      <div class="line mom">
+        <span class="speaker">Mẹ</span>
+        <div class="bubble">
+          <p class="en">Sure. First, let's wash your hair.</p>
+          <p class="vi">Được rồi. Trước tiên mình gội đầu đã nhé.</p>
+        </div>
+      </div>
+      <div class="line child">
+        <span class="speaker">Con</span>
+        <div class="bubble">
+          <p class="en">Okay, please close my eyes gently.</p>
+          <p class="vi">Vâng ạ, mẹ nhẹ nhàng che mắt con nhé.</p>
+        </div>
+      </div>
+      <div class="line mom">
+        <span class="speaker">Mẹ</span>
+        <div class="bubble">
+          <p class="en">I will. All done! You smell so nice now.</p>
+          <p class="vi">Mẹ nhẹ tay đây. Xong rồi! Con thơm ghê luôn.</p>
+        </div>
+      </div>
+    </div>
+    <div class="vocab"><b>Từ vựng cần nhớ:</b> bath time (giờ tắm) · warm (ấm) · toy duck (vịt đồ chơi) · wash your hair (gội đầu) · gently (nhẹ nhàng)</div>
+  </div>
+
+  <!-- 7. GIỜ ĂN TỐI -->
+  <div class="scenario">
+    <div class="scenario-header">
+      <span class="scenario-icon">🍽️</span>
+      <div class="scenario-title-wrap">
+        <p class="scenario-num">Tình huống 7</p>
+        <p class="scenario-title">Giờ ăn tối</p>
+      </div>
+    </div>
+    <div class="dialogue">
+      <div class="line dad">
+        <span class="speaker">Ba</span>
+        <div class="bubble">
+          <p class="en">Dinner is ready! Let's eat together.</p>
+          <p class="vi">Bữa tối xong rồi! Cả nhà mình cùng ăn nào.</p>
+        </div>
+      </div>
+      <div class="line child">
+        <span class="speaker">Con</span>
+        <div class="bubble">
+          <p class="en">It smells so good! I'm very hungry.</p>
+          <p class="vi">Thơm quá ạ! Con đói bụng lắm rồi.</p>
+        </div>
+      </div>
+      <div class="line dad">
+        <span class="speaker">Ba</span>
+        <div class="bubble">
+          <p class="en">Do you want some vegetables too?</p>
+          <p class="vi">Con có muốn ăn thêm rau không?</p>
+        </div>
+      </div>
+      <div class="line child">
+        <span class="speaker">Con</span>
+        <div class="bubble">
+          <p class="en">A little bit, please. I like fish more.</p>
+          <p class="vi">Dạ một chút thôi ạ. Con thích ăn cá hơn.</p>
+        </div>
+      </div>
+      <div class="line dad">
+        <span class="speaker">Ba</span>
+        <div class="bubble">
+          <p class="en">Okay, here is some fish for you.</p>
+          <p class="vi">Được rồi, đây là cá cho con nè.</p>
+        </div>
+      </div>
+      <div class="line child">
+        <span class="speaker">Con</span>
+        <div class="bubble">
+          <p class="en">Thank you, Dad. This is delicious!</p>
+          <p class="vi">Con cảm ơn ba. Món này ngon quá ạ!</p>
+        </div>
+      </div>
+      <div class="line dad">
+        <span class="speaker">Ba</span>
+        <div class="bubble">
+          <p class="en">I'm happy you like it. Eat well!</p>
+          <p class="vi">Ba vui vì con thích. Ăn ngon miệng nhé!</p>
+        </div>
+      </div>
+    </div>
+    <div class="vocab"><b>Từ vựng cần nhớ:</b> dinner (bữa tối) · vegetables (rau) · fish (cá) · delicious (ngon) · eat well (ăn ngon miệng)</div>
+  </div>
+
+  <!-- 8. TRƯỚC KHI ĐI NGỦ -->
+  <div class="scenario">
+    <div class="scenario-header">
+      <span class="scenario-icon">🌙</span>
+      <div class="scenario-title-wrap">
+        <p class="scenario-num">Tình huống 8</p>
+        <p class="scenario-title">Trước khi đi ngủ</p>
+      </div>
+    </div>
+    <div class="dialogue">
+      <div class="line mom">
+        <span class="speaker">Mẹ</span>
+        <div class="bubble">
+          <p class="en">It's bedtime now. Let's brush your teeth.</p>
+          <p class="vi">Đến giờ ngủ rồi. Mình đi đánh răng nào.</p>
+        </div>
+      </div>
+      <div class="line child">
+        <span class="speaker">Con</span>
+        <div class="bubble">
+          <p class="en">Okay, Mom. Can we read a book first?</p>
+          <p class="vi">Vâng ạ mẹ. Mình đọc sách trước được không ạ?</p>
+        </div>
+      </div>
+      <div class="line mom">
+        <span class="speaker">Mẹ</span>
+        <div class="bubble">
+          <p class="en">Of course. Which book do you want?</p>
+          <p class="vi">Được chứ. Con muốn đọc quyển nào?</p>
+        </div>
+      </div>
+      <div class="line child">
+        <span class="speaker">Con</span>
+        <div class="bubble">
+          <p class="en">I want the one about the little bear.</p>
+          <p class="vi">Con muốn quyển về chú gấu nhỏ ạ.</p>
+        </div>
+      </div>
+      <div class="line mom">
+        <span class="speaker">Mẹ</span>
+        <div class="bubble">
+          <p class="en">Good choice. Now, close your eyes.</p>
+          <p class="vi">Chọn hay đấy. Giờ con nhắm mắt lại nào.</p>
+        </div>
+      </div>
+      <div class="line child">
+        <span class="speaker">Con</span>
+        <div class="bubble">
+          <p class="en">Good night, Mom. I love you.</p>
+          <p class="vi">Chúc mẹ ngủ ngon. Con yêu mẹ.</p>
+        </div>
+      </div>
+      <div class="line mom">
+        <span class="speaker">Mẹ</span>
+        <div class="bubble">
+          <p class="en">Good night, sweetie. I love you too. Sweet dreams!</p>
+          <p class="vi">Chúc con ngủ ngon. Mẹ cũng yêu con. Chúc con mơ đẹp!</p>
+        </div>
+      </div>
+    </div>
+    <div class="vocab"><b>Từ vựng cần nhớ:</b> bedtime (giờ đi ngủ) · brush your teeth (đánh răng) · read a book (đọc sách) · close your eyes (nhắm mắt) · sweet dreams (mơ đẹp)</div>
+  </div>
+
+  <div class="tips-box">
+    <h2>💡 Mẹo nhỏ để luyện tập hiệu quả</h2>
+    <ul>
+      <li>Mỗi ngày chỉ luyện 1-2 kịch bản gắn với đúng thời điểm sinh hoạt trong ngày (ví dụ: giờ ăn sáng thì luyện kịch bản Giờ ăn sáng).</li>
+      <li>Ba mẹ đọc câu Tiếng Anh in đậm trước, để con lặp lại theo — không cần dịch, chỉ cần chỉ vào nghĩa tiếng Việt bên dưới nếu con chưa hiểu.</li>
+      <li>Khuyến khích con trả lời bằng cả câu, dù ngắn, thay vì chỉ "Yes" / "No".</li>
+      <li>Lặp lại đều đặn 5-7 ngày cho một kịch bản trước khi chuyển sang kịch bản mới để con nhớ lâu.</li>
+      <li>Luôn khen ngợi khi con nói đúng, dù chỉ một từ — sự tự tin quan trọng hơn sự hoàn hảo.</li>
+    </ul>
+  </div>
+
+  <div class="doc-footer">
+    <p class="cta">Tải thêm tài nguyên miễn phí tại maithom.vn</p>
+    <p class="brand">maithom.vn · Hotline 0924 135 222</p>
+    <p class="tiny">© 2026 Mai Thơm · Camkey English. Tài liệu chỉ dùng cho mục đích cá nhân, vui lòng không sao chép thương mại.</p>
+  </div>
+
+</div>
+
+</body>
+</html>

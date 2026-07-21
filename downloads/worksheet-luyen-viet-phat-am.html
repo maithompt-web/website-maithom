@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Worksheet Luyện Viết & Phát Âm — Mai Thơm & Camkey English</title>
+<style>
+  :root{
+    --terracotta:#D96C4A;
+    --navy:#1D3557;
+    --gold:#F2B134;
+    --text:#222222;
+    --muted:#666666;
+    --sample:#cbcbcb;
+  }
+
+  *{box-sizing:border-box;}
+
+  body{
+    margin:0;
+    padding:0;
+    font-family:"Segoe UI", Arial, Helvetica, sans-serif;
+    color:var(--text);
+    background:#e9e9e9;
+    -webkit-print-color-adjust:exact;
+    print-color-adjust:exact;
+  }
+
+  .page{
+    max-width:21cm;
+    margin:20px auto;
+    background:#ffffff;
+    padding:1.5cm;
+    box-shadow:0 0 12px rgba(0,0,0,0.15);
+  }
+
+  /* ===== Toolbar (screen only) ===== */
+  .toolbar{
+    max-width:21cm;
+    margin:20px auto 0;
+    display:flex;
+    justify-content:flex-end;
+  }
+  .print-btn{
+    background:var(--terracotta);
+    color:#fff;
+    border:none;
+    padding:10px 22px;
+    border-radius:6px;
+    font-size:15px;
+    font-weight:700;
+    cursor:pointer;
+    box-shadow:0 2px 6px rgba(0,0,0,0.2);
+  }
+  .print-btn:hover{ background:#c15a3a; }
+
+  /* ===== Header ===== */
+  .brand-header{
+    text-align:center;
+    border-bottom:4px solid var(--terracotta);
+    padding-bottom:14px;
+    margin-bottom:22px;
+    position:relative;
+  }
+  .brand-header .kicker{
+    display:inline-block;
+    color:var(--gold);
+    background:var(--navy);
+    font-size:12px;
+    font-weight:700;
+    letter-spacing:2px;
+    padding:4px 14px;
+    border-radius:20px;
+    margin-bottom:12px;
+  }
+  .brand-header h1{
+    margin:0 0 8px;
+    color:var(--navy);
+    font-size:30px;
+    letter-spacing:1px;
+  }
+  .brand-header p.sub{
+    margin:0;
+    color:var(--terracotta);
+    font-size:15px;
+    font-weight:600;
+  }
+
+  .section-title{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    margin:0 0 16px;
+  }
+  .section-title .num{
+    background:var(--navy);
+    color:#fff;
+    width:34px;
+    height:34px;
+    min-width:34px;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-weight:700;
+    font-size:16px;
+  }
+  .section-title h2{
+    margin:0;
+    color:var(--navy);
+    font-size:20px;
+    border-bottom:2px solid var(--gold);
+    padding-bottom:4px;
+    flex:1;
+  }
+  .section-note{
+    color:var(--muted);
+    font-size:12.5px;
+    margin:-8px 0 16px 46px;
+    font-style:italic;
+  }
+
+  /* ===== Part 1: Alphabet grid ===== */
+  .alphabet-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:10px 22px;
+  }
+  .letter-cell{
+    min-width:0;
+    border:1px dashed #d8b8ac;
+    border-radius:8px;
+    padding:8px 12px 10px;
+    background:#fdf8f6;
+    page-break-inside:avoid;
+    break-inside:avoid;
+    overflow:hidden;
+  }
+  .letter-cell .letter-sample{
+    font-size:30px;
+    font-weight:800;
+    letter-spacing:4px;
+    margin-bottom:8px;
+    font-family:Georgia, "Times New Roman", serif;
+    white-space:nowrap;
+    overflow:hidden;
+    /* Fallback for browsers without text-stroke support: light gray filled letters */
+    color:#eee;
+  }
+  /* Outline/tracing style: hollow letters for pencil tracing (chuẩn vở luyện viết mầm non) */
+  @supports ((-webkit-text-stroke: 1px #000) or (text-stroke: 1px #000)){
+    .letter-cell .letter-sample{
+      color:transparent;
+      -webkit-text-stroke:2px #999;
+      text-stroke:2px #999;
+    }
+  }
+  .letter-cell .write-line{
+    height:30px;
+    margin-bottom:8px;
+    background-image:linear-gradient(to right, #999 40%, transparent 40%);
+    background-size:9px 2px;
+    background-repeat:repeat-x;
+    background-position:0 100%;
+  }
+  .letter-cell .write-line:last-child{ margin-bottom:0; }
+
+  .divider-note{
+    text-align:center;
+    color:var(--muted);
+    font-size:12px;
+    margin:14px 0 4px;
+  }
+
+  /* ===== Part 2: Pronunciation table ===== */
+  .pron-table{
+    width:100%;
+    border-collapse:collapse;
+    font-size:14px;
+  }
+  .pron-table th{
+    background:var(--navy);
+    color:#fff;
+    padding:9px 8px;
+    text-align:left;
+    font-size:12.5px;
+    letter-spacing:0.5px;
+  }
+  .pron-table td{
+    padding:8px 8px;
+    border-bottom:1px solid #e2d9d5;
+    vertical-align:middle;
+  }
+  .pron-table tr:nth-child(even) td{
+    background:#fdf5ee;
+  }
+  .pron-table .stt{
+    width:28px;
+    text-align:center;
+    color:var(--muted);
+    font-weight:700;
+  }
+  .pron-table .en-word{
+    font-weight:800;
+    color:var(--navy);
+    font-size:15px;
+    white-space:nowrap;
+  }
+  .pron-table .vi-sound{
+    color:var(--terracotta);
+    font-weight:700;
+    font-size:17px;
+    letter-spacing:0.3px;
+    white-space:nowrap;
+  }
+  .checks{
+    white-space:nowrap;
+    letter-spacing:4px;
+    color:#bbb;
+    font-size:15px;
+  }
+  .note-line{
+    border-bottom:1px solid #999;
+    display:inline-block;
+    width:100%;
+    height:18px;
+  }
+
+  .topic-tag{
+    display:inline-block;
+    font-size:10px;
+    font-weight:700;
+    color:#fff;
+    padding:1px 7px;
+    border-radius:10px;
+    margin-left:6px;
+    vertical-align:middle;
+  }
+  .tag-family{ background:var(--terracotta); }
+  .tag-color{ background:var(--gold); color:#4a3600; }
+  .tag-animal{ background:#3d8361; }
+  .tag-object{ background:var(--navy); }
+
+  .legend{
+    margin-top:12px;
+    font-size:11.5px;
+    color:var(--muted);
+    display:flex;
+    gap:14px;
+    flex-wrap:wrap;
+  }
+  .legend span{ display:inline-flex; align-items:center; gap:5px; }
+  .legend i{
+    width:10px;height:10px;border-radius:50%;display:inline-block;
+  }
+
+  .page-footer{
+    margin-top:26px;
+    text-align:center;
+    color:var(--muted);
+    font-size:12px;
+    border-top:1px solid #e5e0dc;
+    padding-top:10px;
+  }
+  .page-footer b{ color:var(--terracotta); }
+
+  .page-break{
+    page-break-before:always;
+    break-before:page;
+  }
+
+  /* ===== Print optimization ===== */
+  @page{
+    size:A4;
+    margin:1.5cm;
+  }
+  @media print{
+    body{ background:#fff; }
+    .toolbar{ display:none; }
+    .page{
+      box-shadow:none;
+      margin:0;
+      padding:0;
+      max-width:100%;
+    }
+  }
+</style>
+</head>
+<body>
+
+  <div class="toolbar no-print">
+    <button class="print-btn" onclick="window.print()">🖨️ In worksheet</button>
+  </div>
+
+  <div class="page">
+
+    <!-- ===== HEADER ===== -->
+    <div class="brand-header">
+      <span class="kicker">TÀI NGUYÊN MIỄN PHÍ</span>
+      <h1>WORKSHEET LUYỆN VIẾT &amp; PHÁT ÂM</h1>
+      <p class="sub">Mai Thơm &amp; Camkey English — Học vui mỗi ngày</p>
+    </div>
+
+    <!-- ===== PHẦN 1: LUYỆN VIẾT CHỮ CÁI ===== -->
+    <div class="section-title">
+      <div class="num">1</div>
+      <h2>Luyện viết bảng chữ cái (A–Z)</h2>
+    </div>
+    <p class="section-note">Bé dùng bút chì tô theo nét chữ rỗng (outline), sau đó tự viết lại trên các dòng kẻ chấm bên dưới — đúng chuẩn vở luyện viết mầm non chuẩn bị vào lớp 1.</p>
+
+    <div class="alphabet-grid">
+      <!-- Letters injected below -->
+      <div class="letter-cell"><div class="letter-sample">Aa&nbsp;&nbsp;Aa&nbsp;&nbsp;Aa</div><div class="write-line"></div><div class="write-line"></div></div>
+      <div class="letter-cell"><div class="letter-sample">Bb&nbsp;&nbsp;Bb&nbsp;&nbsp;Bb</div><div class="write-line"></div><div class="write-line"></div></div>
+      <div class="letter-cell"><div class="letter-sample">Cc&nbsp;&nbsp;Cc&nbsp;&nbsp;Cc</div><div class="write-line"></div><div class="write-line"></div></div>
+      <div class="letter-cell"><div class="letter-sample">Dd&nbsp;&nbsp;Dd&nbsp;&nbsp;Dd</div><div class="write-line"></div><div class="write-line"></div></div>
+      <div class="letter-cell"><div class="letter-sample">Ee&nbsp;&nbsp;Ee&nbsp;&nbsp;Ee</div><div class="write-line"></div><div class="write-line"></div></div>
+      <div class="letter-cell"><div class="letter-sample">Ff&nbsp;&nbsp;Ff&nbsp;&nbsp;Ff</div><div class="write-line"></div><div class="write-line"></div></div>
+      <div class="letter-cell"><div class="letter-sample">Gg&nbsp;&nbsp;Gg&nbsp;&nbsp;Gg</div><div class="write-line"></div><div class="write-line"></div></div>
+      <div class="letter-cell"><div class="letter-sample">Hh&nbsp;&nbsp;Hh&nbsp;&nbsp;Hh</div><div class="write-line"></div><div class="write-line"></div></div>
+      <div class="letter-cell"><div class="letter-sample">Ii&nbsp;&nbsp;Ii&nbsp;&nbsp;Ii</div><div class="write-line"></div><div class="write-line"></div></div>
+      <div class="letter-cell"><div class="letter-sample">Jj&nbsp;&nbsp;Jj&nbsp;&nbsp;Jj</div><div class="write-line"></div><div class="write-line"></div></div>
+      <div class="letter-cell"><div class="letter-sample">Kk&nbsp;&nbsp;Kk&nbsp;&nbsp;Kk</div><div class="write-line"></div><div class="write-line"></div></div>
+      <div class="letter-cell"><div class="letter-sample">Ll&nbsp;&nbsp;Ll&nbsp;&nbsp;Ll</div><div class="write-line"></div><div class="write-line"></div></div>
+      <div class="letter-cell"><div class="letter-sample">Mm&nbsp;&nbsp;Mm&nbsp;&nbsp;Mm</div><div class="write-line"></div><div class="write-line"></div></div>
+      <div class="letter-cell"><div class="letter-sample">Nn&nbsp;&nbsp;Nn&nbsp;&nbsp;Nn</div><div class="write-line"></div><div class="write-line"></div></div>
+      <div class="letter-cell"><div class="letter-sample">Oo&nbsp;&nbsp;Oo&nbsp;&nbsp;Oo</div><div class="write-line"></div><div class="write-line"></div></div>
+      <div class="letter-cell"><div class="letter-sample">Pp&nbsp;&nbsp;Pp&nbsp;&nbsp;Pp</div><div class="write-line"></div><div class="write-line"></div></div>
+      <div class="letter-cell"><div class="letter-sample">Qq&nbsp;&nbsp;Qq&nbsp;&nbsp;Qq</div><div class="write-line"></div><div class="write-line"></div></div>
+      <div class="letter-cell"><div class="letter-sample">Rr&nbsp;&nbsp;Rr&nbsp;&nbsp;Rr</div><div class="write-line"></div><div class="write-line"></div></div>
+      <div class="letter-cell"><div class="letter-sample">Ss&nbsp;&nbsp;Ss&nbsp;&nbsp;Ss</div><div class="write-line"></div><div class="write-line"></div></div>
+      <div class="letter-cell"><div class="letter-sample">Tt&nbsp;&nbsp;Tt&nbsp;&nbsp;Tt</div><div class="write-line"></div><div class="write-line"></div></div>
+      <div class="letter-cell"><div class="letter-sample">Uu&nbsp;&nbsp;Uu&nbsp;&nbsp;Uu</div><div class="write-line"></div><div class="write-line"></div></div>
+      <div class="letter-cell"><div class="letter-sample">Vv&nbsp;&nbsp;Vv&nbsp;&nbsp;Vv</div><div class="write-line"></div><div class="write-line"></div></div>
+      <div class="letter-cell"><div class="letter-sample">Ww&nbsp;&nbsp;Ww&nbsp;&nbsp;Ww</div><div class="write-line"></div><div class="write-line"></div></div>
+      <div class="letter-cell"><div class="letter-sample">Xx&nbsp;&nbsp;Xx&nbsp;&nbsp;Xx</div><div class="write-line"></div><div class="write-line"></div></div>
+      <div class="letter-cell"><div class="letter-sample">Yy&nbsp;&nbsp;Yy&nbsp;&nbsp;Yy</div><div class="write-line"></div><div class="write-line"></div></div>
+      <div class="letter-cell"><div class="letter-sample">Zz&nbsp;&nbsp;Zz&nbsp;&nbsp;Zz</div><div class="write-line"></div><div class="write-line"></div></div>
+    </div>
+
+    <div class="page-footer">
+      Phần 1 — Luyện viết chữ cái · <b>maithom.vn</b>
+    </div>
+
+    <!-- ===== PHẦN 2: LUYỆN PHÁT ÂM ===== -->
+    <div class="page-break"></div>
+
+    <div class="section-title">
+      <div class="num">2</div>
+      <h2>Luyện phát âm cơ bản — 20 từ vựng cho bé 5–6 tuổi</h2>
+    </div>
+    <p class="section-note">Ba mẹ đọc mẫu theo phiên âm quốc tế (IPA), bé lặp lại nhiều lần và tô ✓ vào ô vuông sau mỗi lần luyện tập.</p>
+
+    <table class="pron-table">
+      <thead>
+        <tr>
+          <th class="stt">#</th>
+          <th>Từ tiếng Anh</th>
+          <th>Phiên âm quốc tế (IPA)</th>
+          <th>Số lần luyện tập</th>
+          <th>Ghi chú của bé / ba mẹ</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="stt">1</td>
+          <td class="en-word">Mom <span class="topic-tag tag-family">Gia đình</span></td>
+          <td class="vi-sound">/mɒm/</td>
+          <td class="checks">☐ ☐ ☐ ☐ ☐</td>
+          <td><span class="note-line"></span></td>
+        </tr>
+        <tr>
+          <td class="stt">2</td>
+          <td class="en-word">Dad <span class="topic-tag tag-family">Gia đình</span></td>
+          <td class="vi-sound">/dæd/</td>
+          <td class="checks">☐ ☐ ☐ ☐ ☐</td>
+          <td><span class="note-line"></span></td>
+        </tr>
+        <tr>
+          <td class="stt">3</td>
+          <td class="en-word">Baby <span class="topic-tag tag-family">Gia đình</span></td>
+          <td class="vi-sound">/ˈbeɪ.bi/</td>
+          <td class="checks">☐ ☐ ☐ ☐ ☐</td>
+          <td><span class="note-line"></span></td>
+        </tr>
+        <tr>
+          <td class="stt">4</td>
+          <td class="en-word">Family <span class="topic-tag tag-family">Gia đình</span></td>
+          <td class="vi-sound">/ˈfæm.ə.li/</td>
+          <td class="checks">☐ ☐ ☐ ☐ ☐</td>
+          <td><span class="note-line"></span></td>
+        </tr>
+        <tr>
+          <td class="stt">5</td>
+          <td class="en-word">Red <span class="topic-tag tag-color">Màu sắc</span></td>
+          <td class="vi-sound">/red/</td>
+          <td class="checks">☐ ☐ ☐ ☐ ☐</td>
+          <td><span class="note-line"></span></td>
+        </tr>
+        <tr>
+          <td class="stt">6</td>
+          <td class="en-word">Blue <span class="topic-tag tag-color">Màu sắc</span></td>
+          <td class="vi-sound">/bluː/</td>
+          <td class="checks">☐ ☐ ☐ ☐ ☐</td>
+          <td><span class="note-line"></span></td>
+        </tr>
+        <tr>
+          <td class="stt">7</td>
+          <td class="en-word">Yellow <span class="topic-tag tag-color">Màu sắc</span></td>
+          <td class="vi-sound">/ˈjel.oʊ/</td>
+          <td class="checks">☐ ☐ ☐ ☐ ☐</td>
+          <td><span class="note-line"></span></td>
+        </tr>
+        <tr>
+          <td class="stt">8</td>
+          <td class="en-word">Green <span class="topic-tag tag-color">Màu sắc</span></td>
+          <td class="vi-sound">/ɡriːn/</td>
+          <td class="checks">☐ ☐ ☐ ☐ ☐</td>
+          <td><span class="note-line"></span></td>
+        </tr>
+        <tr>
+          <td class="stt">9</td>
+          <td class="en-word">Cat <span class="topic-tag tag-animal">Con vật</span></td>
+          <td class="vi-sound">/kæt/</td>
+          <td class="checks">☐ ☐ ☐ ☐ ☐</td>
+          <td><span class="note-line"></span></td>
+        </tr>
+        <tr>
+          <td class="stt">10</td>
+          <td class="en-word">Dog <span class="topic-tag tag-animal">Con vật</span></td>
+          <td class="vi-sound">/dɒg/</td>
+          <td class="checks">☐ ☐ ☐ ☐ ☐</td>
+          <td><span class="note-line"></span></td>
+        </tr>
+        <tr>
+          <td class="stt">11</td>
+          <td class="en-word">Fish <span class="topic-tag tag-animal">Con vật</span></td>
+          <td class="vi-sound">/fɪʃ/</td>
+          <td class="checks">☐ ☐ ☐ ☐ ☐</td>
+          <td><span class="note-line"></span></td>
+        </tr>
+        <tr>
+          <td class="stt">12</td>
+          <td class="en-word">Bird <span class="topic-tag tag-animal">Con vật</span></td>
+          <td class="vi-sound">/bɜːrd/</td>
+          <td class="checks">☐ ☐ ☐ ☐ ☐</td>
+          <td><span class="note-line"></span></td>
+        </tr>
+        <tr>
+          <td class="stt">13</td>
+          <td class="en-word">Apple <span class="topic-tag tag-object">Đồ vật</span></td>
+          <td class="vi-sound">/ˈæp.əl/</td>
+          <td class="checks">☐ ☐ ☐ ☐ ☐</td>
+          <td><span class="note-line"></span></td>
+        </tr>
+        <tr>
+          <td class="stt">14</td>
+          <td class="en-word">Ball <span class="topic-tag tag-object">Đồ vật</span></td>
+          <td class="vi-sound">/bɔːl/</td>
+          <td class="checks">☐ ☐ ☐ ☐ ☐</td>
+          <td><span class="note-line"></span></td>
+        </tr>
+        <tr>
+          <td class="stt">15</td>
+          <td class="en-word">Book <span class="topic-tag tag-object">Đồ vật</span></td>
+          <td class="vi-sound">/bʊk/</td>
+          <td class="checks">☐ ☐ ☐ ☐ ☐</td>
+          <td><span class="note-line"></span></td>
+        </tr>
+        <tr>
+          <td class="stt">16</td>
+          <td class="en-word">Chair <span class="topic-tag tag-object">Đồ vật</span></td>
+          <td class="vi-sound">/tʃer/</td>
+          <td class="checks">☐ ☐ ☐ ☐ ☐</td>
+          <td><span class="note-line"></span></td>
+        </tr>
+        <tr>
+          <td class="stt">17</td>
+          <td class="en-word">Table <span class="topic-tag tag-object">Đồ vật</span></td>
+          <td class="vi-sound">/ˈteɪ.bəl/</td>
+          <td class="checks">☐ ☐ ☐ ☐ ☐</td>
+          <td><span class="note-line"></span></td>
+        </tr>
+        <tr>
+          <td class="stt">18</td>
+          <td class="en-word">Egg <span class="topic-tag tag-object">Đồ vật</span></td>
+          <td class="vi-sound">/eg/</td>
+          <td class="checks">☐ ☐ ☐ ☐ ☐</td>
+          <td><span class="note-line"></span></td>
+        </tr>
+        <tr>
+          <td class="stt">19</td>
+          <td class="en-word">Sun <span class="topic-tag tag-object">Đồ vật</span></td>
+          <td class="vi-sound">/sʌn/</td>
+          <td class="checks">☐ ☐ ☐ ☐ ☐</td>
+          <td><span class="note-line"></span></td>
+        </tr>
+        <tr>
+          <td class="stt">20</td>
+          <td class="en-word">Star <span class="topic-tag tag-object">Đồ vật</span></td>
+          <td class="vi-sound">/stɑːr/</td>
+          <td class="checks">☐ ☐ ☐ ☐ ☐</td>
+          <td><span class="note-line"></span></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="legend">
+      <span><i style="background:#D96C4A"></i> Gia đình</span>
+      <span><i style="background:#F2B134"></i> Màu sắc</span>
+      <span><i style="background:#3d8361"></i> Con vật</span>
+      <span><i style="background:#1D3557"></i> Đồ vật</span>
+    </div>
+
+    <div class="page-footer">
+      Phần 2 — Luyện phát âm cơ bản · Bản quyền nội dung thuộc Mai Thơm &amp; Camkey English · <b>maithom.vn</b>
+    </div>
+
+  </div>
+
+</body>
+</html>
