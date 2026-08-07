@@ -101,7 +101,6 @@
   .info-line{ display:flex; justify-content:space-between; font-size:13px; margin:0 0 20px; color:#444; flex-wrap:wrap; gap:10px; }
   .info-line span{ border-bottom:2px dotted var(--navy); padding-bottom:2px; }
   .score-box{ display:inline-block; border:2px solid var(--navy); border-radius:20px; padding:2px 12px; font-size:13px; color:var(--navy); margin-left:6px; font-weight:700; }
-
   .cover{ background:linear-gradient(135deg, var(--pink) 0%, var(--purple) 50%, var(--blue) 100%); padding:44px 34px 40px; text-align:center; }
   .cover .kicker{ display:inline-block; background:#fff; color:var(--pink); font-weight:800; font-size:13px; letter-spacing:1px; padding:6px 20px; border-radius:30px; box-shadow:0 4px 0 rgba(0,0,0,0.08); transform:rotate(-2deg); }
   .cover h1{ color:#fff; font-size:32px; margin:18px 0 8px; text-shadow:0 3px 0 rgba(0,0,0,0.12); }
@@ -143,7 +142,7 @@
   <div class="cover">
     <span class="kicker">Camkey English</span>
     <h1>Tiếng Anh Lớp 2 — Học kỳ 1 🎈</h1>
-    <p class="subtitle">Trọn bộ 18 tuần bài tập, phong cách workbook hiện đại, cho các bạn nhỏ 7-8 tuổi</p>
+    <p class="subtitle">Trọn bộ 18 tuần bài tập theo SGK Tiếng Anh 2 - Global Success</p>
     <span class="cover-badge">🎨 Đa dạng dạng bài · 🐻🐰 Cùng Gấu &amp; Bống học tiếng Anh · ✅ Đáp án ở cuối sách</span>
     <div class="cover-mascots">🐻 🐰</div>
   </div>
@@ -236,9 +235,11 @@
           <div class="match-item"><span class="match-dot"></span><span class="match-word">goodbye</span></div>
           <div class="match-item"><span class="match-dot"></span><span class="match-word">friend</span></div>
           <div class="match-item"><span class="match-dot"></span><span class="match-word">name</span></div>
+          <div class="match-item"><span class="match-dot"></span><span class="match-word">hi</span></div>
         </div>
         <div class="match-col">
           <div class="match-item"><span class="match-pic">👋💨</span><span class="match-dot"></span></div>
+          <div class="match-item"><span class="match-pic">🙋</span><span class="match-dot"></span></div>
           <div class="match-item"><span class="match-pic">😀</span><span class="match-dot"></span></div>
           <div class="match-item"><span class="match-pic">🧑‍🤝‍🧑</span><span class="match-dot"></span></div>
           <div class="match-item"><span class="match-pic">👋</span><span class="match-dot"></span></div>
@@ -257,6 +258,18 @@
         <div class="circle-q">2. friend</div>
         <div class="circle-opt"><span>😀</span><span>🧑‍🤝‍🧑</span><span>👋</span></div>
       </div>
+      <div class="circle-row" style="margin-top:12px;">
+        <div class="circle-q">3. hello</div>
+        <div class="circle-opt"><span>👋</span><span>😀</span><span>✋</span></div>
+      </div>
+      <div class="circle-row" style="margin-top:12px;">
+        <div class="circle-q">4. hi</div>
+        <div class="circle-opt"><span>🙋</span><span>👋💨</span><span>😀</span></div>
+      </div>
+      <div class="circle-row" style="margin-top:12px;">
+        <div class="circle-q">5. bye</div>
+        <div class="circle-opt"><span>✋</span><span>🧑‍🤝‍🧑</span><span>👋💨</span></div>
+      </div>
     </div>
 
     <div class="task-box" style="background:var(--green-l);">
@@ -266,6 +279,7 @@
       <div class="tf-row">2. 👋💨 = name<span class="tf-faces"><span>😊</span><span>😢</span></span></div>
       <div class="tf-row">3. 🧑‍🤝‍🧑 = friend<span class="tf-faces"><span>😊</span><span>😢</span></span></div>
       <div class="tf-row">4. 😀 = goodbye<span class="tf-faces"><span>😊</span><span>😢</span></span></div>
+      <div class="tf-row">5. 🙋 = hi<span class="tf-faces"><span>😊</span><span>😢</span></span></div>
     </div>
 
     <div class="task-box" style="background:var(--orange-l);">
@@ -280,6 +294,18 @@
       <div class="letter-boxes">
         <div class="letter-box">f</div><div class="letter-box">r</div><div class="letter-box">i</div><div class="letter-box">e</div><div class="letter-box blank">n</div><div class="letter-box">d</div>
       </div>
+      <div class="circle-row" style="margin:10px 0 6px;"><span style="font-size:28px;">✋</span></div>
+      <div class="letter-boxes">
+        <div class="letter-box">b</div><div class="letter-box blank">y</div><div class="letter-box">e</div>
+      </div>
+      <div class="circle-row" style="margin:10px 0 6px;"><span style="font-size:28px;">😀</span></div>
+      <div class="letter-boxes">
+        <div class="letter-box">n</div><div class="letter-box blank">a</div><div class="letter-box">m</div><div class="letter-box">e</div>
+      </div>
+      <div class="circle-row" style="margin:10px 0 6px;"><span style="font-size:28px;">🙋</span></div>
+      <div class="letter-boxes">
+        <div class="letter-box">h</div><div class="letter-box blank">i</div>
+      </div>
     </div>
 
     <div class="task-box" style="background:var(--pink-l);">
@@ -292,6 +318,15 @@
       <div class="circle-row" style="margin:10px 0 4px;"><span style="font-size:28px;">😀</span></div>
       <div class="scramble-tiles"><span class="tile">A</span><span class="tile">E</span><span class="tile">N</span><span class="tile">M</span></div>
       <div class="write-line" style="margin-left:26px; margin-right:26px; max-width:200px;"></div>
+      <div class="circle-row" style="margin:10px 0 4px;"><span style="font-size:28px;">👋</span></div>
+      <div class="scramble-tiles"><span class="tile">L</span><span class="tile">O</span><span class="tile">H</span><span class="tile">E</span><span class="tile">L</span></div>
+      <div class="write-line" style="margin-left:26px; margin-right:26px; max-width:200px;"></div>
+      <div class="circle-row" style="margin:10px 0 4px;"><span style="font-size:28px;">🙋</span></div>
+      <div class="scramble-tiles"><span class="tile">I</span><span class="tile">H</span></div>
+      <div class="write-line" style="margin-left:26px; margin-right:26px; max-width:200px;"></div>
+      <div class="circle-row" style="margin:10px 0 4px;"><span style="font-size:28px;">🧑‍🤝‍🧑</span></div>
+      <div class="scramble-tiles"><span class="tile">N</span><span class="tile">F</span><span class="tile">D</span><span class="tile">I</span><span class="tile">R</span><span class="tile">E</span></div>
+      <div class="write-line" style="margin-left:26px; margin-right:26px; max-width:200px;"></div>
     </div>
 
     <div class="task-box" style="background:var(--blue-l);">
@@ -301,6 +336,12 @@
       <div class="scramble-tiles"><span class="tile word">name?</span><span class="tile word">your</span><span class="tile word">What's</span></div>
       <div class="write-line" style="margin-left:26px; margin-right:26px;"></div>
       <div class="scramble-tiles"><span class="tile word">Bống.</span><span class="tile word">I'm</span><span class="tile word">Hello,</span></div>
+      <div class="write-line" style="margin-left:26px; margin-right:26px;"></div>
+      <div class="scramble-tiles"><span class="tile word">Gấu.</span><span class="tile word">I'm</span><span class="tile word">Hi!</span></div>
+      <div class="write-line" style="margin-left:26px; margin-right:26px;"></div>
+      <div class="scramble-tiles"><span class="tile word">to</span><span class="tile word">Nice</span><span class="tile word">meet</span><span class="tile word">you!</span></div>
+      <div class="write-line" style="margin-left:26px; margin-right:26px;"></div>
+      <div class="scramble-tiles"><span class="tile word">bye!</span><span class="tile word">Bye</span></div>
       <div class="write-line" style="margin-left:26px; margin-right:26px;"></div>
     </div>
 
@@ -312,6 +353,15 @@
       </div>
       <div class="mcq-q">2. A: Goodbye! &nbsp; B: ______!
         <div class="mcq-opts"><span class="mcq-opt">A. Hello</span><span class="mcq-opt">B. Bye bye</span><span class="mcq-opt">C. Name</span></div>
+      </div>
+      <div class="mcq-q">3. A: Nice to meet you! &nbsp; B: Nice to meet you ______!
+        <div class="mcq-opts"><span class="mcq-opt">A. too</span><span class="mcq-opt">B. name</span><span class="mcq-opt">C. bye</span></div>
+      </div>
+      <div class="mcq-q">4. A: ______! I'm Bống. &nbsp; B: Hi, Bống!
+        <div class="mcq-opts"><span class="mcq-opt">A. Hello</span><span class="mcq-opt">B. Goodbye</span><span class="mcq-opt">C. Friend</span></div>
+      </div>
+      <div class="mcq-q">5. A: Who is he? &nbsp; B: He's my ______.
+        <div class="mcq-opts"><span class="mcq-opt">A. friend</span><span class="mcq-opt">B. bye</span><span class="mcq-opt">C. hello</span></div>
       </div>
     </div>
 
@@ -328,15 +378,19 @@
       <div class="tf-row">1. Gấu's name is Gấu.<span class="tf-faces"><span>😊</span><span>😢</span></span></div>
       <div class="tf-row">2. Bống says "Goodbye" first.<span class="tf-faces"><span>😊</span><span>😢</span></span></div>
       <div class="tf-row">3. They say "Bye bye" at the end.<span class="tf-faces"><span>😊</span><span>😢</span></span></div>
+      <div class="tf-row">4. Gấu says "Nice to meet you" to Bống.<span class="tf-faces"><span>😊</span><span>😢</span></span></div>
+      <div class="tf-row">5. The conversation starts with "Goodbye".<span class="tf-faces"><span>😊</span><span>😢</span></span></div>
     </div>
 
     <div class="task-box" style="background:var(--yellow-l);">
       <span class="task-num">9</span>
       <p class="task-title">Tô màu theo yêu cầu</p>
-      <p class="color-instr">Tô <b style="background:var(--pink);">màu hồng</b> cho hình tròn ứng với lời chào <b style="background:var(--pink);">"Hello"</b>, tô <b style="background:var(--blue);">màu xanh</b> cho hình ngôi sao ứng với lời tạm biệt <b style="background:var(--blue);">"Goodbye"</b>.</p>
+      <p class="color-instr">Tô <b style="background:var(--pink);">màu hồng</b> cho hình tròn ứng với lời chào <b style="background:var(--pink);">"Hello"</b>, tô <b style="background:var(--blue);">màu xanh</b> cho hình ngôi sao ứng với lời tạm biệt <b style="background:var(--blue);">"Goodbye"</b>, tô <b style="background:var(--yellow);">màu vàng</b> cho hình tam giác ứng với lời chào <b style="background:var(--yellow);">"Hi"</b>, và tô <b style="background:var(--green);">màu xanh lá</b> cho hình vuông ứng với lời tạm biệt <b style="background:var(--green);">"Bye"</b>.</p>
       <div class="shape-row">
         <span class="shape">●</span>
         <span class="shape">★</span>
+        <span class="shape">▲</span>
+        <span class="shape">■</span>
       </div>
     </div>
 
@@ -346,6 +400,10 @@
       <div class="trace-word">Hello!</div>
       <div class="write-line"></div>
       <div class="trace-word">Goodbye!</div>
+      <div class="write-line"></div>
+      <div class="trace-word">Hi!</div>
+      <div class="write-line"></div>
+      <div class="trace-word">Bye bye!</div>
       <div class="write-line"></div>
     </div>
 
@@ -397,11 +455,13 @@
           <div class="match-item"><span class="match-dot"></span><span class="match-word">good afternoon</span></div>
           <div class="match-item"><span class="match-dot"></span><span class="match-word">teacher</span></div>
           <div class="match-item"><span class="match-dot"></span><span class="match-word">happy</span></div>
+          <div class="match-item"><span class="match-dot"></span><span class="match-word">classmate</span></div>
         </div>
         <div class="match-col">
           <div class="match-item"><span class="match-pic">😄</span><span class="match-dot"></span></div>
           <div class="match-item"><span class="match-pic">👩‍🏫</span><span class="match-dot"></span></div>
           <div class="match-item"><span class="match-pic">🌇</span><span class="match-dot"></span></div>
+          <div class="match-item"><span class="match-pic">👫</span><span class="match-dot"></span></div>
           <div class="match-item"><span class="match-pic">🌅</span><span class="match-dot"></span></div>
         </div>
       </div>
@@ -414,6 +474,7 @@
       <div class="tf-row">2. 🌙 = good afternoon<span class="tf-faces"><span>😊</span><span>😢</span></span></div>
       <div class="tf-row">3. 👩‍🏫 = teacher<span class="tf-faces"><span>😊</span><span>😢</span></span></div>
       <div class="tf-row">4. 👫 = happy<span class="tf-faces"><span>😊</span><span>😢</span></span></div>
+      <div class="tf-row">5. 🌙 = good evening<span class="tf-faces"><span>😊</span><span>😢</span></span></div>
     </div>
 
     <div class="task-box" style="background:var(--orange-l);">
@@ -428,6 +489,20 @@
       <div class="letter-boxes">
         <div class="letter-box">h</div><div class="letter-box">a</div><div class="letter-box blank">p</div><div class="letter-box">p</div><div class="letter-box">y</div>
       </div>
+      <div class="circle-row" style="margin-bottom:6px;"><span style="font-size:28px;">👫</span></div>
+      <div class="letter-boxes">
+        <div class="letter-box">c</div><div class="letter-box">l</div><div class="letter-box">a</div><div class="letter-box">s</div><div class="letter-box blank">s</div><div class="letter-box">m</div><div class="letter-box">a</div><div class="letter-box">t</div><div class="letter-box">e</div>
+      </div>
+      <div class="circle-row" style="margin-bottom:6px;"><span style="font-size:28px;">👋</span></div>
+      <div class="letter-boxes">
+        <div class="letter-box">h</div><div class="letter-box blank">e</div><div class="letter-box">l</div><div class="letter-box">l</div><div class="letter-box">o</div>
+      </div>
+      <div class="circle-row" style="margin-bottom:6px;"><span style="font-size:28px;">🌅</span></div>
+      <div class="letter-boxes">
+        <div class="letter-box">g</div><div class="letter-box">o</div><div class="letter-box">o</div><div class="letter-box">d</div>
+        <span style="width:14px; display:inline-block;"></span>
+        <div class="letter-box">m</div><div class="letter-box">o</div><div class="letter-box blank">r</div><div class="letter-box">n</div><div class="letter-box">i</div><div class="letter-box">n</div><div class="letter-box">g</div>
+      </div>
     </div>
 
     <div class="task-box" style="background:var(--green-l);">
@@ -438,6 +513,15 @@
       </div>
       <div class="mcq-q">2. 👩‍🏫 Teacher: "Hello, class! How are you?" 🐰 Bống: "I'm ______!" 😄
         <div class="mcq-opts"><span class="mcq-opt">A. happy</span><span class="mcq-opt">B. sad</span><span class="mcq-opt">C. tired</span></div>
+      </div>
+      <div class="mcq-q">3. 🌇 🐰 Bống: "It's afternoon now! Say '______', Gấu!"
+        <div class="mcq-opts"><span class="mcq-opt">A. Good afternoon</span><span class="mcq-opt">B. Good morning</span><span class="mcq-opt">C. Good evening</span></div>
+      </div>
+      <div class="mcq-q">4. 🌙 🐻 Gấu: "______, everyone! Time for bed."
+        <div class="mcq-opts"><span class="mcq-opt">A. Good evening</span><span class="mcq-opt">B. Good morning</span><span class="mcq-opt">C. Happy</span></div>
+      </div>
+      <div class="mcq-q">5. 👫 🐻 Gấu: "Are they your friends?" 🐰 Bống: "Yes, they are my ______!"
+        <div class="mcq-opts"><span class="mcq-opt">A. classmates</span><span class="mcq-opt">B. teacher</span><span class="mcq-opt">C. happy</span></div>
       </div>
     </div>
 
@@ -453,6 +537,8 @@
       <div class="tf-row">1. Gấu says "Good morning."<span class="tf-faces"><span>😊</span><span>😢</span></span></div>
       <div class="tf-row">2. Bống is happy.<span class="tf-faces"><span>😊</span><span>😢</span></span></div>
       <div class="tf-row">3. The teacher says "Good evening."<span class="tf-faces"><span>😊</span><span>😢</span></span></div>
+      <div class="tf-row">4. The teacher says "Good morning, children!"<span class="tf-faces"><span>😊</span><span>😢</span></span></div>
+      <div class="tf-row">5. Bống is happy to see her classmates.<span class="tf-faces"><span>😊</span><span>😢</span></span></div>
     </div>
 
     <div class="task-box" style="background:var(--purple-l);">
@@ -461,6 +547,10 @@
       <div class="trace-word">Teacher!</div>
       <div class="write-line"></div>
       <div class="trace-word">Happy!</div>
+      <div class="write-line"></div>
+      <div class="trace-word">Classmate!</div>
+      <div class="write-line"></div>
+      <div class="trace-word">Good morning!</div>
       <div class="write-line"></div>
     </div>
 
@@ -510,8 +600,10 @@
           <div class="match-item"><span class="match-dot"></span><span class="match-word">book</span></div>
           <div class="match-item"><span class="match-dot"></span><span class="match-word">pencil</span></div>
           <div class="match-item"><span class="match-dot"></span><span class="match-word">ruler</span></div>
+          <div class="match-item"><span class="match-dot"></span><span class="match-word">pen</span></div>
         </div>
         <div class="match-col">
+          <div class="match-item"><span class="match-pic">🖊️</span><span class="match-dot"></span></div>
           <div class="match-item"><span class="match-pic">📏</span><span class="match-dot"></span></div>
           <div class="match-item"><span class="match-pic">🎒</span><span class="match-dot"></span></div>
           <div class="match-item"><span class="match-pic">✏️</span><span class="match-dot"></span></div>
@@ -525,6 +617,9 @@
       <p class="task-title">Đọc từ, khoanh tròn tranh đúng</p>
       <div class="circle-row"><div class="circle-q">1. pen</div><div class="circle-opt"><span>🖊️</span><span>✏️</span><span>📏</span></div></div>
       <div class="circle-row" style="margin-top:12px;"><div class="circle-q">2. notebook</div><div class="circle-opt"><span>📓</span><span>📖</span><span>🎒</span></div></div>
+      <div class="circle-row" style="margin-top:12px;"><div class="circle-q">3. schoolbag</div><div class="circle-opt"><span>🎒</span><span>📖</span><span>📏</span></div></div>
+      <div class="circle-row" style="margin-top:12px;"><div class="circle-q">4. book</div><div class="circle-opt"><span>📖</span><span>📓</span><span>🖊️</span></div></div>
+      <div class="circle-row" style="margin-top:12px;"><div class="circle-q">5. ruler</div><div class="circle-opt"><span>📏</span><span>✏️</span><span>🖊️</span></div></div>
     </div>
 
     <div class="task-box" style="background:var(--pink-l);">
@@ -537,6 +632,15 @@
       <div class="circle-row" style="margin-bottom:4px;"><span style="font-size:28px;">📏</span></div>
       <div class="scramble-tiles"><span class="tile">l</span><span class="tile">e</span><span class="tile">r</span><span class="tile">u</span><span class="tile">r</span></div>
       <div class="write-line" style="margin-left:26px; margin-right:26px; max-width:200px;"></div>
+      <div class="circle-row" style="margin-bottom:4px;"><span style="font-size:28px;">🎒</span></div>
+      <div class="scramble-tiles"><span class="tile">g</span><span class="tile">a</span><span class="tile">b</span><span class="tile">l</span><span class="tile">o</span><span class="tile">o</span><span class="tile">h</span><span class="tile">c</span><span class="tile">s</span></div>
+      <div class="write-line" style="margin-left:26px; margin-right:26px; max-width:200px;"></div>
+      <div class="circle-row" style="margin-bottom:4px;"><span style="font-size:28px;">📖</span></div>
+      <div class="scramble-tiles"><span class="tile">o</span><span class="tile">k</span><span class="tile">b</span><span class="tile">o</span></div>
+      <div class="write-line" style="margin-left:26px; margin-right:26px; max-width:200px;"></div>
+      <div class="circle-row" style="margin-bottom:4px;"><span style="font-size:28px;">🖊️</span></div>
+      <div class="scramble-tiles"><span class="tile">n</span><span class="tile">p</span><span class="tile">e</span></div>
+      <div class="write-line" style="margin-left:26px; margin-right:26px; max-width:200px;"></div>
     </div>
 
     <div class="task-box" style="background:var(--blue-l);">
@@ -547,13 +651,19 @@
       <div class="write-line" style="margin-left:26px; margin-right:26px;"></div>
       <div class="scramble-tiles"><span class="tile word">a</span><span class="tile word">schoolbag</span><span class="tile word">It's</span></div>
       <div class="write-line" style="margin-left:26px; margin-right:26px;"></div>
+      <div class="scramble-tiles"><span class="tile word">book</span><span class="tile word">a</span><span class="tile word">It's</span></div>
+      <div class="write-line" style="margin-left:26px; margin-right:26px;"></div>
+      <div class="scramble-tiles"><span class="tile word">ruler</span><span class="tile word">a</span><span class="tile word">It's</span></div>
+      <div class="write-line" style="margin-left:26px; margin-right:26px;"></div>
+      <div class="scramble-tiles"><span class="tile word">pen</span><span class="tile word">a</span><span class="tile word">It's</span></div>
+      <div class="write-line" style="margin-left:26px; margin-right:26px;"></div>
     </div>
 
     <div class="task-box" style="background:var(--yellow-l);">
       <span class="task-num">5</span>
       <p class="task-title">Tô màu theo yêu cầu</p>
-      <p class="color-instr">Tô <b style="background:var(--pink);">màu hồng</b> cho hình tròn ứng với từ <b style="background:var(--pink);">"book"</b>, tô <b style="background:var(--blue);">màu xanh</b> cho hình ngôi sao ứng với từ <b style="background:var(--blue);">"pen"</b>.</p>
-      <div class="shape-row"><span class="shape">●</span><span class="shape">★</span></div>
+      <p class="color-instr">Tô <b style="background:var(--pink);">màu hồng</b> cho hình tròn ứng với từ <b style="background:var(--pink);">"book"</b>, tô <b style="background:var(--blue);">màu xanh</b> cho hình ngôi sao ứng với từ <b style="background:var(--blue);">"pen"</b>, tô <b style="background:var(--yellow);">màu vàng</b> cho hình tam giác ứng với từ <b style="background:var(--yellow);">"pencil"</b>, và tô <b style="background:var(--green);">màu xanh lá</b> cho hình vuông ứng với từ <b style="background:var(--green);">"ruler"</b>.</p>
+      <div class="shape-row"><span class="shape">●</span><span class="shape">★</span><span class="shape">▲</span><span class="shape">■</span></div>
     </div>
 
     <div class="task-box" style="background:var(--purple-l);">
@@ -562,6 +672,10 @@
       <div class="trace-word">Pencil!</div>
       <div class="write-line"></div>
       <div class="trace-word">Notebook!</div>
+      <div class="write-line"></div>
+      <div class="trace-word">Schoolbag!</div>
+      <div class="write-line"></div>
+      <div class="trace-word">Ruler!</div>
       <div class="write-line"></div>
     </div>
 
@@ -614,6 +728,18 @@
         <div class="circle-q">2. window</div>
         <div class="circle-opt"><span>🪟</span><span>📋</span><span>🖍️</span></div>
       </div>
+      <div class="circle-row" style="margin-top:12px;">
+        <div class="circle-q">3. door</div>
+        <div class="circle-opt"><span>🚪</span><span>⏰</span><span>🪑</span></div>
+      </div>
+      <div class="circle-row" style="margin-top:12px;">
+        <div class="circle-q">4. clock</div>
+        <div class="circle-opt"><span>⏰</span><span>🪟</span><span>📋</span></div>
+      </div>
+      <div class="circle-row" style="margin-top:12px;">
+        <div class="circle-q">5. board</div>
+        <div class="circle-opt"><span>📋</span><span>🖍️</span><span>🚪</span></div>
+      </div>
     </div>
 
     <div class="task-box" style="background:var(--green-l);">
@@ -623,6 +749,7 @@
       <div class="tf-row">2. 🚪 = clock<span class="tf-faces"><span>😊</span><span>😢</span></span></div>
       <div class="tf-row">3. ⏰ = clock<span class="tf-faces"><span>😊</span><span>😢</span></span></div>
       <div class="tf-row">4. 📋 = door<span class="tf-faces"><span>😊</span><span>😢</span></span></div>
+      <div class="tf-row">5. 🪑 = chair<span class="tf-faces"><span>😊</span><span>😢</span></span></div>
     </div>
 
     <div class="task-box" style="background:var(--orange-l);">
@@ -637,6 +764,18 @@
       <div class="letter-boxes">
         <div class="letter-box">b</div><div class="letter-box">o</div><div class="letter-box">a</div><div class="letter-box">r</div><div class="letter-box blank">d</div>
       </div>
+      <div class="circle-row" style="margin-bottom:6px;"><span style="font-size:28px;">🪑</span></div>
+      <div class="letter-boxes">
+        <div class="letter-box">c</div><div class="letter-box">h</div><div class="letter-box blank">a</div><div class="letter-box">i</div><div class="letter-box">r</div>
+      </div>
+      <div class="circle-row" style="margin-bottom:6px;"><span style="font-size:28px;">🪟</span></div>
+      <div class="letter-boxes">
+        <div class="letter-box">w</div><div class="letter-box">i</div><div class="letter-box">n</div><div class="letter-box blank">d</div><div class="letter-box">o</div><div class="letter-box">w</div>
+      </div>
+      <div class="circle-row" style="margin-bottom:6px;"><span style="font-size:28px;">⏰</span></div>
+      <div class="letter-boxes">
+        <div class="letter-box">c</div><div class="letter-box">l</div><div class="letter-box blank">o</div><div class="letter-box">c</div><div class="letter-box">k</div>
+      </div>
     </div>
 
     <div class="task-box" style="background:var(--green-l);">
@@ -647,6 +786,15 @@
       </div>
       <div class="mcq-q">2. 🐰 Bống: Where's the clock? 🐻 Gấu: ______
         <div class="mcq-opts"><span class="mcq-opt">A. It's near the window.</span><span class="mcq-opt">B. I'm five.</span><span class="mcq-opt">C. Yes, please.</span></div>
+      </div>
+      <div class="mcq-q">3. 🐻 Gấu: Where's the crayon? 🐰 Bống: ______
+        <div class="mcq-opts"><span class="mcq-opt">A. It's near the chair.</span><span class="mcq-opt">B. Goodbye.</span><span class="mcq-opt">C. I'm five.</span></div>
+      </div>
+      <div class="mcq-q">4. 🐰 Bống: Where's the chair? 🐻 Gấu: ______
+        <div class="mcq-opts"><span class="mcq-opt">A. It's near the board.</span><span class="mcq-opt">B. Yes, please.</span><span class="mcq-opt">C. Hello.</span></div>
+      </div>
+      <div class="mcq-q">5. 🐻 Gấu: Where's the board? 🐰 Bống: ______
+        <div class="mcq-opts"><span class="mcq-opt">A. It's near the window.</span><span class="mcq-opt">B. It's a pencil.</span><span class="mcq-opt">C. Thank you.</span></div>
       </div>
     </div>
 
@@ -662,6 +810,9 @@
       </div>
       <div class="tf-row">1. The board is near the window.<span class="tf-faces"><span>😊</span><span>😢</span></span></div>
       <div class="tf-row">2. The clock is near the chair.<span class="tf-faces"><span>😊</span><span>😢</span></span></div>
+      <div class="tf-row">3. The clock is near the door.<span class="tf-faces"><span>😊</span><span>😢</span></span></div>
+      <div class="tf-row">4. Gấu and Bống are in the classroom.<span class="tf-faces"><span>😊</span><span>😢</span></span></div>
+      <div class="tf-row">5. The board is near the door.<span class="tf-faces"><span>😊</span><span>😢</span></span></div>
     </div>
 
     <div class="task-box" style="background:var(--purple-l);">
@@ -670,6 +821,10 @@
       <div class="trace-word">Crayon!</div>
       <div class="write-line"></div>
       <div class="trace-word">Window!</div>
+      <div class="write-line"></div>
+      <div class="trace-word">Door!</div>
+      <div class="write-line"></div>
+      <div class="trace-word">Clock!</div>
       <div class="write-line"></div>
     </div>
 
@@ -722,12 +877,14 @@
           <div class="match-item"><span class="match-dot"></span><span class="match-word">girl</span></div>
           <div class="match-item"><span class="match-dot"></span><span class="match-word">kind</span></div>
           <div class="match-item"><span class="match-dot"></span><span class="match-word">funny</span></div>
+          <div class="match-item"><span class="match-dot"></span><span class="match-word">smart</span></div>
         </div>
         <div class="match-col">
           <div class="match-item"><span class="match-pic">😂</span><span class="match-dot"></span></div>
           <div class="match-item"><span class="match-pic">👦</span><span class="match-dot"></span></div>
           <div class="match-item"><span class="match-pic">🤗</span><span class="match-dot"></span></div>
           <div class="match-item"><span class="match-pic">👧</span><span class="match-dot"></span></div>
+          <div class="match-item"><span class="match-pic">🤓</span><span class="match-dot"></span></div>
         </div>
       </div>
     </div>
@@ -743,6 +900,18 @@
         <div class="circle-q">2. friendly</div>
         <div class="circle-opt"><span>🙂</span><span>🤗</span><span>🤓</span></div>
       </div>
+      <div class="circle-row" style="margin-top:12px;">
+        <div class="circle-q">3. boy</div>
+        <div class="circle-opt"><span>👦</span><span>👧</span><span>🤓</span></div>
+      </div>
+      <div class="circle-row" style="margin-top:12px;">
+        <div class="circle-q">4. girl</div>
+        <div class="circle-opt"><span>👧</span><span>👦</span><span>😂</span></div>
+      </div>
+      <div class="circle-row" style="margin-top:12px;">
+        <div class="circle-q">5. kind</div>
+        <div class="circle-opt"><span>🤗</span><span>🤓</span><span>🙂</span></div>
+      </div>
     </div>
 
     <div class="task-box" style="background:var(--green-l);">
@@ -752,6 +921,7 @@
       <div class="tf-row">2. 👧 = boy<span class="tf-faces"><span>😊</span><span>😢</span></span></div>
       <div class="tf-row">3. 🤗 = kind<span class="tf-faces"><span>😊</span><span>😢</span></span></div>
       <div class="tf-row">4. 😂 = smart<span class="tf-faces"><span>😊</span><span>😢</span></span></div>
+      <div class="tf-row">5. 🙂 = friendly<span class="tf-faces"><span>😊</span><span>😢</span></span></div>
     </div>
 
     <div class="task-box" style="background:var(--blue-l);">
@@ -762,13 +932,19 @@
       <div class="write-line" style="margin-left:26px; margin-right:26px;"></div>
       <div class="scramble-tiles"><span class="tile word">funny.</span><span class="tile word">He</span><span class="tile word">is</span></div>
       <div class="write-line" style="margin-left:26px; margin-right:26px;"></div>
+      <div class="scramble-tiles"><span class="tile word">smart.</span><span class="tile word">She</span><span class="tile word">is</span></div>
+      <div class="write-line" style="margin-left:26px; margin-right:26px;"></div>
+      <div class="scramble-tiles"><span class="tile word">friendly.</span><span class="tile word">He</span><span class="tile word">is</span></div>
+      <div class="write-line" style="margin-left:26px; margin-right:26px;"></div>
+      <div class="scramble-tiles"><span class="tile word">kind.</span><span class="tile word">He</span><span class="tile word">is</span></div>
+      <div class="write-line" style="margin-left:26px; margin-right:26px;"></div>
     </div>
 
     <div class="task-box" style="background:var(--yellow-l);">
       <span class="task-num">5</span>
       <p class="task-title">Tô màu theo yêu cầu</p>
-      <p class="color-instr">Tô <b style="background:var(--pink);">màu hồng</b> cho hình tròn ứng với từ <b style="background:var(--pink);">"boy"</b>, tô <b style="background:var(--blue);">màu xanh</b> cho hình ngôi sao ứng với từ <b style="background:var(--blue);">"girl"</b>.</p>
-      <div class="shape-row"><span class="shape">●</span><span class="shape">★</span></div>
+      <p class="color-instr">Tô <b style="background:var(--pink);">màu hồng</b> cho hình tròn ứng với từ <b style="background:var(--pink);">"boy"</b>, tô <b style="background:var(--blue);">màu xanh</b> cho hình ngôi sao ứng với từ <b style="background:var(--blue);">"girl"</b>, tô <b style="background:var(--green);">màu xanh lá</b> cho hình tam giác ứng với từ <b style="background:var(--green);">"kind"</b>, tô <b style="background:var(--orange);">màu cam</b> cho hình thoi ứng với từ <b style="background:var(--orange);">"funny"</b>.</p>
+      <div class="shape-row"><span class="shape">●</span><span class="shape">★</span><span class="shape">▲</span><span class="shape">◆</span></div>
     </div>
 
     <div class="task-box" style="background:var(--purple-l);">
@@ -777,6 +953,10 @@
       <div class="trace-word">Friendly!</div>
       <div class="write-line"></div>
       <div class="trace-word">Smart!</div>
+      <div class="write-line"></div>
+      <div class="trace-word">Funny!</div>
+      <div class="write-line"></div>
+      <div class="trace-word">Kind!</div>
       <div class="write-line"></div>
     </div>
 
@@ -829,7 +1009,7 @@
       </div>
     </div>
 
-    <span class="sec-badge b2">Phần II — Nối từ với tranh (4 điểm)</span>
+    <span class="sec-badge b2">Phần II — Nối từ với tranh (5 cặp x 0.5 điểm = 2.5 điểm)</span>
     <div class="task-box" style="background:var(--pink-l);">
       <span class="task-num">2</span>
       <p class="task-title">Nối từ ở cột trái với tranh đúng ở cột phải</p>
@@ -840,8 +1020,10 @@
           <div class="match-item"><span class="match-dot"></span><span class="match-word">pencil</span></div>
           <div class="match-item"><span class="match-dot"></span><span class="match-word">girl</span></div>
           <div class="match-item"><span class="match-dot"></span><span class="match-word">chair</span></div>
+          <div class="match-item"><span class="match-dot"></span><span class="match-word">window</span></div>
         </div>
         <div class="match-col">
+          <div class="match-item"><span class="match-pic">🪟</span><span class="match-dot"></span></div>
           <div class="match-item"><span class="match-pic">👧</span><span class="match-dot"></span></div>
           <div class="match-item"><span class="match-pic">🪑</span><span class="match-dot"></span></div>
           <div class="match-item"><span class="match-pic">🎒</span><span class="match-dot"></span></div>
@@ -850,7 +1032,7 @@
       </div>
     </div>
 
-    <span class="sec-badge b3">Phần III — Viết câu ngắn (2 câu x ... = còn lại điểm)</span>
+    <span class="sec-badge b3">Phần III — Viết câu ngắn (3 câu x 0.5 điểm = 1.5 điểm)</span>
     <div class="task-box" style="background:var(--blue-l);">
       <span class="task-num">3</span>
       <p class="task-title">Đọc câu hỏi rồi viết câu trả lời bằng tiếng Anh</p>
@@ -858,6 +1040,8 @@
       <div class="mcq-q">1. What's your name?</div>
       <div class="write-line" style="margin-left:26px; margin-right:26px;"></div>
       <div class="mcq-q">2. What's this? 🖍️</div>
+      <div class="write-line" style="margin-left:26px; margin-right:26px;"></div>
+      <div class="mcq-q">3. How is she? 🤗</div>
       <div class="write-line" style="margin-left:26px; margin-right:26px;"></div>
     </div>
 
@@ -910,12 +1094,14 @@
           <div class="match-item"><span class="match-dot"></span><span class="match-word">mother</span></div>
           <div class="match-item"><span class="match-dot"></span><span class="match-word">brother</span></div>
           <div class="match-item"><span class="match-dot"></span><span class="match-word">sister</span></div>
+          <div class="match-item"><span class="match-dot"></span><span class="match-word">grandmother</span></div>
         </div>
         <div class="match-col">
-          <div class="match-item"><span class="match-pic">🧒</span><span class="match-dot"></span></div>
+          <div class="match-item"><span class="match-pic">👵</span><span class="match-dot"></span></div>
           <div class="match-item"><span class="match-pic">👨</span><span class="match-dot"></span></div>
           <div class="match-item"><span class="match-pic">👧</span><span class="match-dot"></span></div>
           <div class="match-item"><span class="match-pic">👩</span><span class="match-dot"></span></div>
+          <div class="match-item"><span class="match-pic">🧒</span><span class="match-dot"></span></div>
         </div>
       </div>
     </div>
@@ -932,6 +1118,18 @@
       <div class="letter-boxes">
         <div class="letter-box">m</div><div class="letter-box">o</div><div class="letter-box">t</div><div class="letter-box blank">h</div><div class="letter-box">e</div><div class="letter-box">r</div>
       </div>
+      <div class="circle-row" style="margin-bottom:6px;"><span style="font-size:28px;">👨</span></div>
+      <div class="letter-boxes">
+        <div class="letter-box">f</div><div class="letter-box blank">a</div><div class="letter-box">t</div><div class="letter-box">h</div><div class="letter-box">e</div><div class="letter-box">r</div>
+      </div>
+      <div class="circle-row" style="margin-bottom:6px;"><span style="font-size:28px;">🧒</span></div>
+      <div class="letter-boxes">
+        <div class="letter-box">b</div><div class="letter-box">r</div><div class="letter-box blank">o</div><div class="letter-box">t</div><div class="letter-box">h</div><div class="letter-box">e</div><div class="letter-box">r</div>
+      </div>
+      <div class="circle-row" style="margin-bottom:6px;"><span style="font-size:28px;">👴</span></div>
+      <div class="letter-boxes">
+        <div class="letter-box">g</div><div class="letter-box">r</div><div class="letter-box">a</div><div class="letter-box">n</div><div class="letter-box">d</div><div class="letter-box blank">f</div><div class="letter-box">a</div><div class="letter-box">t</div><div class="letter-box">h</div><div class="letter-box">e</div><div class="letter-box">r</div>
+      </div>
     </div>
 
     <div class="task-box" style="background:var(--pink-l);">
@@ -944,6 +1142,15 @@
       <div class="circle-row" style="margin-bottom:4px;"><span style="font-size:28px;">👧</span></div>
       <div class="scramble-tiles"><span class="tile">e</span><span class="tile">r</span><span class="tile">s</span><span class="tile">i</span><span class="tile">t</span><span class="tile">s</span></div>
       <div class="write-line" style="margin-left:26px; margin-right:26px; max-width:200px;"></div>
+      <div class="circle-row" style="margin-bottom:4px;"><span style="font-size:28px;">👩</span></div>
+      <div class="scramble-tiles"><span class="tile">t</span><span class="tile">h</span><span class="tile">o</span><span class="tile">m</span><span class="tile">r</span><span class="tile">e</span></div>
+      <div class="write-line" style="margin-left:26px; margin-right:26px; max-width:200px;"></div>
+      <div class="circle-row" style="margin-bottom:4px;"><span style="font-size:28px;">🧒</span></div>
+      <div class="scramble-tiles"><span class="tile">h</span><span class="tile">t</span><span class="tile">r</span><span class="tile">o</span><span class="tile">b</span><span class="tile">e</span><span class="tile">r</span></div>
+      <div class="write-line" style="margin-left:26px; margin-right:26px; max-width:200px;"></div>
+      <div class="circle-row" style="margin-bottom:4px;"><span style="font-size:28px;">👵</span></div>
+      <div class="scramble-tiles"><span class="tile">o</span><span class="tile">t</span><span class="tile">g</span><span class="tile">h</span><span class="tile">e</span><span class="tile">r</span><span class="tile">d</span><span class="tile">n</span><span class="tile">a</span><span class="tile">m</span><span class="tile">r</span></div>
+      <div class="write-line" style="margin-left:26px; margin-right:26px; max-width:200px;"></div>
     </div>
 
     <div class="task-box" style="background:var(--green-l);">
@@ -954,6 +1161,15 @@
       </div>
       <div class="mcq-q">2. 🐻 Gấu: Who is this? 🐰 Bống: This is my ______. 👴
         <div class="mcq-opts"><span class="mcq-opt">A. grandfather</span><span class="mcq-opt">B. brother</span><span class="mcq-opt">C. clock</span></div>
+      </div>
+      <div class="mcq-q">3. 🐻 Gấu: Is this your sister? 🐰 Bống: No, this is my ______. 👩
+        <div class="mcq-opts"><span class="mcq-opt">A. mother</span><span class="mcq-opt">B. father</span><span class="mcq-opt">C. table</span></div>
+      </div>
+      <div class="mcq-q">4. 🐰 Bống: This is my ______. 👵
+        <div class="mcq-opts"><span class="mcq-opt">A. grandmother</span><span class="mcq-opt">B. brother</span><span class="mcq-opt">C. ball</span></div>
+      </div>
+      <div class="mcq-q">5. 🐻 Gấu: Who is this boy? 🐰 Bống: This is my ______. 🧒
+        <div class="mcq-opts"><span class="mcq-opt">A. brother</span><span class="mcq-opt">B. sister</span><span class="mcq-opt">C. bag</span></div>
       </div>
     </div>
 
@@ -967,7 +1183,10 @@
         <p>🐰 Bống: This is my grandmother.</p>
       </div>
       <div class="tf-row">1. This is Bống's father.<span class="tf-faces"><span>😊</span><span>😢</span></span></div>
-      <div class="tf-row">2. This is Bống's brother.<span class="tf-faces"><span>😊</span><span>😢</span></span></div>
+      <div class="tf-row">2. This is Bống's mother.<span class="tf-faces"><span>😊</span><span>😢</span></span></div>
+      <div class="tf-row">3. This is Bống's grandmother.<span class="tf-faces"><span>😊</span><span>😢</span></span></div>
+      <div class="tf-row">4. This is Bống's brother.<span class="tf-faces"><span>😊</span><span>😢</span></span></div>
+      <div class="tf-row">5. This is Bống's sister.<span class="tf-faces"><span>😊</span><span>😢</span></span></div>
     </div>
 
     <div class="task-box" style="background:var(--purple-l);">
@@ -976,6 +1195,10 @@
       <div class="trace-word">Father!</div>
       <div class="write-line"></div>
       <div class="trace-word">Mother!</div>
+      <div class="write-line"></div>
+      <div class="trace-word">Brother!</div>
+      <div class="write-line"></div>
+      <div class="trace-word">Sister!</div>
       <div class="write-line"></div>
     </div>
 
@@ -1027,6 +1250,18 @@
         <div class="circle-q">2. farmer</div>
         <div class="circle-opt"><span>👨‍🌾</span><span>👩‍⚕️</span><span>👶</span></div>
       </div>
+      <div class="circle-row" style="margin-top:12px;">
+        <div class="circle-q">3. teacher</div>
+        <div class="circle-opt"><span>👩‍🏫</span><span>👨‍🦱</span><span>👶</span></div>
+      </div>
+      <div class="circle-row" style="margin-top:12px;">
+        <div class="circle-q">4. aunt</div>
+        <div class="circle-opt"><span>👩‍🦱</span><span>👨‍🦱</span><span>👩‍🏫</span></div>
+      </div>
+      <div class="circle-row" style="margin-top:12px;">
+        <div class="circle-q">5. uncle</div>
+        <div class="circle-opt"><span>👨‍🦱</span><span>👩‍🦱</span><span>👨‍🌾</span></div>
+      </div>
     </div>
 
     <div class="task-box" style="background:var(--green-l);">
@@ -1036,6 +1271,7 @@
       <div class="tf-row">2. 👩‍🦱 = uncle<span class="tf-faces"><span>😊</span><span>😢</span></span></div>
       <div class="tf-row">3. 👨‍🌾 = farmer<span class="tf-faces"><span>😊</span><span>😢</span></span></div>
       <div class="tf-row">4. 👩‍🏫 = doctor<span class="tf-faces"><span>😊</span><span>😢</span></span></div>
+      <div class="tf-row">5. 👨‍🦱 = uncle<span class="tf-faces"><span>😊</span><span>😢</span></span></div>
     </div>
 
     <div class="task-box" style="background:var(--blue-l);">
@@ -1045,6 +1281,12 @@
       <div class="scramble-tiles"><span class="tile word">doctor</span><span class="tile word">mother</span><span class="tile word">a</span><span class="tile word">My</span><span class="tile word">is</span></div>
       <div class="write-line" style="margin-left:26px; margin-right:26px;"></div>
       <div class="scramble-tiles"><span class="tile word">farmer</span><span class="tile word">father</span><span class="tile word">a</span><span class="tile word">My</span><span class="tile word">is</span></div>
+      <div class="write-line" style="margin-left:26px; margin-right:26px;"></div>
+      <div class="scramble-tiles"><span class="tile word">teacher</span><span class="tile word">aunt</span><span class="tile word">a</span><span class="tile word">My</span><span class="tile word">is</span></div>
+      <div class="write-line" style="margin-left:26px; margin-right:26px;"></div>
+      <div class="scramble-tiles"><span class="tile word">farmer</span><span class="tile word">uncle</span><span class="tile word">a</span><span class="tile word">My</span><span class="tile word">is</span></div>
+      <div class="write-line" style="margin-left:26px; margin-right:26px;"></div>
+      <div class="scramble-tiles"><span class="tile word">doctor</span><span class="tile word">aunt</span><span class="tile word">a</span><span class="tile word">My</span><span class="tile word">is</span></div>
       <div class="write-line" style="margin-left:26px; margin-right:26px;"></div>
     </div>
 
@@ -1057,13 +1299,22 @@
       <div class="mcq-q">2. This is my ______. She works in a hospital.
         <div class="mcq-opts"><span class="mcq-opt">A. aunt</span><span class="mcq-opt">B. uncle</span><span class="mcq-opt">C. baby</span></div>
       </div>
+      <div class="mcq-q">3. My ______ teaches at school.
+        <div class="mcq-opts"><span class="mcq-opt">A. teacher</span><span class="mcq-opt">B. doctor</span><span class="mcq-opt">C. farmer</span></div>
+      </div>
+      <div class="mcq-q">4. This is my little ______. She is only one year old.
+        <div class="mcq-opts"><span class="mcq-opt">A. baby</span><span class="mcq-opt">B. uncle</span><span class="mcq-opt">C. teacher</span></div>
+      </div>
+      <div class="mcq-q">5. My ______ is my father's brother.
+        <div class="mcq-opts"><span class="mcq-opt">A. uncle</span><span class="mcq-opt">B. aunt</span><span class="mcq-opt">C. baby</span></div>
+      </div>
     </div>
 
     <div class="task-box" style="background:var(--yellow-l);">
       <span class="task-num">5</span>
       <p class="task-title">Tô màu theo yêu cầu</p>
-      <p class="color-instr">Tô <b style="background:var(--pink);">màu hồng</b> cho hình tròn ứng với từ <b style="background:var(--pink);">"doctor"</b>, tô <b style="background:var(--blue);">màu xanh</b> cho hình ngôi sao ứng với từ <b style="background:var(--blue);">"farmer"</b>.</p>
-      <div class="shape-row"><span class="shape">●</span><span class="shape">★</span></div>
+      <p class="color-instr">Tô <b style="background:var(--pink);">màu hồng</b> cho hình tròn ứng với từ <b style="background:var(--pink);">"doctor"</b>, tô <b style="background:var(--blue);">màu xanh</b> cho hình ngôi sao ứng với từ <b style="background:var(--blue);">"farmer"</b>, tô <b style="background:var(--green);">màu xanh lá</b> cho hình thoi ứng với từ <b style="background:var(--green);">"teacher"</b>, tô <b style="background:var(--purple);">màu tím</b> cho hình tam giác ứng với từ <b style="background:var(--purple);">"uncle"</b>.</p>
+      <div class="shape-row"><span class="shape">●</span><span class="shape">★</span><span class="shape">◆</span><span class="shape">▲</span></div>
     </div>
 
     <div class="task-box" style="background:var(--purple-l);">
@@ -1072,6 +1323,10 @@
       <div class="trace-word">Baby!</div>
       <div class="write-line"></div>
       <div class="trace-word">Teacher!</div>
+      <div class="write-line"></div>
+      <div class="trace-word">Farmer!</div>
+      <div class="write-line"></div>
+      <div class="trace-word">Doctor!</div>
       <div class="write-line"></div>
     </div>
 
@@ -1121,8 +1376,10 @@
           <div class="match-item"><span class="match-dot"></span><span class="match-word">door</span></div>
           <div class="match-item"><span class="match-dot"></span><span class="match-word">window</span></div>
           <div class="match-item"><span class="match-dot"></span><span class="match-word">garden</span></div>
+          <div class="match-item"><span class="match-dot"></span><span class="match-word">wall</span></div>
         </div>
         <div class="match-col">
+          <div class="match-item"><span class="match-pic">🧱</span><span class="match-dot"></span></div>
           <div class="match-item"><span class="match-pic">🪟</span><span class="match-dot"></span></div>
           <div class="match-item"><span class="match-pic">🌷</span><span class="match-dot"></span></div>
           <div class="match-item"><span class="match-pic">🏠</span><span class="match-dot"></span></div>
@@ -1138,6 +1395,7 @@
       <div class="tf-row">2. 🚪 = window<span class="tf-faces"><span>😊</span><span>😢</span></span></div>
       <div class="tf-row">3. 🧱 = wall<span class="tf-faces"><span>😊</span><span>😢</span></span></div>
       <div class="tf-row">4. 🏚️ = door<span class="tf-faces"><span>😊</span><span>😢</span></span></div>
+      <div class="tf-row">5. 🌷 = garden<span class="tf-faces"><span>😊</span><span>😢</span></span></div>
     </div>
 
     <div class="task-box" style="background:var(--orange-l);">
@@ -1152,6 +1410,18 @@
       <div class="letter-boxes">
         <div class="letter-box">g</div><div class="letter-box blank">a</div><div class="letter-box">r</div><div class="letter-box">d</div><div class="letter-box blank">e</div><div class="letter-box">n</div>
       </div>
+      <div class="circle-row" style="margin-bottom:6px;"><span style="font-size:28px;">🏠</span></div>
+      <div class="letter-boxes">
+        <div class="letter-box">h</div><div class="letter-box blank">o</div><div class="letter-box">u</div><div class="letter-box blank">s</div><div class="letter-box">e</div>
+      </div>
+      <div class="circle-row" style="margin-bottom:6px;"><span style="font-size:28px;">🚪</span></div>
+      <div class="letter-boxes">
+        <div class="letter-box">d</div><div class="letter-box blank">o</div><div class="letter-box">o</div><div class="letter-box blank">r</div>
+      </div>
+      <div class="circle-row" style="margin-bottom:6px;"><span style="font-size:28px;">🧱</span></div>
+      <div class="letter-boxes">
+        <div class="letter-box">w</div><div class="letter-box blank">a</div><div class="letter-box">l</div><div class="letter-box blank">l</div>
+      </div>
     </div>
 
     <div class="task-box" style="background:var(--pink-l);">
@@ -1164,6 +1434,15 @@
       <div class="circle-row" style="margin-bottom:4px;"><span style="font-size:28px;">🏚️</span></div>
       <div class="scramble-tiles"><span class="tile">o</span><span class="tile">o</span><span class="tile">f</span><span class="tile">r</span></div>
       <div class="write-line" style="margin-left:26px; margin-right:26px; max-width:200px;"></div>
+      <div class="circle-row" style="margin-bottom:4px;"><span style="font-size:28px;">🚪</span></div>
+      <div class="scramble-tiles"><span class="tile">o</span><span class="tile">d</span><span class="tile">r</span><span class="tile">o</span></div>
+      <div class="write-line" style="margin-left:26px; margin-right:26px; max-width:200px;"></div>
+      <div class="circle-row" style="margin-bottom:4px;"><span style="font-size:28px;">🧱</span></div>
+      <div class="scramble-tiles"><span class="tile">l</span><span class="tile">w</span><span class="tile">l</span><span class="tile">a</span></div>
+      <div class="write-line" style="margin-left:26px; margin-right:26px; max-width:200px;"></div>
+      <div class="circle-row" style="margin-bottom:4px;"><span style="font-size:28px;">🌷</span></div>
+      <div class="scramble-tiles"><span class="tile">e</span><span class="tile">g</span><span class="tile">d</span><span class="tile">r</span><span class="tile">n</span><span class="tile">a</span></div>
+      <div class="write-line" style="margin-left:26px; margin-right:26px; max-width:200px;"></div>
     </div>
 
     <div class="task-box" style="background:var(--purple-l);">
@@ -1175,9 +1454,11 @@
         <p>🐻 Gấu: Does it have a wall?</p>
         <p>🐰 Bống: Yes! And a big roof too.</p>
       </div>
-      <div class="tf-row">1. Bống's house has a garden.<span class="tf-faces"><span>😊</span><span>😢</span></span></div>
-      <div class="tf-row">2. Bống's house doesn't have a wall.<span class="tf-faces"><span>😊</span><span>😢</span></span></div>
-      <div class="tf-row">3. Bống's house has a roof.<span class="tf-faces"><span>😊</span><span>😢</span></span></div>
+      <div class="tf-row">1. This is Bống's house.<span class="tf-faces"><span>😊</span><span>😢</span></span></div>
+      <div class="tf-row">2. Bống's house has a garden.<span class="tf-faces"><span>😊</span><span>😢</span></span></div>
+      <div class="tf-row">3. Bống's house doesn't have a wall.<span class="tf-faces"><span>😊</span><span>😢</span></span></div>
+      <div class="tf-row">4. Bống's house has a roof.<span class="tf-faces"><span>😊</span><span>😢</span></span></div>
+      <div class="tf-row">5. Bống's house doesn't have a garden.<span class="tf-faces"><span>😊</span><span>😢</span></span></div>
     </div>
 
     <div class="task-box" style="background:var(--purple-l);">
@@ -1186,6 +1467,10 @@
       <div class="trace-word">House!</div>
       <div class="write-line"></div>
       <div class="trace-word">Garden!</div>
+      <div class="write-line"></div>
+      <div class="trace-word">Door!</div>
+      <div class="write-line"></div>
+      <div class="trace-word">Window!</div>
       <div class="write-line"></div>
     </div>
 
@@ -1236,6 +1521,18 @@
         <div class="circle-q">2. bedroom</div>
         <div class="circle-opt"><span>🛏️</span><span>🚗</span><span>🪜</span></div>
       </div>
+      <div class="circle-row" style="margin-top:12px;">
+        <div class="circle-q">3. living room</div>
+        <div class="circle-opt"><span>🛋️</span><span>🍳</span><span>🛁</span></div>
+      </div>
+      <div class="circle-row" style="margin-top:12px;">
+        <div class="circle-q">4. bathroom</div>
+        <div class="circle-opt"><span>🛁</span><span>🪜</span><span>🚗</span></div>
+      </div>
+      <div class="circle-row" style="margin-top:12px;">
+        <div class="circle-q">5. garage</div>
+        <div class="circle-opt"><span>🚗</span><span>🛏️</span><span>🍳</span></div>
+      </div>
     </div>
 
     <div class="task-box" style="background:var(--orange-l);">
@@ -1250,6 +1547,18 @@
       <div class="letter-boxes">
         <div class="letter-box">s</div><div class="letter-box">t</div><div class="letter-box">a</div><div class="letter-box blank">i</div><div class="letter-box">r</div><div class="letter-box">s</div>
       </div>
+      <div class="circle-row" style="margin-bottom:6px;"><span style="font-size:28px;">🛏️</span></div>
+      <div class="letter-boxes">
+        <div class="letter-box">b</div><div class="letter-box">e</div><div class="letter-box blank">d</div><div class="letter-box">r</div><div class="letter-box">o</div><div class="letter-box blank">o</div><div class="letter-box">m</div>
+      </div>
+      <div class="circle-row" style="margin-bottom:6px;"><span style="font-size:28px;">🛁</span></div>
+      <div class="letter-boxes">
+        <div class="letter-box">b</div><div class="letter-box">a</div><div class="letter-box blank">t</div><div class="letter-box">h</div><div class="letter-box">r</div><div class="letter-box">o</div><div class="letter-box blank">o</div><div class="letter-box">m</div>
+      </div>
+      <div class="circle-row" style="margin-bottom:6px;"><span style="font-size:28px;">🚗</span></div>
+      <div class="letter-boxes">
+        <div class="letter-box">g</div><div class="letter-box">a</div><div class="letter-box blank">r</div><div class="letter-box">a</div><div class="letter-box">g</div><div class="letter-box blank">e</div>
+      </div>
     </div>
 
     <div class="task-box" style="background:var(--blue-l);">
@@ -1259,6 +1568,12 @@
       <div class="scramble-tiles"><span class="tile word">next to</span><span class="tile word">kitchen</span><span class="tile word">is</span><span class="tile word">the</span><span class="tile word">The</span><span class="tile word">living room</span></div>
       <div class="write-line" style="margin-left:26px; margin-right:26px;"></div>
       <div class="scramble-tiles"><span class="tile word">bathroom</span><span class="tile word">next to</span><span class="tile word">is</span><span class="tile word">the</span><span class="tile word">My bedroom</span></div>
+      <div class="write-line" style="margin-left:26px; margin-right:26px;"></div>
+      <div class="scramble-tiles"><span class="tile word">is</span><span class="tile word">the</span><span class="tile word">kitchen</span><span class="tile word">The</span><span class="tile word">next to</span><span class="tile word">garage</span></div>
+      <div class="write-line" style="margin-left:26px; margin-right:26px;"></div>
+      <div class="scramble-tiles"><span class="tile word">stairs</span><span class="tile word">The</span><span class="tile word">next to</span><span class="tile word">is</span><span class="tile word">the</span><span class="tile word">bathroom</span></div>
+      <div class="write-line" style="margin-left:26px; margin-right:26px;"></div>
+      <div class="scramble-tiles"><span class="tile word">the</span><span class="tile word">garage</span><span class="tile word">is</span><span class="tile word">living room</span><span class="tile word">My</span><span class="tile word">next to</span></div>
       <div class="write-line" style="margin-left:26px; margin-right:26px;"></div>
     </div>
 
@@ -1271,13 +1586,22 @@
       <div class="mcq-q">2. My bedroom is next to the ______.
         <div class="mcq-opts"><span class="mcq-opt">A. garage</span><span class="mcq-opt">B. bathroom</span><span class="mcq-opt">C. stairs</span></div>
       </div>
+      <div class="mcq-q">3. 🐰 Bống: Where's the garage? &nbsp; 🐻 Gấu: It's ______ the kitchen.
+        <div class="mcq-opts"><span class="mcq-opt">A. on</span><span class="mcq-opt">B. next to</span><span class="mcq-opt">C. under</span></div>
+      </div>
+      <div class="mcq-q">4. My bathroom is ______ my bedroom.
+        <div class="mcq-opts"><span class="mcq-opt">A. next to</span><span class="mcq-opt">B. in</span><span class="mcq-opt">C. on</span></div>
+      </div>
+      <div class="mcq-q">5. Where's the living room? It's ______ the kitchen.
+        <div class="mcq-opts"><span class="mcq-opt">A. under</span><span class="mcq-opt">B. on</span><span class="mcq-opt">C. next to</span></div>
+      </div>
     </div>
 
     <div class="task-box" style="background:var(--yellow-l);">
       <span class="task-num">5</span>
       <p class="task-title">Tô màu theo yêu cầu</p>
-      <p class="color-instr">Tô <b style="background:var(--pink);">màu hồng</b> cho hình vuông ứng với từ <b style="background:var(--pink);">"kitchen"</b>, tô <b style="background:var(--blue);">màu xanh</b> cho hình tròn ứng với từ <b style="background:var(--blue);">"bedroom"</b>.</p>
-      <div class="shape-row"><span class="shape">■</span><span class="shape">●</span></div>
+      <p class="color-instr">Tô <b style="background:var(--pink);">màu hồng</b> cho hình vuông ứng với từ <b style="background:var(--pink);">"kitchen"</b>, tô <b style="background:var(--blue);">màu xanh dương</b> cho hình tròn ứng với từ <b style="background:var(--blue);">"bedroom"</b>, tô <b style="background:var(--orange);">màu cam</b> cho hình tam giác ứng với từ <b style="background:var(--orange);">"garage"</b>, tô <b style="background:var(--green);">màu xanh lá</b> cho hình thoi ứng với từ <b style="background:var(--green);">"bathroom"</b>.</p>
+      <div class="shape-row"><span class="shape">■</span><span class="shape">●</span><span class="shape">▲</span><span class="shape">♦</span></div>
     </div>
 
     <div class="task-box" style="background:var(--purple-l);">
@@ -1286,6 +1610,10 @@
       <div class="trace-word">Kitchen!</div>
       <div class="write-line"></div>
       <div class="trace-word">Stairs!</div>
+      <div class="write-line"></div>
+      <div class="trace-word">Bedroom!</div>
+      <div class="write-line"></div>
+      <div class="trace-word">Bathroom!</div>
       <div class="write-line"></div>
     </div>
 
@@ -1348,8 +1676,8 @@
     <div class="task-box" style="background:var(--orange-l);">
       <span class="task-num">II</span>
       <p class="task-title">Chọn từ trong khung rồi điền vào chỗ trống</p>
-      <p class="task-instruction">Mỗi câu điền đúng được 1 điểm.</p>
-      <div class="scramble-tiles"><span class="tile word">schoolbag</span><span class="tile word">mother</span><span class="tile word">window</span><span class="tile word">farmer</span></div>
+      <p class="task-instruction">Mỗi câu điền đúng được 0,8 điểm.</p>
+      <div class="scramble-tiles"><span class="tile word">schoolbag</span><span class="tile word">mother</span><span class="tile word">window</span><span class="tile word">farmer</span><span class="tile word">friend</span></div>
       <div class="mcq-q">1. I keep my pens and books in my ______.</div>
       <div class="write-line" style="margin-left:26px; max-width:220px;"></div>
       <div class="mcq-q">2. My father and my ______ are my parents.</div>
@@ -1357,6 +1685,8 @@
       <div class="mcq-q">3. Open the ______ to let fresh air in.</div>
       <div class="write-line" style="margin-left:26px; max-width:220px;"></div>
       <div class="mcq-q">4. He grows rice and vegetables. He is a ______.</div>
+      <div class="write-line" style="margin-left:26px; max-width:220px;"></div>
+      <div class="mcq-q">5. Bống always helps me. She is my best ______.</div>
       <div class="write-line" style="margin-left:26px; max-width:220px;"></div>
     </div>
 
@@ -1368,6 +1698,8 @@
       <div class="mcq-q">1. What's this? 📏</div>
       <div class="write-line" style="margin-left:26px; margin-right:26px;"></div>
       <div class="mcq-q">2. Where's the kitchen?</div>
+      <div class="write-line" style="margin-left:26px; margin-right:26px;"></div>
+      <div class="mcq-q">3. What's this? 🎒</div>
       <div class="write-line" style="margin-left:26px; margin-right:26px;"></div>
     </div>
 
@@ -1420,12 +1752,14 @@
           <div class="match-item"><span class="match-dot"></span><span class="match-word">ear</span></div>
           <div class="match-item"><span class="match-dot"></span><span class="match-word">nose</span></div>
           <div class="match-item"><span class="match-dot"></span><span class="match-word">hand</span></div>
+          <div class="match-item"><span class="match-dot"></span><span class="match-word">mouth</span></div>
         </div>
         <div class="match-col">
           <div class="match-item"><span class="match-pic">✋</span><span class="match-dot"></span></div>
           <div class="match-item"><span class="match-pic">👃</span><span class="match-dot"></span></div>
           <div class="match-item"><span class="match-pic">👁️</span><span class="match-dot"></span></div>
           <div class="match-item"><span class="match-pic">👂</span><span class="match-dot"></span></div>
+          <div class="match-item"><span class="match-pic">👄</span><span class="match-dot"></span></div>
         </div>
       </div>
     </div>
@@ -1441,6 +1775,18 @@
         <div class="circle-q">2. hair</div>
         <div class="circle-opt"><span>💇</span><span>✋</span><span>👃</span></div>
       </div>
+      <div class="circle-row" style="margin-top:12px;">
+        <div class="circle-q">3. eye</div>
+        <div class="circle-opt"><span>👁️</span><span>👄</span><span>👂</span></div>
+      </div>
+      <div class="circle-row" style="margin-top:12px;">
+        <div class="circle-q">4. ear</div>
+        <div class="circle-opt"><span>👂</span><span>💇</span><span>✋</span></div>
+      </div>
+      <div class="circle-row" style="margin-top:12px;">
+        <div class="circle-q">5. nose</div>
+        <div class="circle-opt"><span>👃</span><span>👁️</span><span>💇</span></div>
+      </div>
     </div>
 
     <div class="task-box" style="background:var(--pink-l);">
@@ -1453,6 +1799,15 @@
       <div class="circle-row" style="margin-bottom:4px;"><span style="font-size:28px;">✋</span></div>
       <div class="scramble-tiles"><span class="tile">D</span><span class="tile">N</span><span class="tile">A</span><span class="tile">H</span></div>
       <div class="write-line" style="margin-left:26px; margin-right:26px; max-width:200px;"></div>
+      <div class="circle-row" style="margin-bottom:4px;"><span style="font-size:28px;">👃</span></div>
+      <div class="scramble-tiles"><span class="tile">O</span><span class="tile">S</span><span class="tile">E</span><span class="tile">N</span></div>
+      <div class="write-line" style="margin-left:26px; margin-right:26px; max-width:200px;"></div>
+      <div class="circle-row" style="margin-bottom:4px;"><span style="font-size:28px;">👄</span></div>
+      <div class="scramble-tiles"><span class="tile">T</span><span class="tile">H</span><span class="tile">O</span><span class="tile">U</span><span class="tile">M</span></div>
+      <div class="write-line" style="margin-left:26px; margin-right:26px; max-width:200px;"></div>
+      <div class="circle-row" style="margin-bottom:4px;"><span style="font-size:28px;">💇</span></div>
+      <div class="scramble-tiles"><span class="tile">I</span><span class="tile">R</span><span class="tile">A</span><span class="tile">H</span></div>
+      <div class="write-line" style="margin-left:26px; margin-right:26px; max-width:200px;"></div>
     </div>
 
     <div class="task-box" style="background:var(--green-l);">
@@ -1463,6 +1818,15 @@
       </div>
       <div class="mcq-q">2. 🐰 Bống points to the side of her head and says: "This is my ______."
         <div class="mcq-opts"><span class="mcq-opt">A. eye</span><span class="mcq-opt">B. ear</span><span class="mcq-opt">C. mouth</span></div>
+      </div>
+      <div class="mcq-q">3. 🐻 Gấu smells a flower with his ______.
+        <div class="mcq-opts"><span class="mcq-opt">A. nose</span><span class="mcq-opt">B. mouth</span><span class="mcq-opt">C. hair</span></div>
+      </div>
+      <div class="mcq-q">4. 🐰 Bống: I eat with my ______.
+        <div class="mcq-opts"><span class="mcq-opt">A. ear</span><span class="mcq-opt">B. mouth</span><span class="mcq-opt">C. hand</span></div>
+      </div>
+      <div class="mcq-q">5. I have two ______ and I can see with them.
+        <div class="mcq-opts"><span class="mcq-opt">A. eyes</span><span class="mcq-opt">B. hands</span><span class="mcq-opt">C. ears</span></div>
       </div>
     </div>
 
@@ -1477,6 +1841,9 @@
       </div>
       <div class="tf-row">1. Gấu has two hands.<span class="tf-faces"><span>😊</span><span>😢</span></span></div>
       <div class="tf-row">2. Bống has two noses.<span class="tf-faces"><span>😊</span><span>😢</span></span></div>
+      <div class="tf-row">3. Bống has one mouth.<span class="tf-faces"><span>😊</span><span>😢</span></span></div>
+      <div class="tf-row">4. Gấu has two eyes.<span class="tf-faces"><span>😊</span><span>😢</span></span></div>
+      <div class="tf-row">5. Gấu has one hand.<span class="tf-faces"><span>😊</span><span>😢</span></span></div>
     </div>
 
     <div class="task-box" style="background:var(--purple-l);">
@@ -1485,6 +1852,10 @@
       <div class="trace-word">Nose!</div>
       <div class="write-line"></div>
       <div class="trace-word">Mouth!</div>
+      <div class="write-line"></div>
+      <div class="trace-word">Eye!</div>
+      <div class="write-line"></div>
+      <div class="trace-word">Ear!</div>
       <div class="write-line"></div>
     </div>
 
@@ -1534,6 +1905,7 @@
       <div class="tf-row">2. 🦶 = arm<span class="tf-faces"><span>😊</span><span>😢</span></span></div>
       <div class="tf-row">3. 💪 = arm<span class="tf-faces"><span>😊</span><span>😢</span></span></div>
       <div class="tf-row">4. 🦷 = finger<span class="tf-faces"><span>😊</span><span>😢</span></span></div>
+      <div class="tf-row">5. ☝️ = finger<span class="tf-faces"><span>😊</span><span>😢</span></span></div>
     </div>
 
     <div class="task-box" style="background:var(--orange-l);">
@@ -1542,8 +1914,14 @@
       <p class="task-instruction">Nhìn tranh, viết chữ cái còn thiếu vào ô trống.</p>
       <div class="circle-row" style="margin-bottom:6px;"><span style="font-size:28px;">🦵</span></div>
       <div class="letter-boxes"><div class="letter-box">L</div><div class="letter-box blank">E</div><div class="letter-box">G</div></div>
-      <div class="circle-row" style="margin-bottom:6px;"><span style="font-size:28px;">💪</span></div>
+      <div class="circle-row" style="margin-bottom:6px; margin-top:10px;"><span style="font-size:28px;">💪</span></div>
       <div class="letter-boxes"><div class="letter-box">A</div><div class="letter-box">R</div><div class="letter-box blank">M</div></div>
+      <div class="circle-row" style="margin-bottom:6px; margin-top:10px;"><span style="font-size:28px;">🦶</span></div>
+      <div class="letter-boxes"><div class="letter-box">F</div><div class="letter-box">O</div><div class="letter-box blank">O</div><div class="letter-box">T</div></div>
+      <div class="circle-row" style="margin-bottom:6px; margin-top:10px;"><span style="font-size:28px;">🦷</span></div>
+      <div class="letter-boxes"><div class="letter-box">T</div><div class="letter-box">O</div><div class="letter-box">O</div><div class="letter-box">T</div><div class="letter-box blank">H</div></div>
+      <div class="circle-row" style="margin-bottom:6px; margin-top:10px;"><span style="font-size:28px;">☝️</span></div>
+      <div class="letter-boxes"><div class="letter-box">F</div><div class="letter-box blank">I</div><div class="letter-box">N</div><div class="letter-box">G</div><div class="letter-box">E</div><div class="letter-box">R</div></div>
     </div>
 
     <div class="task-box" style="background:var(--pink-l);">
@@ -1553,8 +1931,17 @@
       <div class="circle-row" style="margin-bottom:4px;"><span style="font-size:28px;">🦶</span></div>
       <div class="scramble-tiles"><span class="tile">O</span><span class="tile">T</span><span class="tile">O</span><span class="tile">F</span></div>
       <div class="write-line" style="margin-left:26px; margin-right:26px; max-width:200px;"></div>
-      <div class="circle-row" style="margin-bottom:4px;"><span style="font-size:28px;">🦷</span></div>
+      <div class="circle-row" style="margin-bottom:4px; margin-top:8px;"><span style="font-size:28px;">🦷</span></div>
       <div class="scramble-tiles"><span class="tile">O</span><span class="tile">T</span><span class="tile">O</span><span class="tile">H</span><span class="tile">T</span></div>
+      <div class="write-line" style="margin-left:26px; margin-right:26px; max-width:200px;"></div>
+      <div class="circle-row" style="margin-bottom:4px; margin-top:8px;"><span style="font-size:28px;">🦵</span></div>
+      <div class="scramble-tiles"><span class="tile">G</span><span class="tile">E</span><span class="tile">L</span></div>
+      <div class="write-line" style="margin-left:26px; margin-right:26px; max-width:200px;"></div>
+      <div class="circle-row" style="margin-bottom:4px; margin-top:8px;"><span style="font-size:28px;">💪</span></div>
+      <div class="scramble-tiles"><span class="tile">R</span><span class="tile">M</span><span class="tile">A</span></div>
+      <div class="write-line" style="margin-left:26px; margin-right:26px; max-width:200px;"></div>
+      <div class="circle-row" style="margin-bottom:4px; margin-top:8px;"><span style="font-size:28px;">☝️</span></div>
+      <div class="scramble-tiles"><span class="tile">G</span><span class="tile">R</span><span class="tile">I</span><span class="tile">F</span><span class="tile">E</span><span class="tile">N</span></div>
       <div class="write-line" style="margin-left:26px; margin-right:26px; max-width:200px;"></div>
     </div>
 
@@ -1566,13 +1953,19 @@
       <div class="write-line" style="margin-left:26px; margin-right:26px;"></div>
       <div class="scramble-tiles"><span class="tile word">legs</span><span class="tile word">I</span><span class="tile word">two</span><span class="tile word">have</span></div>
       <div class="write-line" style="margin-left:26px; margin-right:26px;"></div>
+      <div class="scramble-tiles"><span class="tile word">arms</span><span class="tile word">have</span><span class="tile word">two</span><span class="tile word">I</span></div>
+      <div class="write-line" style="margin-left:26px; margin-right:26px;"></div>
+      <div class="scramble-tiles"><span class="tile word">feet</span><span class="tile word">two</span><span class="tile word">I</span><span class="tile word">have</span></div>
+      <div class="write-line" style="margin-left:26px; margin-right:26px;"></div>
+      <div class="scramble-tiles"><span class="tile word">head</span><span class="tile word">I</span><span class="tile word">one</span><span class="tile word">have</span></div>
+      <div class="write-line" style="margin-left:26px; margin-right:26px;"></div>
     </div>
 
     <div class="task-box" style="background:var(--yellow-l);">
       <span class="task-num">5</span>
       <p class="task-title">Tô màu theo yêu cầu</p>
-      <p class="color-instr">Tô <b style="background:var(--pink);">màu hồng</b> cho hình tròn ứng với từ <b style="background:var(--pink);">"leg"</b>, tô <b style="background:var(--blue);">màu xanh</b> cho hình ngôi sao ứng với từ <b style="background:var(--blue);">"arm"</b>.</p>
-      <div class="shape-row"><span class="shape">●</span><span class="shape">★</span></div>
+      <p class="color-instr">Tô <b style="background:var(--pink);">màu hồng</b> cho hình tròn ứng với từ <b style="background:var(--pink);">"leg"</b>, tô <b style="background:var(--blue);">màu xanh</b> cho hình ngôi sao ứng với từ <b style="background:var(--blue);">"arm"</b>, tô <b style="background:var(--green);">màu xanh lá</b> cho hình tam giác ứng với từ <b style="background:var(--green);">"finger"</b>, tô <b style="background:var(--orange);">màu cam</b> cho hình thoi ứng với từ <b style="background:var(--orange);">"tooth"</b>.</p>
+      <div class="shape-row"><span class="shape">●</span><span class="shape">★</span><span class="shape">▲</span><span class="shape">◆</span></div>
     </div>
 
     <div class="task-box" style="background:var(--purple-l);">
@@ -1581,6 +1974,10 @@
       <div class="trace-word">Finger!</div>
       <div class="write-line"></div>
       <div class="trace-word">Tooth!</div>
+      <div class="write-line"></div>
+      <div class="trace-word">Leg!</div>
+      <div class="write-line"></div>
+      <div class="trace-word">Arm!</div>
       <div class="write-line"></div>
     </div>
 
@@ -1631,12 +2028,14 @@
           <div class="match-item"><span class="match-dot"></span><span class="match-word">kite</span></div>
           <div class="match-item"><span class="match-dot"></span><span class="match-word">robot</span></div>
           <div class="match-item"><span class="match-dot"></span><span class="match-word">balloon</span></div>
+          <div class="match-item"><span class="match-dot"></span><span class="match-word">doll</span></div>
         </div>
         <div class="match-col">
           <div class="match-item"><span class="match-pic">🤖</span><span class="match-dot"></span></div>
           <div class="match-item"><span class="match-pic">🎈</span><span class="match-dot"></span></div>
           <div class="match-item"><span class="match-pic">⚽</span><span class="match-dot"></span></div>
           <div class="match-item"><span class="match-pic">🪁</span><span class="match-dot"></span></div>
+          <div class="match-item"><span class="match-pic">🪆</span><span class="match-dot"></span></div>
         </div>
       </div>
     </div>
@@ -1652,6 +2051,18 @@
         <div class="circle-q">2. teddy bear</div>
         <div class="circle-opt"><span>🧸</span><span>🪆</span><span>🐶</span></div>
       </div>
+      <div class="circle-row" style="margin-top:12px;">
+        <div class="circle-q">3. ball</div>
+        <div class="circle-opt"><span>⚽</span><span>🪁</span><span>🎈</span></div>
+      </div>
+      <div class="circle-row" style="margin-top:12px;">
+        <div class="circle-q">4. kite</div>
+        <div class="circle-opt"><span>🪁</span><span>🎈</span><span>⚽</span></div>
+      </div>
+      <div class="circle-row" style="margin-top:12px;">
+        <div class="circle-q">5. balloon</div>
+        <div class="circle-opt"><span>🎈</span><span>🪁</span><span>⚽</span></div>
+      </div>
     </div>
 
     <div class="task-box" style="background:var(--orange-l);">
@@ -1666,6 +2077,18 @@
       <div class="letter-boxes">
         <div class="letter-box">k</div><div class="letter-box blank">i</div><div class="letter-box">t</div><div class="letter-box">e</div>
       </div>
+      <div class="circle-row" style="margin-bottom:6px; margin-top:10px;"><span style="font-size:28px;">🤖</span></div>
+      <div class="letter-boxes">
+        <div class="letter-box">r</div><div class="letter-box">o</div><div class="letter-box blank">b</div><div class="letter-box">o</div><div class="letter-box">t</div>
+      </div>
+      <div class="circle-row" style="margin-bottom:6px; margin-top:10px;"><span style="font-size:28px;">🪆</span></div>
+      <div class="letter-boxes">
+        <div class="letter-box">d</div><div class="letter-box">o</div><div class="letter-box blank">l</div><div class="letter-box">l</div>
+      </div>
+      <div class="circle-row" style="margin-bottom:6px; margin-top:10px;"><span style="font-size:28px;">🎈</span></div>
+      <div class="letter-boxes">
+        <div class="letter-box">b</div><div class="letter-box">a</div><div class="letter-box">l</div><div class="letter-box blank">l</div><div class="letter-box">o</div><div class="letter-box">o</div><div class="letter-box">n</div>
+      </div>
     </div>
 
     <div class="task-box" style="background:var(--green-l);">
@@ -1676,6 +2099,15 @@
       </div>
       <div class="mcq-q">2. 🐻 Gấu: What's this? 🐰 Bống: It's a ______.
         <div class="mcq-opts"><span class="mcq-opt">A. teddy bear</span><span class="mcq-opt">B. run</span><span class="mcq-opt">C. jump</span></div>
+      </div>
+      <div class="mcq-q">3. 🐰 Bống: Do you have a kite? 🐻 Gấu: ______
+        <div class="mcq-opts"><span class="mcq-opt">A. Yes, I do.</span><span class="mcq-opt">B. It's a doll.</span><span class="mcq-opt">C. I like balls.</span></div>
+      </div>
+      <div class="mcq-q">4. 🐻 Gấu: What's this? 🐰 Bống: It's a ______.
+        <div class="mcq-opts"><span class="mcq-opt">A. balloon</span><span class="mcq-opt">B. swim</span><span class="mcq-opt">C. eat</span></div>
+      </div>
+      <div class="mcq-q">5. 🐰 Bống: Do you have a ball? 🐻 Gấu: ______
+        <div class="mcq-opts"><span class="mcq-opt">A. No, I don't.</span><span class="mcq-opt">B. It's a kite.</span><span class="mcq-opt">C. I like dolls.</span></div>
       </div>
     </div>
 
@@ -1692,6 +2124,8 @@
       <div class="tf-row">1. Gấu has a kite.<span class="tf-faces"><span>😊</span><span>😢</span></span></div>
       <div class="tf-row">2. Bống doesn't have a balloon.<span class="tf-faces"><span>😊</span><span>😢</span></span></div>
       <div class="tf-row">3. Gấu and Bống play together.<span class="tf-faces"><span>😊</span><span>😢</span></span></div>
+      <div class="tf-row">4. Bống thinks the kite is beautiful.<span class="tf-faces"><span>😊</span><span>😢</span></span></div>
+      <div class="tf-row">5. Bống doesn't like her balloon.<span class="tf-faces"><span>😊</span><span>😢</span></span></div>
     </div>
 
     <div class="task-box" style="background:var(--purple-l);">
@@ -1700,6 +2134,10 @@
       <div class="trace-word">Ball!</div>
       <div class="write-line"></div>
       <div class="trace-word">Robot!</div>
+      <div class="write-line"></div>
+      <div class="trace-word">Kite!</div>
+      <div class="write-line"></div>
+      <div class="trace-word">Doll!</div>
       <div class="write-line"></div>
     </div>
 
@@ -1746,6 +2184,7 @@
       <div class="tf-row">2. 🥁 = yo-yo<span class="tf-faces"><span>😊</span><span>😢</span></span></div>
       <div class="tf-row">3. 🚂 = toy train<span class="tf-faces"><span>😊</span><span>😢</span></span></div>
       <div class="tf-row">4. 🏠 = blocks<span class="tf-faces"><span>😊</span><span>😢</span></span></div>
+      <div class="tf-row">5. 🪀 = yo-yo<span class="tf-faces"><span>😊</span><span>😢</span></span></div>
     </div>
 
     <div class="task-box" style="background:var(--pink-l);">
@@ -1758,6 +2197,15 @@
       <div class="circle-row" style="margin-bottom:4px; margin-top:8px;"><span style="font-size:28px;">🥁</span></div>
       <div class="scramble-tiles"><span class="tile">m</span><span class="tile">r</span><span class="tile">u</span><span class="tile">d</span></div>
       <div class="write-line" style="margin-left:26px; margin-right:26px; max-width:200px;"></div>
+      <div class="circle-row" style="margin-bottom:4px; margin-top:8px;"><span style="font-size:28px;">🧩</span></div>
+      <div class="scramble-tiles"><span class="tile">z</span><span class="tile">l</span><span class="tile">e</span><span class="tile">p</span><span class="tile">u</span><span class="tile">z</span></div>
+      <div class="write-line" style="margin-left:26px; margin-right:26px; max-width:200px;"></div>
+      <div class="circle-row" style="margin-bottom:4px; margin-top:8px;"><span style="font-size:28px;">🪀</span></div>
+      <div class="scramble-tiles"><span class="tile">o</span><span class="tile">y</span><span class="tile">o</span><span class="tile">y</span></div>
+      <div class="write-line" style="margin-left:26px; margin-right:26px; max-width:200px;"></div>
+      <div class="circle-row" style="margin-bottom:4px; margin-top:8px;"><span style="font-size:28px;">🚂</span></div>
+      <div class="scramble-tiles"><span class="tile">a</span><span class="tile">i</span><span class="tile">n</span><span class="tile">t</span><span class="tile">r</span></div>
+      <div class="write-line" style="margin-left:26px; margin-right:26px; max-width:200px;"></div>
     </div>
 
     <div class="task-box" style="background:var(--blue-l);">
@@ -1767,6 +2215,12 @@
       <div class="scramble-tiles"><span class="tile word">have</span><span class="tile word">I</span><span class="tile word">puzzle</span><span class="tile word">a</span></div>
       <div class="write-line" style="margin-left:26px; margin-right:26px;"></div>
       <div class="scramble-tiles"><span class="tile word">have</span><span class="tile word">Do</span><span class="tile word">a</span><span class="tile word">drum</span><span class="tile word">you</span></div>
+      <div class="write-line" style="margin-left:26px; margin-right:26px;"></div>
+      <div class="scramble-tiles"><span class="tile word">a</span><span class="tile word">have</span><span class="tile word">yo-yo</span><span class="tile word">I</span></div>
+      <div class="write-line" style="margin-left:26px; margin-right:26px;"></div>
+      <div class="scramble-tiles"><span class="tile word">blocks</span><span class="tile word">Do</span><span class="tile word">have</span><span class="tile word">you</span></div>
+      <div class="write-line" style="margin-left:26px; margin-right:26px;"></div>
+      <div class="scramble-tiles"><span class="tile word">train</span><span class="tile word">have</span><span class="tile word">a</span><span class="tile word">toy</span><span class="tile word">I</span></div>
       <div class="write-line" style="margin-left:26px; margin-right:26px;"></div>
     </div>
 
@@ -1779,13 +2233,22 @@
       <div class="mcq-q">2. 🐰 Bống: What's this? 🐻 Gấu: It's a ______.
         <div class="mcq-opts"><span class="mcq-opt">A. toy train</span><span class="mcq-opt">B. swim</span><span class="mcq-opt">C. jump</span></div>
       </div>
+      <div class="mcq-q">3. 🐰 Bống: Do you have a puzzle? 🐻 Gấu: ______
+        <div class="mcq-opts"><span class="mcq-opt">A. Yes, I do.</span><span class="mcq-opt">B. It's blocks.</span><span class="mcq-opt">C. I like drums.</span></div>
+      </div>
+      <div class="mcq-q">4. 🐻 Gấu: What's this? 🐰 Bống: It's a ______.
+        <div class="mcq-opts"><span class="mcq-opt">A. doll house</span><span class="mcq-opt">B. run</span><span class="mcq-opt">C. eat</span></div>
+      </div>
+      <div class="mcq-q">5. 🐰 Bống: Do you have blocks? 🐻 Gấu: ______
+        <div class="mcq-opts"><span class="mcq-opt">A. No, I don't.</span><span class="mcq-opt">B. It's a puzzle.</span><span class="mcq-opt">C. I like yo-yos.</span></div>
+      </div>
     </div>
 
     <div class="task-box" style="background:var(--yellow-l);">
       <span class="task-num">5</span>
       <p class="task-title">Tô màu theo yêu cầu</p>
-      <p class="color-instr">Tô <b style="background:var(--pink);">màu hồng</b> cho hình tròn ứng với từ <b style="background:var(--pink);">"puzzle"</b>, tô <b style="background:var(--blue);">màu xanh</b> cho hình ngôi sao ứng với từ <b style="background:var(--blue);">"blocks"</b>.</p>
-      <div class="shape-row"><span class="shape">●</span><span class="shape">★</span></div>
+      <p class="color-instr">Tô <b style="background:var(--pink);">màu hồng</b> cho hình tròn ứng với từ <b style="background:var(--pink);">"puzzle"</b>, tô <b style="background:var(--blue);">màu xanh</b> cho hình ngôi sao ứng với từ <b style="background:var(--blue);">"blocks"</b>, tô <b style="background:var(--green);">màu xanh lá</b> cho hình tam giác ứng với từ <b style="background:var(--green);">"drum"</b>, tô <b style="background:var(--orange);">màu cam</b> cho hình thoi ứng với từ <b style="background:var(--orange);">"yo-yo"</b>.</p>
+      <div class="shape-row"><span class="shape">●</span><span class="shape">★</span><span class="shape">▲</span><span class="shape">◆</span></div>
     </div>
 
     <div class="task-box" style="background:var(--purple-l);">
@@ -1794,6 +2257,10 @@
       <div class="trace-word">Puzzle!</div>
       <div class="write-line"></div>
       <div class="trace-word">Drum!</div>
+      <div class="write-line"></div>
+      <div class="trace-word">Blocks!</div>
+      <div class="write-line"></div>
+      <div class="trace-word">Yo-yo!</div>
       <div class="write-line"></div>
     </div>
 
@@ -1843,11 +2310,13 @@
           <div class="match-item"><span class="match-dot"></span><span class="match-word">cat</span></div>
           <div class="match-item"><span class="match-dot"></span><span class="match-word">bird</span></div>
           <div class="match-item"><span class="match-dot"></span><span class="match-word">fish</span></div>
+          <div class="match-item"><span class="match-dot"></span><span class="match-word">elephant</span></div>
         </div>
         <div class="match-col">
+          <div class="match-item"><span class="match-pic">🐦</span><span class="match-dot"></span></div>
+          <div class="match-item"><span class="match-pic">🐘</span><span class="match-dot"></span></div>
           <div class="match-item"><span class="match-pic">🐟</span><span class="match-dot"></span></div>
           <div class="match-item"><span class="match-pic">🐶</span><span class="match-dot"></span></div>
-          <div class="match-item"><span class="match-pic">🐦</span><span class="match-dot"></span></div>
           <div class="match-item"><span class="match-pic">🐱</span><span class="match-dot"></span></div>
         </div>
       </div>
@@ -1864,6 +2333,18 @@
         <div class="circle-q">2. elephant</div>
         <div class="circle-opt"><span>🐘</span><span>🐟</span><span>🐦</span></div>
       </div>
+      <div class="circle-row" style="margin-top:12px;">
+        <div class="circle-q">3. dog</div>
+        <div class="circle-opt"><span>🐶</span><span>🐱</span><span>🐦</span></div>
+      </div>
+      <div class="circle-row" style="margin-top:12px;">
+        <div class="circle-q">4. cat</div>
+        <div class="circle-opt"><span>🐦</span><span>🐱</span><span>🐘</span></div>
+      </div>
+      <div class="circle-row" style="margin-top:12px;">
+        <div class="circle-q">5. fish</div>
+        <div class="circle-opt"><span>🐟</span><span>🐰</span><span>🐘</span></div>
+      </div>
     </div>
 
     <div class="task-box" style="background:var(--green-l);">
@@ -1873,6 +2354,7 @@
       <div class="tf-row">2. 🐱 = bird<span class="tf-faces"><span>😊</span><span>😢</span></span></div>
       <div class="tf-row">3. 🐟 = fish<span class="tf-faces"><span>😊</span><span>😢</span></span></div>
       <div class="tf-row">4. 🐦 = rabbit<span class="tf-faces"><span>😊</span><span>😢</span></span></div>
+      <div class="tf-row">5. 🐘 = elephant<span class="tf-faces"><span>😊</span><span>😢</span></span></div>
     </div>
 
     <div class="task-box" style="background:var(--orange-l);">
@@ -1886,6 +2368,18 @@
       <div class="circle-row" style="margin-bottom:6px; margin-top:10px;"><span style="font-size:28px;">🐦</span></div>
       <div class="letter-boxes">
         <div class="letter-box">b</div><div class="letter-box blank">i</div><div class="letter-box">r</div><div class="letter-box">d</div>
+      </div>
+      <div class="circle-row" style="margin-bottom:6px; margin-top:10px;"><span style="font-size:28px;">🐱</span></div>
+      <div class="letter-boxes">
+        <div class="letter-box">c</div><div class="letter-box blank">a</div><div class="letter-box">t</div>
+      </div>
+      <div class="circle-row" style="margin-bottom:6px; margin-top:10px;"><span style="font-size:28px;">🐟</span></div>
+      <div class="letter-boxes">
+        <div class="letter-box">f</div><div class="letter-box">i</div><div class="letter-box blank">s</div><div class="letter-box">h</div>
+      </div>
+      <div class="circle-row" style="margin-bottom:6px; margin-top:10px;"><span style="font-size:28px;">🐰</span></div>
+      <div class="letter-boxes">
+        <div class="letter-box">r</div><div class="letter-box blank">a</div><div class="letter-box">b</div><div class="letter-box">b</div><div class="letter-box">i</div><div class="letter-box">t</div>
       </div>
     </div>
 
@@ -1902,6 +2396,8 @@
       <div class="tf-row">1. Bống has a cat.<span class="tf-faces"><span>😊</span><span>😢</span></span></div>
       <div class="tf-row">2. Gấu doesn't have a pet.<span class="tf-faces"><span>😊</span><span>😢</span></span></div>
       <div class="tf-row">3. Bống likes dogs and cats.<span class="tf-faces"><span>😊</span><span>😢</span></span></div>
+      <div class="tf-row">4. Bống's cat is named Mimi.<span class="tf-faces"><span>😊</span><span>😢</span></span></div>
+      <div class="tf-row">5. Gấu's dog is named Max.<span class="tf-faces"><span>😊</span><span>😢</span></span></div>
     </div>
 
     <div class="task-box" style="background:var(--purple-l);">
@@ -1910,6 +2406,10 @@
       <div class="trace-word">Dog!</div>
       <div class="write-line"></div>
       <div class="trace-word">Fish!</div>
+      <div class="write-line"></div>
+      <div class="trace-word">Cat!</div>
+      <div class="write-line"></div>
+      <div class="trace-word">Bird!</div>
       <div class="write-line"></div>
     </div>
 
@@ -1957,10 +2457,22 @@
       <p class="task-title">Đọc từ, khoanh tròn tranh đúng</p>
       <div class="circle-row">
         <div class="circle-q">1. blue</div>
-        <div class="circle-opt"><span>🔵</span><span>🔴</span><span>🟡</span></div>
+        <div class="circle-opt"><span>🔴</span><span>🔵</span><span>🟡</span></div>
       </div>
       <div class="circle-row" style="margin-top:12px;">
         <div class="circle-q">2. ten</div>
+        <div class="circle-opt"><span>5️⃣</span><span>🟢</span><span>🔟</span></div>
+      </div>
+      <div class="circle-row" style="margin-top:12px;">
+        <div class="circle-q">3. red</div>
+        <div class="circle-opt"><span>🔴</span><span>🟡</span><span>🔵</span></div>
+      </div>
+      <div class="circle-row" style="margin-top:12px;">
+        <div class="circle-q">4. green</div>
+        <div class="circle-opt"><span>🔵</span><span>🟢</span><span>🔴</span></div>
+      </div>
+      <div class="circle-row" style="margin-top:12px;">
+        <div class="circle-q">5. five</div>
         <div class="circle-opt"><span>🔟</span><span>5️⃣</span><span>🟢</span></div>
       </div>
     </div>
@@ -1975,6 +2487,15 @@
       <div class="circle-row" style="margin-bottom:4px;"><span style="font-size:28px;">5️⃣</span></div>
       <div class="scramble-tiles"><span class="tile">V</span><span class="tile">E</span><span class="tile">F</span><span class="tile">I</span></div>
       <div class="write-line" style="margin-left:26px; margin-right:26px; max-width:200px;"></div>
+      <div class="circle-row" style="margin-bottom:4px;"><span style="font-size:28px;">🔴</span></div>
+      <div class="scramble-tiles"><span class="tile">D</span><span class="tile">E</span><span class="tile">R</span></div>
+      <div class="write-line" style="margin-left:26px; margin-right:26px; max-width:200px;"></div>
+      <div class="circle-row" style="margin-bottom:4px;"><span style="font-size:28px;">🔵</span></div>
+      <div class="scramble-tiles"><span class="tile">E</span><span class="tile">U</span><span class="tile">L</span><span class="tile">B</span></div>
+      <div class="write-line" style="margin-left:26px; margin-right:26px; max-width:200px;"></div>
+      <div class="circle-row" style="margin-bottom:4px;"><span style="font-size:28px;">🔟</span></div>
+      <div class="scramble-tiles"><span class="tile">N</span><span class="tile">E</span><span class="tile">T</span></div>
+      <div class="write-line" style="margin-left:26px; margin-right:26px; max-width:200px;"></div>
     </div>
 
     <div class="task-box" style="background:var(--blue-l);">
@@ -1984,6 +2505,12 @@
       <div class="scramble-tiles"><span class="tile word">is</span><span class="tile word">blue</span><span class="tile word">It</span></div>
       <div class="write-line" style="margin-left:26px; margin-right:26px;"></div>
       <div class="scramble-tiles"><span class="tile word">have</span><span class="tile word">five</span><span class="tile word">I</span></div>
+      <div class="write-line" style="margin-left:26px; margin-right:26px;"></div>
+      <div class="scramble-tiles"><span class="tile word">red</span><span class="tile word">It</span><span class="tile word">is</span></div>
+      <div class="write-line" style="margin-left:26px; margin-right:26px;"></div>
+      <div class="scramble-tiles"><span class="tile word">yellow</span><span class="tile word">is</span><span class="tile word">It</span></div>
+      <div class="write-line" style="margin-left:26px; margin-right:26px;"></div>
+      <div class="scramble-tiles"><span class="tile word">I</span><span class="tile word">ten</span><span class="tile word">have</span></div>
       <div class="write-line" style="margin-left:26px; margin-right:26px;"></div>
     </div>
 
@@ -1996,13 +2523,22 @@
       <div class="mcq-q">2. 🐻 Gấu: How many balloons? 🐰 Bống: ______.
         <div class="mcq-opts"><span class="mcq-opt">A. Blue</span><span class="mcq-opt">B. Ten</span><span class="mcq-opt">C. Cat</span></div>
       </div>
+      <div class="mcq-q">3. 🐻 Gấu: What colour is the sun? 🐰 Bống: It's ______.
+        <div class="mcq-opts"><span class="mcq-opt">A. yellow</span><span class="mcq-opt">B. dog</span><span class="mcq-opt">C. bird</span></div>
+      </div>
+      <div class="mcq-q">4. 🐻 Gấu: How many stars? 🐰 Bống: ______.
+        <div class="mcq-opts"><span class="mcq-opt">A. Five</span><span class="mcq-opt">B. Blue</span><span class="mcq-opt">C. Fish</span></div>
+      </div>
+      <div class="mcq-q">5. 🐻 Gấu: What colour is the grass? 🐰 Bống: It's ______.
+        <div class="mcq-opts"><span class="mcq-opt">A. rabbit</span><span class="mcq-opt">B. green</span><span class="mcq-opt">C. ten</span></div>
+      </div>
     </div>
 
     <div class="task-box" style="background:var(--yellow-l);">
       <span class="task-num">5</span>
       <p class="task-title">Tô màu theo yêu cầu</p>
-      <p class="color-instr">Tô <b style="background:var(--pink);">màu đỏ</b> cho hình tròn ứng với từ <b style="background:var(--pink);">"red"</b>, tô <b style="background:var(--green);">màu xanh lá</b> cho hình ngôi sao ứng với từ <b style="background:var(--green);">"green"</b>.</p>
-      <div class="shape-row"><span class="shape">●</span><span class="shape">★</span></div>
+      <p class="color-instr">Tô <b style="background:var(--pink);">màu đỏ</b> cho hình tròn ứng với từ <b style="background:var(--pink);">"red"</b>, tô <b style="background:var(--green);">màu xanh lá</b> cho hình ngôi sao ứng với từ <b style="background:var(--green);">"green"</b>, tô <b style="background:var(--yellow);">màu vàng</b> cho hình tam giác ứng với từ <b style="background:var(--yellow);">"yellow"</b>, tô <b style="background:var(--blue);">màu xanh dương</b> cho hình vuông ứng với từ <b style="background:var(--blue);">"blue"</b>.</p>
+      <div class="shape-row"><span class="shape">●</span><span class="shape">★</span><span class="shape">▲</span><span class="shape">■</span></div>
     </div>
 
     <div class="task-box" style="background:var(--purple-l);">
@@ -2011,6 +2547,10 @@
       <div class="trace-word">Yellow!</div>
       <div class="write-line"></div>
       <div class="trace-word">Green!</div>
+      <div class="write-line"></div>
+      <div class="trace-word">Red!</div>
+      <div class="write-line"></div>
+      <div class="trace-word">Blue!</div>
       <div class="write-line"></div>
     </div>
 
@@ -2074,7 +2614,7 @@
     <span class="sec-badge b2">🅱️ Phần II — Nối từ với tranh</span>
     <div class="task-box" style="background:var(--pink-l);">
       <span class="task-num">II</span>
-      <p class="task-title">Phần II. Nối từ với tranh ôn tập (4 điểm)</p>
+      <p class="task-title">Phần II. Nối từ với tranh ôn tập (5 mục × 0.8 điểm = 4 điểm)</p>
       <p class="task-instruction">Dùng bút nối mỗi từ ở cột trái với hình đúng ở cột phải nhé!</p>
       <div class="match-row">
         <div class="match-col">
@@ -2082,12 +2622,14 @@
           <div class="match-item"><span class="match-dot"></span><span class="match-word">teddy bear</span></div>
           <div class="match-item"><span class="match-dot"></span><span class="match-word">fish</span></div>
           <div class="match-item"><span class="match-dot"></span><span class="match-word">yellow</span></div>
+          <div class="match-item"><span class="match-dot"></span><span class="match-word">red</span></div>
         </div>
         <div class="match-col">
-          <div class="match-item"><span class="match-pic">🐟</span><span class="match-dot"></span></div>
-          <div class="match-item"><span class="match-pic">🟡</span><span class="match-dot"></span></div>
-          <div class="match-item"><span class="match-pic">✋</span><span class="match-dot"></span></div>
           <div class="match-item"><span class="match-pic">🧸</span><span class="match-dot"></span></div>
+          <div class="match-item"><span class="match-pic">🐟</span><span class="match-dot"></span></div>
+          <div class="match-item"><span class="match-pic">🔴</span><span class="match-dot"></span></div>
+          <div class="match-item"><span class="match-pic">✋</span><span class="match-dot"></span></div>
+          <div class="match-item"><span class="match-pic">🟡</span><span class="match-dot"></span></div>
         </div>
       </div>
     </div>
@@ -2119,16 +2661,16 @@
     <span class="answer-week-label">TUẦN 1 — Unit 1: Hello (Phần 1)</span>
   <div class="answer-page">
     <h2>✅ Đáp án dành cho Ba Mẹ</h2>
-    <p class="answer-item"><b>Bài 1 (Nối từ — tranh):</b> hello ↔ 👋 ; goodbye ↔ 👋💨 ; friend ↔ 🧑‍🤝‍🧑 ; name ↔ 😀.</p>
-    <p class="answer-item"><b>Bài 2:</b> Câu 1 — 👋💨 (goodbye). Câu 2 — 🧑‍🤝‍🧑 (friend).</p>
-    <p class="answer-item"><b>Bài 3:</b> Câu 1 — Đúng 😊. Câu 2 — Sai 😢 (👋💨 là goodbye, không phải name). Câu 3 — Đúng 😊. Câu 4 — Sai 😢 (😀 là name, không phải goodbye).</p>
-    <p class="answer-item"><b>Bài 4 (Điền chữ cái):</b> h<b>e</b>llo — fri<b>e</b>nd.</p>
-    <p class="answer-item"><b>Bài 5 (Sắp xếp chữ cái):</b> E-Y-B → <b>bye</b>. A-E-N-M → <b>name</b>.</p>
-    <p class="answer-item"><b>Bài 6 (Sắp xếp từ thành câu):</b> "What's your name?" — "Hello, I'm Bống."</p>
-    <p class="answer-item"><b>Bài 7 (Trắc nghiệm):</b> Câu 1 — A. name. Câu 2 — B. Bye bye.</p>
-    <p class="answer-item"><b>Bài 8 (Đọc hiểu):</b> Câu 1 — Đúng 😊. Câu 2 — Sai 😢 (Bống nói "Goodbye" trước). Câu 3 — Đúng 😊.</p>
-    <p class="answer-item"><b>Bài 9:</b> Hình tròn tô màu hồng (Hello), hình ngôi sao tô màu xanh (Goodbye).</p>
-    <p class="answer-item"><b>Bài 10:</b> Ba mẹ kiểm tra bé viết đúng chính tả "Hello!" và "Goodbye!", có dấu chấm than ở cuối câu.</p>
+    <p class="answer-item"><b>Bài 1 (Nối từ — tranh):</b> hello ↔ 👋 ; goodbye ↔ 👋💨 ; friend ↔ 🧑‍🤝‍🧑 ; name ↔ 😀 ; hi ↔ 🙋.</p>
+    <p class="answer-item"><b>Bài 2:</b> Câu 1 — 👋💨 (goodbye). Câu 2 — 🧑‍🤝‍🧑 (friend). Câu 3 — 👋 (hello). Câu 4 — 🙋 (hi). Câu 5 — ✋ (bye).</p>
+    <p class="answer-item"><b>Bài 3:</b> Câu 1 — Đúng 😊. Câu 2 — Sai 😢 (👋💨 là goodbye, không phải name). Câu 3 — Đúng 😊. Câu 4 — Sai 😢 (😀 là name, không phải goodbye). Câu 5 — Đúng 😊.</p>
+    <p class="answer-item"><b>Bài 4 (Điền chữ cái):</b> h<b>e</b>llo — fri<b>e</b>nd — b<b>y</b>e — n<b>a</b>me — h<b>i</b>.</p>
+    <p class="answer-item"><b>Bài 5 (Sắp xếp chữ cái):</b> E-Y-B → <b>bye</b>. A-E-N-M → <b>name</b>. L-O-H-E-L → <b>hello</b>. I-H → <b>hi</b>. N-F-D-I-R-E → <b>friend</b>.</p>
+    <p class="answer-item"><b>Bài 6 (Sắp xếp từ thành câu):</b> "What's your name?" — "Hello, I'm Bống." — "Hi! I'm Gấu." — "Nice to meet you!" — "Bye bye!"</p>
+    <p class="answer-item"><b>Bài 7 (Trắc nghiệm):</b> Câu 1 — A. name. Câu 2 — B. Bye bye. Câu 3 — A. too. Câu 4 — A. Hello. Câu 5 — A. friend.</p>
+    <p class="answer-item"><b>Bài 8 (Đọc hiểu):</b> Câu 1 — Đúng 😊. Câu 2 — Sai 😢 (Bống nói "Goodbye" trước). Câu 3 — Đúng 😊. Câu 4 — Đúng 😊. Câu 5 — Sai 😢 (hội thoại bắt đầu bằng "Hello", không phải "Goodbye").</p>
+    <p class="answer-item"><b>Bài 9:</b> Hình tròn tô màu hồng (Hello), hình ngôi sao tô màu xanh (Goodbye), hình tam giác tô màu vàng (Hi), hình vuông tô màu xanh lá (Bye).</p>
+    <p class="answer-item"><b>Bài 10:</b> Ba mẹ kiểm tra bé viết đúng chính tả "Hello!", "Goodbye!", "Hi!" và "Bye bye!", có dấu chấm than ở cuối câu.</p>
   </div>
 
   </div>
@@ -2136,12 +2678,12 @@
     <span class="answer-week-label">TUẦN 2 — Unit 1: Hello (Phần 2)</span>
   <div class="answer-page">
     <h2>✅ Đáp án dành cho Ba Mẹ</h2>
-    <p class="answer-item"><b>Bài 1 (Nối từ với tranh):</b> good morning → 🌅; good afternoon → 🌇; teacher → 👩‍🏫; happy → 😄</p>
-    <p class="answer-item"><b>Bài 2 (Đúng/Sai):</b> 1. 🌅 = good morning → Đúng 😊 | 2. 🌙 = good afternoon → Sai 😢 (đây là good evening) | 3. 👩‍🏫 = teacher → Đúng 😊 | 4. 👫 = happy → Sai 😢 (đây là classmate)</p>
-    <p class="answer-item"><b>Bài 3 (Điền chữ cái):</b> teacher (thiếu chữ "a") | happy (thiếu chữ "p")</p>
-    <p class="answer-item"><b>Bài 4 (Trắc nghiệm):</b> 1. A. Good morning | 2. A. happy</p>
-    <p class="answer-item"><b>Bài 5 (Đọc hiểu):</b> 1. Đúng 😊 | 2. Đúng 😊 | 3. Sai 😢 (teacher nói "Good morning")</p>
-    <p class="answer-item"><b>Bài 6 (Tô nét chữ):</b> Ba mẹ kiểm tra bé viết đúng "Teacher!" và "Happy!" theo nét chấm.</p>
+    <p class="answer-item"><b>Bài 1 (Nối từ với tranh):</b> good morning → 🌅; good afternoon → 🌇; teacher → 👩‍🏫; happy → 😄; classmate → 👫</p>
+    <p class="answer-item"><b>Bài 2 (Đúng/Sai):</b> 1. 🌅 = good morning → Đúng 😊 | 2. 🌙 = good afternoon → Sai 😢 (đây là good evening) | 3. 👩‍🏫 = teacher → Đúng 😊 | 4. 👫 = happy → Sai 😢 (đây là classmate) | 5. 🌙 = good evening → Đúng 😊</p>
+    <p class="answer-item"><b>Bài 3 (Điền chữ cái):</b> teacher (thiếu chữ "a") | happy (thiếu chữ "p") | cla<b>s</b>smate (thiếu chữ "s") | h<b>e</b>llo (thiếu chữ "e") | good mo<b>r</b>ning (thiếu chữ "r")</p>
+    <p class="answer-item"><b>Bài 4 (Trắc nghiệm):</b> 1. A. Good morning | 2. A. happy | 3. A. Good afternoon | 4. A. Good evening | 5. A. classmates</p>
+    <p class="answer-item"><b>Bài 5 (Đọc hiểu):</b> 1. Đúng 😊 | 2. Đúng 😊 | 3. Sai 😢 (teacher nói "Good morning") | 4. Đúng 😊 | 5. Đúng 😊</p>
+    <p class="answer-item"><b>Bài 6 (Tô nét chữ):</b> Ba mẹ kiểm tra bé viết đúng "Teacher!", "Happy!", "Classmate!" và "Good morning!" theo nét chấm.</p>
   </div>
 
   </div>
@@ -2149,12 +2691,12 @@
     <span class="answer-week-label">TUẦN 3 — Unit 2: My school things (Phần 1)</span>
   <div class="answer-page">
     <h2>✅ Đáp án dành cho Ba Mẹ</h2>
-    <p class="answer-item"><b>Bài 1 (Nối từ với tranh):</b> schoolbag → 🎒; book → 📖; pencil → ✏️; ruler → 📏</p>
-    <p class="answer-item"><b>Bài 2 (Khoanh tranh đúng):</b> 1. pen → 🖊️ | 2. notebook → 📓</p>
-    <p class="answer-item"><b>Bài 3 (Sắp xếp chữ cái):</b> ✏️ → pencil | 📏 → ruler</p>
-    <p class="answer-item"><b>Bài 4 (Sắp xếp thành câu):</b> It's a pencil. | It's a schoolbag.</p>
-    <p class="answer-item"><b>Bài 5 (Tô màu):</b> Hình tròn tô hồng (book), hình ngôi sao tô xanh (pen).</p>
-    <p class="answer-item"><b>Bài 6 (Tô nét chữ):</b> Ba mẹ kiểm tra bé viết đúng "Pencil!" và "Notebook!" theo nét chấm.</p>
+    <p class="answer-item"><b>Bài 1 (Nối từ với tranh):</b> schoolbag → 🎒; book → 📖; pencil → ✏️; ruler → 📏; pen → 🖊️</p>
+    <p class="answer-item"><b>Bài 2 (Khoanh tranh đúng):</b> 1. pen → 🖊️ | 2. notebook → 📓 | 3. schoolbag → 🎒 | 4. book → 📖 | 5. ruler → 📏</p>
+    <p class="answer-item"><b>Bài 3 (Sắp xếp chữ cái):</b> ✏️ → pencil | 📏 → ruler | 🎒 → schoolbag | 📖 → book | 🖊️ → pen</p>
+    <p class="answer-item"><b>Bài 4 (Sắp xếp thành câu):</b> It's a pencil. | It's a schoolbag. | It's a book. | It's a ruler. | It's a pen.</p>
+    <p class="answer-item"><b>Bài 5 (Tô màu):</b> Hình tròn tô hồng (book), hình ngôi sao tô xanh (pen), hình tam giác tô vàng (pencil), hình vuông tô xanh lá (ruler).</p>
+    <p class="answer-item"><b>Bài 6 (Tô nét chữ):</b> Ba mẹ kiểm tra bé viết đúng "Pencil!", "Notebook!", "Schoolbag!" và "Ruler!" theo nét chấm.</p>
   </div>
 
   </div>
@@ -2162,12 +2704,12 @@
     <span class="answer-week-label">TUẦN 4 — Unit 2: My school things (Phần 2)</span>
   <div class="answer-page">
     <h2>✅ Đáp án dành cho Ba Mẹ</h2>
-    <div class="answer-item"><b>Bài 1:</b> 1. chair = 🪑 · 2. window = 🪟</div>
-    <div class="answer-item"><b>Bài 2:</b> 1. Đúng (😊) · 2. Sai (😢, 🚪 = door) · 3. Đúng (😊) · 4. Sai (😢, 📋 = board)</div>
-    <div class="answer-item"><b>Bài 3:</b> door · board</div>
-    <div class="answer-item"><b>Bài 4:</b> 1. A — It's near the door. · 2. A — It's near the window.</div>
-    <div class="answer-item"><b>Bài 5:</b> 1. Đúng (😊) · 2. Sai (😢, clock is near the door)</div>
-    <div class="answer-item"><b>Bài 6:</b> Ba mẹ giúp bé tô đúng nét chấm rồi tự viết lại "Crayon!" và "Window!" — kiểm tra bé viết đúng chính tả nhé.</div>
+    <div class="answer-item"><b>Bài 1:</b> 1. chair = 🪑 · 2. window = 🪟 · 3. door = 🚪 · 4. clock = ⏰ · 5. board = 📋</div>
+    <div class="answer-item"><b>Bài 2:</b> 1. Đúng (😊) · 2. Sai (😢, 🚪 = door) · 3. Đúng (😊) · 4. Sai (😢, 📋 = board) · 5. Đúng (😊)</div>
+    <div class="answer-item"><b>Bài 3:</b> door · board · chair · window · clock</div>
+    <div class="answer-item"><b>Bài 4:</b> 1. A — It's near the door. · 2. A — It's near the window. · 3. A — It's near the chair. · 4. A — It's near the board. · 5. A — It's near the window.</div>
+    <div class="answer-item"><b>Bài 5:</b> 1. Đúng (😊) · 2. Sai (😢, clock is near the door) · 3. Đúng (😊) · 4. Đúng (😊) · 5. Sai (😢, board is near the window)</div>
+    <div class="answer-item"><b>Bài 6:</b> Ba mẹ giúp bé tô đúng nét chấm rồi tự viết lại "Crayon!", "Window!", "Door!" và "Clock!" — kiểm tra bé viết đúng chính tả nhé.</div>
   </div>
 
   </div>
@@ -2175,12 +2717,12 @@
     <span class="answer-week-label">TUẦN 5 — Unit 3: My friends</span>
   <div class="answer-page">
     <h2>✅ Đáp án dành cho Ba Mẹ</h2>
-    <div class="answer-item"><b>Bài 1:</b> boy = 👦 · girl = 👧 · kind = 🤗 · funny = 😂</div>
-    <div class="answer-item"><b>Bài 2:</b> 1. smart = 🤓 · 2. friendly = 🙂</div>
-    <div class="answer-item"><b>Bài 3:</b> 1. Đúng (😊) · 2. Sai (😢, 👧 = girl) · 3. Đúng (😊) · 4. Sai (😢, 😂 = funny)</div>
-    <div class="answer-item"><b>Bài 4:</b> 1. She is kind. · 2. He is funny.</div>
-    <div class="answer-item"><b>Bài 5:</b> Ba mẹ giúp bé tô hình tròn màu hồng (boy) và hình ngôi sao màu xanh (girl).</div>
-    <div class="answer-item"><b>Bài 6:</b> Ba mẹ giúp bé tô đúng nét chấm rồi tự viết lại "Friendly!" và "Smart!" — kiểm tra bé viết đúng chính tả nhé.</div>
+    <div class="answer-item"><b>Bài 1:</b> boy = 👦 · girl = 👧 · kind = 🤗 · funny = 😂 · smart = 🤓</div>
+    <div class="answer-item"><b>Bài 2:</b> 1. smart = 🤓 · 2. friendly = 🙂 · 3. boy = 👦 · 4. girl = 👧 · 5. kind = 🤗</div>
+    <div class="answer-item"><b>Bài 3:</b> 1. Đúng (😊) · 2. Sai (😢, 👧 = girl) · 3. Đúng (😊) · 4. Sai (😢, 😂 = funny) · 5. Đúng (😊)</div>
+    <div class="answer-item"><b>Bài 4:</b> 1. She is kind. · 2. He is funny. · 3. She is smart. · 4. He is friendly. · 5. He is kind.</div>
+    <div class="answer-item"><b>Bài 5:</b> Ba mẹ giúp bé tô hình tròn màu hồng (boy), hình ngôi sao màu xanh (girl), hình tam giác màu xanh lá (kind) và hình thoi màu cam (funny).</div>
+    <div class="answer-item"><b>Bài 6:</b> Ba mẹ giúp bé tô đúng nét chấm rồi tự viết lại "Friendly!", "Smart!", "Funny!" và "Kind!" — kiểm tra bé viết đúng chính tả nhé.</div>
   </div>
 
   </div>
@@ -2189,10 +2731,11 @@
   <div class="answer-page">
     <h2>✅ Đáp án dành cho Ba Mẹ</h2>
     <div class="answer-item"><b>Phần I (6 điểm):</b> 1. A · 2. A · 3. A · 4. A · 5. A · 6. A</div>
-    <div class="answer-item"><b>Phần II (4 điểm):</b> schoolbag = 🎒 · pencil = ✏️ · girl = 👧 · chair = 🪑</div>
-    <div class="answer-item"><b>Phần III — Gợi ý câu trả lời mẫu:</b></div>
+    <div class="answer-item"><b>Phần II (2.5 điểm):</b> schoolbag = 🎒 · pencil = ✏️ · girl = 👧 · chair = 🪑 · window = 🪟</div>
+    <div class="answer-item"><b>Phần III (1.5 điểm) — Gợi ý câu trả lời mẫu:</b></div>
     <div class="answer-item">1. My name is (tên bé). — Ví dụ: "My name is Bống."</div>
     <div class="answer-item">2. It's a crayon. (hoặc tên đồ vật đúng theo hình bé nhìn thấy)</div>
+    <div class="answer-item">3. She is kind. (hoặc tính từ phù hợp đã học: kind, funny, smart, friendly)</div>
     <div class="answer-item" style="margin-top:8px; font-style:italic;">Lưu ý: Ba mẹ chỉ cần kiểm tra bé viết đúng ý và đúng từ đã học, không cần quá khắt khe về dấu chấm câu hay viết hoa.</div>
   </div>
 
@@ -2201,12 +2744,12 @@
     <span class="answer-week-label">TUẦN 7 — Unit 4: My family (Phần 1)</span>
   <div class="answer-page">
     <h2>✅ Đáp án dành cho Ba Mẹ</h2>
-    <div class="answer-item"><b>Bài 1:</b> father = 👨 · mother = 👩 · brother = 🧒 · sister = 👧</div>
-    <div class="answer-item"><b>Bài 2:</b> sister · mother</div>
-    <div class="answer-item"><b>Bài 3:</b> father · sister</div>
-    <div class="answer-item"><b>Bài 4:</b> 1. A — father. · 2. A — grandfather.</div>
-    <div class="answer-item"><b>Bài 5:</b> 1. Đúng (😊) · 2. Sai (😢, đây là grandmother)</div>
-    <div class="answer-item"><b>Bài 6:</b> Ba mẹ giúp bé tô đúng nét chấm rồi tự viết lại "Father!" và "Mother!" — kiểm tra bé viết đúng chính tả nhé.</div>
+    <div class="answer-item"><b>Bài 1:</b> father = 👨 · mother = 👩 · brother = 🧒 · sister = 👧 · grandmother = 👵</div>
+    <div class="answer-item"><b>Bài 2:</b> sister · mother · father · brother · grandfather</div>
+    <div class="answer-item"><b>Bài 3:</b> father · sister · mother · brother · grandmother</div>
+    <div class="answer-item"><b>Bài 4:</b> 1. A — father. · 2. A — grandfather. · 3. A — mother. · 4. A — grandmother. · 5. A — brother.</div>
+    <div class="answer-item"><b>Bài 5:</b> 1. Đúng (😊) · 2. Đúng (😊) · 3. Đúng (😊) · 4. Sai (😢, đây là grandmother) · 5. Sai (😢, đây là grandmother)</div>
+    <div class="answer-item"><b>Bài 6:</b> Ba mẹ giúp bé tô đúng nét chấm rồi tự viết lại "Father!", "Mother!", "Brother!" và "Sister!" — kiểm tra bé viết đúng chính tả nhé.</div>
   </div>
 
   </div>
@@ -2214,12 +2757,12 @@
     <span class="answer-week-label">TUẦN 8 — Unit 4: My family (Phần 2)</span>
   <div class="answer-page">
     <h2>✅ Đáp án dành cho Ba Mẹ</h2>
-    <p class="answer-item"><b>Bài 1:</b> 1. doctor → 👩‍⚕️ &nbsp; 2. farmer → 👨‍🌾</p>
-    <p class="answer-item"><b>Bài 2:</b> 1. Đúng (👶 = baby) &nbsp; 2. Sai (👩‍🦱 là aunt, không phải uncle) &nbsp; 3. Đúng (👨‍🌾 = farmer) &nbsp; 4. Sai (👩‍🏫 là teacher, không phải doctor)</p>
-    <p class="answer-item"><b>Bài 3:</b> Câu 1: My mother is a doctor. &nbsp; Câu 2: My father is a farmer.</p>
-    <p class="answer-item"><b>Bài 4:</b> Câu 1: B. farmer &nbsp; Câu 2: A. aunt</p>
-    <p class="answer-item"><b>Bài 5:</b> Tô màu hồng hình tròn (doctor), tô màu xanh hình ngôi sao (farmer).</p>
-    <p class="answer-item"><b>Bài 6:</b> Bé tô theo nét chấm rồi tự viết lại "Baby!" và "Teacher!".</p>
+    <p class="answer-item"><b>Bài 1:</b> 1. doctor → 👩‍⚕️ &nbsp; 2. farmer → 👨‍🌾 &nbsp; 3. teacher → 👩‍🏫 &nbsp; 4. aunt → 👩‍🦱 &nbsp; 5. uncle → 👨‍🦱</p>
+    <p class="answer-item"><b>Bài 2:</b> 1. Đúng (👶 = baby) &nbsp; 2. Sai (👩‍🦱 là aunt, không phải uncle) &nbsp; 3. Đúng (👨‍🌾 = farmer) &nbsp; 4. Sai (👩‍🏫 là teacher, không phải doctor) &nbsp; 5. Đúng (👨‍🦱 = uncle)</p>
+    <p class="answer-item"><b>Bài 3:</b> Câu 1: My mother is a doctor. &nbsp; Câu 2: My father is a farmer. &nbsp; Câu 3: My aunt is a teacher. &nbsp; Câu 4: My uncle is a farmer. &nbsp; Câu 5: My aunt is a doctor.</p>
+    <p class="answer-item"><b>Bài 4:</b> Câu 1: B. farmer &nbsp; Câu 2: A. aunt &nbsp; Câu 3: A. teacher &nbsp; Câu 4: A. baby &nbsp; Câu 5: A. uncle</p>
+    <p class="answer-item"><b>Bài 5:</b> Tô màu hồng hình tròn (doctor), tô màu xanh hình ngôi sao (farmer), tô màu xanh lá hình thoi (teacher), tô màu tím hình tam giác (uncle).</p>
+    <p class="answer-item"><b>Bài 6:</b> Bé tô theo nét chấm rồi tự viết lại "Baby!", "Teacher!", "Farmer!" và "Doctor!".</p>
   </div>
 
   </div>
@@ -2227,12 +2770,12 @@
     <span class="answer-week-label">TUẦN 9 — Unit 5: My house (Phần 1)</span>
   <div class="answer-page">
     <h2>✅ Đáp án dành cho Ba Mẹ</h2>
-    <p class="answer-item"><b>Bài 1:</b> house → 🏠, door → 🚪, window → 🪟, garden → 🌷</p>
-    <p class="answer-item"><b>Bài 2:</b> 1. Đúng (🏠 = house) &nbsp; 2. Sai (🚪 là door, không phải window) &nbsp; 3. Đúng (🧱 = wall) &nbsp; 4. Sai (🏚️ là roof, không phải door)</p>
-    <p class="answer-item"><b>Bài 3:</b> w-<b>i</b>-n-d-<b>o</b>-w (window) &nbsp; g-<b>a</b>-r-d-<b>e</b>-n (garden)</p>
-    <p class="answer-item"><b>Bài 4:</b> house &nbsp; roof</p>
-    <p class="answer-item"><b>Bài 5:</b> 1. Đúng &nbsp; 2. Sai (nhà Bống có tường) &nbsp; 3. Đúng</p>
-    <p class="answer-item"><b>Bài 6:</b> Bé tô theo nét chấm rồi tự viết lại "House!" và "Garden!".</p>
+    <p class="answer-item"><b>Bài 1:</b> house → 🏠, door → 🚪, window → 🪟, garden → 🌷, wall → 🧱</p>
+    <p class="answer-item"><b>Bài 2:</b> 1. Đúng (🏠 = house) &nbsp; 2. Sai (🚪 là door, không phải window) &nbsp; 3. Đúng (🧱 = wall) &nbsp; 4. Sai (🏚️ là roof, không phải door) &nbsp; 5. Đúng (🌷 = garden)</p>
+    <p class="answer-item"><b>Bài 3:</b> w-<b>i</b>-n-d-<b>o</b>-w (window) &nbsp; g-<b>a</b>-r-d-<b>e</b>-n (garden) &nbsp; h-<b>o</b>-u-<b>s</b>-e (house) &nbsp; d-<b>o</b>-o-<b>r</b> (door) &nbsp; w-<b>a</b>-l-<b>l</b> (wall)</p>
+    <p class="answer-item"><b>Bài 4:</b> house &nbsp; roof &nbsp; door &nbsp; wall &nbsp; garden</p>
+    <p class="answer-item"><b>Bài 5:</b> 1. Đúng &nbsp; 2. Đúng &nbsp; 3. Sai (nhà Bống có tường) &nbsp; 4. Đúng &nbsp; 5. Sai (nhà Bống có vườn)</p>
+    <p class="answer-item"><b>Bài 6:</b> Bé tô theo nét chấm rồi tự viết lại "House!", "Garden!", "Door!" và "Window!".</p>
   </div>
 
   </div>
@@ -2240,12 +2783,12 @@
     <span class="answer-week-label">TUẦN 10 — Unit 5: My house (Phần 2)</span>
   <div class="answer-page">
     <h2>✅ Đáp án dành cho Ba Mẹ</h2>
-    <p class="answer-item"><b>Bài 1:</b> 1. kitchen → 🍳 &nbsp; 2. bedroom → 🛏️</p>
-    <p class="answer-item"><b>Bài 2:</b> k-i-t-<b>c</b>-h-<b>e</b>-n (kitchen) &nbsp; s-t-a-<b>i</b>-r-s (stairs)</p>
-    <p class="answer-item"><b>Bài 3:</b> Câu 1: The kitchen is next to the living room. &nbsp; Câu 2: My bedroom is next to the bathroom.</p>
-    <p class="answer-item"><b>Bài 4:</b> Câu 1: A. next to &nbsp; Câu 2: B. bathroom</p>
-    <p class="answer-item"><b>Bài 5:</b> Tô màu hồng hình vuông (kitchen), tô màu xanh hình tròn (bedroom).</p>
-    <p class="answer-item"><b>Bài 6:</b> Bé tô theo nét chấm rồi tự viết lại "Kitchen!" và "Stairs!".</p>
+    <p class="answer-item"><b>Bài 1:</b> 1. kitchen → 🍳 &nbsp; 2. bedroom → 🛏️ &nbsp; 3. living room → 🛋️ &nbsp; 4. bathroom → 🛁 &nbsp; 5. garage → 🚗</p>
+    <p class="answer-item"><b>Bài 2:</b> k-i-t-<b>c</b>-h-<b>e</b>-n (kitchen) &nbsp; s-t-a-<b>i</b>-r-s (stairs) &nbsp; b-e-<b>d</b>-r-o-<b>o</b>-m (bedroom) &nbsp; b-a-<b>t</b>-h-r-o-<b>o</b>-m (bathroom) &nbsp; g-a-<b>r</b>-a-g-<b>e</b> (garage)</p>
+    <p class="answer-item"><b>Bài 3:</b> Câu 1: The kitchen is next to the living room. &nbsp; Câu 2: My bedroom is next to the bathroom. &nbsp; Câu 3: The garage is next to the kitchen. &nbsp; Câu 4: The bathroom is next to the stairs. &nbsp; Câu 5: My living room is next to the garage.</p>
+    <p class="answer-item"><b>Bài 4:</b> Câu 1: A. next to &nbsp; Câu 2: B. bathroom &nbsp; Câu 3: B. next to &nbsp; Câu 4: A. next to &nbsp; Câu 5: C. next to</p>
+    <p class="answer-item"><b>Bài 5:</b> Tô màu hồng hình vuông (kitchen), tô màu xanh dương hình tròn (bedroom), tô màu cam hình tam giác (garage), tô màu xanh lá hình thoi (bathroom).</p>
+    <p class="answer-item"><b>Bài 6:</b> Bé tô theo nét chấm rồi tự viết lại "Kitchen!", "Stairs!", "Bedroom!" và "Bathroom!".</p>
   </div>
 
   </div>
@@ -2254,8 +2797,8 @@
   <div class="answer-page">
     <h2>✅ Đáp án dành cho Ba Mẹ</h2>
     <p class="answer-item"><b>Phần I (Trắc nghiệm, mỗi câu 0,75 điểm):</b> 1. A · 2. B · 3. A · 4. B · 5. A · 6. B · 7. A · 8. B</p>
-    <p class="answer-item"><b>Phần II (Điền từ, mỗi câu 1 điểm):</b> 1. schoolbag · 2. mother · 3. window · 4. farmer</p>
-    <p class="answer-item"><b>Phần III (Câu trả lời mẫu — không tính điểm):</b> 1. "It's a ruler." · 2. "The kitchen is next to the living room." (Ba mẹ chấp nhận mọi câu trả lời đúng ngữ pháp và hợp lý của bé.)</p>
+    <p class="answer-item"><b>Phần II (Điền từ, mỗi câu 0,8 điểm):</b> 1. schoolbag · 2. mother · 3. window · 4. farmer · 5. friend</p>
+    <p class="answer-item"><b>Phần III (Câu trả lời mẫu — không tính điểm):</b> 1. "It's a ruler." · 2. "The kitchen is next to the living room." · 3. "It's a schoolbag." (Ba mẹ chấp nhận mọi câu trả lời đúng ngữ pháp và hợp lý của bé.)</p>
     <p class="answer-item"><b>Tổng điểm bài kiểm tra:</b> Phần I (6 điểm) + Phần II (4 điểm) = 10 điểm. Phần III là phần luyện viết thêm, ba mẹ chỉ cần khen ngợi và sửa lỗi nhẹ nhàng cho bé.</p>
   </div>
 
@@ -2264,12 +2807,12 @@
     <span class="answer-week-label">TUẦN 12 — Unit 6: My body (Phần 1)</span>
   <div class="answer-page">
     <h2>✅ Đáp án dành cho Ba Mẹ</h2>
-    <p class="answer-item"><b>Bài 1 (Nối từ với tranh):</b> eye – 👁️ · ear – 👂 · nose – 👃 · hand – ✋</p>
-    <p class="answer-item"><b>Bài 2 (Khoanh tranh đúng):</b> 1. 👄 (mouth) · 2. 💇 (hair)</p>
-    <p class="answer-item"><b>Bài 3 (Sắp xếp chữ cái):</b> 1. EYE · 2. HAND</p>
-    <p class="answer-item"><b>Bài 4 (Trắc nghiệm):</b> 1. A (nose) · 2. B (ear)</p>
-    <p class="answer-item"><b>Bài 5 (Đọc hiểu Đúng/Sai):</b> 1. Đúng 😊 · 2. Sai 😢 (Bống chỉ có một mũi)</p>
-    <p class="answer-item"><b>Bài 6 (Tô nét chữ):</b> Nose! · Mouth! — Ba mẹ cho bé tô theo nét chấm rồi tự viết lại đúng chính tả.</p>
+    <p class="answer-item"><b>Bài 1 (Nối từ với tranh):</b> eye – 👁️ · ear – 👂 · nose – 👃 · hand – ✋ · mouth – 👄</p>
+    <p class="answer-item"><b>Bài 2 (Khoanh tranh đúng):</b> 1. 👄 (mouth) · 2. 💇 (hair) · 3. 👁️ (eye) · 4. 👂 (ear) · 5. 👃 (nose)</p>
+    <p class="answer-item"><b>Bài 3 (Sắp xếp chữ cái):</b> 1. EYE · 2. HAND · 3. NOSE · 4. MOUTH · 5. HAIR</p>
+    <p class="answer-item"><b>Bài 4 (Trắc nghiệm):</b> 1. A (nose) · 2. B (ear) · 3. A (nose) · 4. B (mouth) · 5. A (eyes)</p>
+    <p class="answer-item"><b>Bài 5 (Đọc hiểu Đúng/Sai):</b> 1. Đúng 😊 · 2. Sai 😢 (Bống chỉ có một mũi) · 3. Đúng 😊 · 4. Đúng 😊 · 5. Sai 😢 (Gấu có hai tay)</p>
+    <p class="answer-item"><b>Bài 6 (Tô nét chữ):</b> Nose! · Mouth! · Eye! · Ear! — Ba mẹ cho bé tô theo nét chấm rồi tự viết lại đúng chính tả.</p>
   </div>
 
   </div>
@@ -2277,12 +2820,12 @@
     <span class="answer-week-label">TUẦN 13 — Unit 6: My body (Phần 2)</span>
   <div class="answer-page">
     <h2>✅ Đáp án dành cho Ba Mẹ</h2>
-    <p class="answer-item"><b>Bài 1 (Đúng/Sai):</b> 1. Đúng 😊 · 2. Sai 😢 (🦶 là foot) · 3. Đúng 😊 · 4. Sai 😢 (🦷 là tooth)</p>
-    <p class="answer-item"><b>Bài 2 (Điền chữ cái còn thiếu):</b> 1. LEG · 2. ARM</p>
-    <p class="answer-item"><b>Bài 3 (Sắp xếp chữ cái):</b> 1. FOOT · 2. TOOTH</p>
-    <p class="answer-item"><b>Bài 4 (Sắp xếp từ thành câu):</b> 1. I have five fingers. · 2. I have two legs.</p>
-    <p class="answer-item"><b>Bài 5 (Tô màu):</b> Hình tròn (●) tô màu hồng ứng với "leg", hình ngôi sao (★) tô màu xanh ứng với "arm".</p>
-    <p class="answer-item"><b>Bài 6 (Tô nét chữ):</b> Finger! · Tooth! — Ba mẹ cho bé tô theo nét chấm rồi tự viết lại đúng chính tả.</p>
+    <p class="answer-item"><b>Bài 1 (Đúng/Sai):</b> 1. Đúng 😊 · 2. Sai 😢 (🦶 là foot) · 3. Đúng 😊 · 4. Sai 😢 (🦷 là tooth) · 5. Đúng 😊</p>
+    <p class="answer-item"><b>Bài 2 (Điền chữ cái còn thiếu):</b> 1. LEG · 2. ARM · 3. FOOT · 4. TOOTH · 5. FINGER</p>
+    <p class="answer-item"><b>Bài 3 (Sắp xếp chữ cái):</b> 1. FOOT · 2. TOOTH · 3. LEG · 4. ARM · 5. FINGER</p>
+    <p class="answer-item"><b>Bài 4 (Sắp xếp từ thành câu):</b> 1. I have five fingers. · 2. I have two legs. · 3. I have two arms. · 4. I have two feet. · 5. I have one head.</p>
+    <p class="answer-item"><b>Bài 5 (Tô màu):</b> Hình tròn (●) tô màu hồng ứng với "leg", hình ngôi sao (★) tô màu xanh ứng với "arm", hình tam giác (▲) tô màu xanh lá ứng với "finger", hình thoi (◆) tô màu cam ứng với "tooth".</p>
+    <p class="answer-item"><b>Bài 6 (Tô nét chữ):</b> Finger! · Tooth! · Leg! · Arm! — Ba mẹ cho bé tô theo nét chấm rồi tự viết lại đúng chính tả.</p>
   </div>
 
   </div>
@@ -2290,12 +2833,12 @@
     <span class="answer-week-label">TUẦN 14 — Unit 7: My toys (Phần 1)</span>
   <div class="answer-page">
     <h2>✅ Đáp án dành cho Ba Mẹ</h2>
-    <div class="answer-item"><b>Bài 1 (Nối từ với tranh):</b> ball – ⚽; kite – 🪁; robot – 🤖; balloon – 🎈</div>
-    <div class="answer-item"><b>Bài 2 (Khoanh tranh đúng):</b> 1. doll → 🪆; 2. teddy bear → 🧸</div>
-    <div class="answer-item"><b>Bài 3 (Điền chữ cái):</b> b-<b>a</b>-l-l = ball; k-<b>i</b>-t-e = kite</div>
-    <div class="answer-item"><b>Bài 4 (Trắc nghiệm):</b> 1. A – Yes, I do. 2. A – teddy bear</div>
-    <div class="answer-item"><b>Bài 5 (Đọc hiểu):</b> 1. Đúng (😊); 2. Sai (😢) – Bống có bóng bay; 3. Đúng (😊)</div>
-    <div class="answer-item"><b>Bài 6 (Tô nét chữ):</b> Ba mẹ kiểm tra bé viết đúng "Ball!" và "Robot!" theo nét chấm.</div>
+    <div class="answer-item"><b>Bài 1 (Nối từ với tranh):</b> ball – ⚽; kite – 🪁; robot – 🤖; balloon – 🎈; doll – 🪆</div>
+    <div class="answer-item"><b>Bài 2 (Khoanh tranh đúng):</b> 1. doll → 🪆; 2. teddy bear → 🧸; 3. ball → ⚽; 4. kite → 🪁; 5. balloon → 🎈</div>
+    <div class="answer-item"><b>Bài 3 (Điền chữ cái):</b> b-<b>a</b>-l-l = ball; k-<b>i</b>-t-e = kite; ro-<b>b</b>-ot = robot; do-<b>l</b>-l = doll; ba-<b>l</b>-loon = balloon</div>
+    <div class="answer-item"><b>Bài 4 (Trắc nghiệm):</b> 1. A – Yes, I do. 2. A – teddy bear. 3. A – Yes, I do. 4. A – balloon. 5. A – No, I don't.</div>
+    <div class="answer-item"><b>Bài 5 (Đọc hiểu):</b> 1. Đúng (😊); 2. Sai (😢) – Bống có bóng bay; 3. Đúng (😊); 4. Đúng (😊); 5. Sai (😢) – Bống thích bóng bay của mình</div>
+    <div class="answer-item"><b>Bài 6 (Tô nét chữ):</b> Ba mẹ kiểm tra bé viết đúng "Ball!", "Robot!", "Kite!" và "Doll!" theo nét chấm.</div>
   </div>
 
   </div>
@@ -2303,12 +2846,12 @@
     <span class="answer-week-label">TUẦN 15 — Unit 7: My toys (Phần 2)</span>
   <div class="answer-page">
     <h2>✅ Đáp án dành cho Ba Mẹ</h2>
-    <div class="answer-item"><b>Bài 1 (Đúng/Sai):</b> 1. Đúng (😊); 2. Sai (😢) – đây là drum; 3. Đúng (😊); 4. Sai (😢) – đây là doll house</div>
-    <div class="answer-item"><b>Bài 2 (Sắp xếp chữ cái):</b> blocks; drum</div>
-    <div class="answer-item"><b>Bài 3 (Sắp xếp câu):</b> I have a puzzle. / Do you have a drum?</div>
-    <div class="answer-item"><b>Bài 4 (Trắc nghiệm):</b> 1. A – Yes, I do. 2. A – toy train</div>
-    <div class="answer-item"><b>Bài 5 (Tô màu):</b> Hình tròn tô màu hồng (puzzle), hình ngôi sao tô màu xanh (blocks)</div>
-    <div class="answer-item"><b>Bài 6 (Tô nét chữ):</b> Ba mẹ kiểm tra bé viết đúng "Puzzle!" và "Drum!" theo nét chấm.</div>
+    <div class="answer-item"><b>Bài 1 (Đúng/Sai):</b> 1. Đúng (😊); 2. Sai (😢) – đây là drum; 3. Đúng (😊); 4. Sai (😢) – đây là doll house; 5. Đúng (😊)</div>
+    <div class="answer-item"><b>Bài 2 (Sắp xếp chữ cái):</b> blocks; drum; puzzle; yo-yo; train</div>
+    <div class="answer-item"><b>Bài 3 (Sắp xếp câu):</b> I have a puzzle. / Do you have a drum? / I have a yo-yo. / Do you have blocks? / I have a toy train.</div>
+    <div class="answer-item"><b>Bài 4 (Trắc nghiệm):</b> 1. A – Yes, I do. 2. A – toy train. 3. A – Yes, I do. 4. A – doll house. 5. A – No, I don't.</div>
+    <div class="answer-item"><b>Bài 5 (Tô màu):</b> Hình tròn tô màu hồng (puzzle), hình ngôi sao tô màu xanh (blocks), hình tam giác tô màu xanh lá (drum), hình thoi tô màu cam (yo-yo)</div>
+    <div class="answer-item"><b>Bài 6 (Tô nét chữ):</b> Ba mẹ kiểm tra bé viết đúng "Puzzle!", "Drum!", "Blocks!" và "Yo-yo!" theo nét chấm.</div>
   </div>
 
   </div>
@@ -2316,12 +2859,12 @@
     <span class="answer-week-label">TUẦN 16 — Unit 8: Animals</span>
   <div class="answer-page">
     <h2>✅ Đáp án dành cho Ba Mẹ</h2>
-    <div class="answer-item"><b>Bài 1 (Nối từ với tranh):</b> dog – 🐶; cat – 🐱; bird – 🐦; fish – 🐟</div>
-    <div class="answer-item"><b>Bài 2 (Khoanh tranh đúng):</b> 1. rabbit → 🐰; 2. elephant → 🐘</div>
-    <div class="answer-item"><b>Bài 3 (Đúng/Sai):</b> 1. Đúng (😊); 2. Sai (😢) – đây là cat; 3. Đúng (😊); 4. Sai (😢) – đây là bird</div>
-    <div class="answer-item"><b>Bài 4 (Điền chữ cái):</b> d-<b>o</b>-g = dog; b-<b>i</b>-r-d = bird</div>
-    <div class="answer-item"><b>Bài 5 (Đọc hiểu):</b> 1. Đúng (😊); 2. Sai (😢) – Gấu có nuôi thú cưng; 3. Đúng (😊)</div>
-    <div class="answer-item"><b>Bài 6 (Tô nét chữ):</b> Ba mẹ kiểm tra bé viết đúng "Dog!" và "Fish!" theo nét chấm.</div>
+    <div class="answer-item"><b>Bài 1 (Nối từ với tranh):</b> dog – 🐶; cat – 🐱; bird – 🐦; fish – 🐟; elephant – 🐘</div>
+    <div class="answer-item"><b>Bài 2 (Khoanh tranh đúng):</b> 1. rabbit → 🐰; 2. elephant → 🐘; 3. dog → 🐶; 4. cat → 🐱; 5. fish → 🐟</div>
+    <div class="answer-item"><b>Bài 3 (Đúng/Sai):</b> 1. Đúng (😊); 2. Sai (😢) – đây là cat; 3. Đúng (😊); 4. Sai (😢) – đây là bird; 5. Đúng (😊)</div>
+    <div class="answer-item"><b>Bài 4 (Điền chữ cái):</b> d-<b>o</b>-g = dog; b-<b>i</b>-r-d = bird; c-<b>a</b>-t = cat; fi-<b>s</b>-h = fish; r-<b>a</b>-bbit = rabbit</div>
+    <div class="answer-item"><b>Bài 5 (Đọc hiểu):</b> 1. Đúng (😊); 2. Sai (😢) – Gấu có nuôi thú cưng; 3. Đúng (😊); 4. Đúng (😊); 5. Sai (😢) – tên chú chó của Gấu là Rex</div>
+    <div class="answer-item"><b>Bài 6 (Tô nét chữ):</b> Ba mẹ kiểm tra bé viết đúng "Dog!", "Fish!", "Cat!" và "Bird!" theo nét chấm.</div>
   </div>
 
   </div>
@@ -2329,12 +2872,12 @@
     <span class="answer-week-label">TUẦN 17 — Unit 9: Colours & Numbers</span>
   <div class="answer-page">
     <h2>✅ Đáp án dành cho Ba Mẹ</h2>
-    <p class="answer-item"><b>Bài 1</b> (Khoanh tranh đúng): 1. 🔵 blue — 2. 🔟 ten</p>
-    <p class="answer-item"><b>Bài 2</b> (Sắp xếp chữ cái): 1. green — 2. five</p>
-    <p class="answer-item"><b>Bài 3</b> (Sắp xếp từ thành câu): 1. It is blue. — 2. I have five.</p>
-    <p class="answer-item"><b>Bài 4</b> (Trắc nghiệm): 1. A (red) — 2. B (Ten)</p>
-    <p class="answer-item"><b>Bài 5</b> (Tô màu): Hình tròn tô màu đỏ (ứng với từ "red"), hình ngôi sao tô màu xanh lá (ứng với từ "green").</p>
-    <p class="answer-item"><b>Bài 6</b> (Tô nét chữ): Ba mẹ giúp bé tô theo nét chấm mờ chữ "Yellow!" và "Green!", sau đó tự viết lại đúng chính tả vào dòng kẻ chấm bên dưới.</p>
+    <p class="answer-item"><b>Bài 1</b> (Khoanh tranh đúng): 1. 🔵 blue — 2. 🔟 ten — 3. 🔴 red — 4. 🟢 green — 5. 5️⃣ five</p>
+    <p class="answer-item"><b>Bài 2</b> (Sắp xếp chữ cái): 1. green — 2. five — 3. red — 4. blue — 5. ten</p>
+    <p class="answer-item"><b>Bài 3</b> (Sắp xếp từ thành câu): 1. It is blue. — 2. I have five. — 3. It is red. — 4. It is yellow. — 5. I have ten.</p>
+    <p class="answer-item"><b>Bài 4</b> (Trắc nghiệm): 1. A (red) — 2. B (Ten) — 3. A (yellow) — 4. A (Five) — 5. B (green)</p>
+    <p class="answer-item"><b>Bài 5</b> (Tô màu): Hình tròn tô màu đỏ (ứng với từ "red"), hình ngôi sao tô màu xanh lá (ứng với từ "green"), hình tam giác tô màu vàng (ứng với từ "yellow"), hình vuông tô màu xanh dương (ứng với từ "blue").</p>
+    <p class="answer-item"><b>Bài 6</b> (Tô nét chữ): Ba mẹ giúp bé tô theo nét chấm mờ chữ "Yellow!", "Green!", "Red!" và "Blue!", sau đó tự viết lại đúng chính tả vào dòng kẻ chấm bên dưới.</p>
   </div>
 
   </div>
@@ -2344,8 +2887,8 @@
     <h2>✅ Đáp án dành cho Ba Mẹ</h2>
     <p class="answer-item"><b>Phần I — Trắc nghiệm (6 điểm, mỗi câu 0.75 điểm):</b></p>
     <p class="answer-item">1. A (eye) — 2. B (ear) — 3. A (robot) — 4. B (kite) — 5. C (dog) — 6. A (rabbit) — 7. B (red) — 8. B (ten)</p>
-    <p class="answer-item"><b>Phần II — Nối từ với tranh (4 điểm):</b></p>
-    <p class="answer-item">hand → ✋ &nbsp;|&nbsp; teddy bear → 🧸 &nbsp;|&nbsp; fish → 🐟 &nbsp;|&nbsp; yellow → 🟡</p>
+    <p class="answer-item"><b>Phần II — Nối từ với tranh (5 mục × 0.8 điểm = 4 điểm):</b></p>
+    <p class="answer-item">hand → ✋ &nbsp;|&nbsp; teddy bear → 🧸 &nbsp;|&nbsp; fish → 🐟 &nbsp;|&nbsp; yellow → 🟡 &nbsp;|&nbsp; red → 🔴</p>
     <p class="answer-item"><b>Phần III — Viết câu ngắn (câu trả lời mẫu, không tính điểm trừ, khuyến khích bé tự viết):</b></p>
     <p class="answer-item">1. What colour do you like? → <i>I like blue. / I like red.</i> (bé có thể chọn màu bất kỳ đã học)</p>
     <p class="answer-item">2. Do you have a pet? What is it? → <i>Yes, I do. It's a dog. / No, I don't.</i></p>
